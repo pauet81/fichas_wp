@@ -1,0 +1,73 @@
+flowchart LR
+  A[Homepage]
+
+  subgraph Infantil
+    I[Infantil]
+    I --> I3[3 Años]
+    I --> I4[4 Años]
+    I --> I5[5 Años]
+    I --> IH[Halloween]
+    I --> II[Invierno]
+    I --> IN[Navidad]
+    I --> IO[Otoño]
+    I --> IP[Primavera]
+    I --> IV[Verano]
+
+    I3 --> I3L[Lenguaje]
+    I3 --> I3Ing[Inglés]
+    I3 --> I3M[Matemáticas]
+    I3 --> I3C[Conocimiento del Entorno]
+
+    I4 --> I4L[Lenguaje]
+    I4 --> I4Ing[Inglés]
+    I4 --> I4M[Matemáticas]
+    I4 --> I4C[Conocimiento del Entorno]
+
+    I5 --> I5L[Lenguaje]
+    I5 --> I5Ing[Inglés]
+    I5 --> I5M[Matemáticas]
+    I5 --> I5C[Conocimiento del Entorno]
+  end
+
+  subgraph Primaria
+    P[Primaria]
+    P --> P1[1º Primaria]
+    P --> P2[2º Primaria]
+    P --> P3[3º Primaria]
+    P --> P4[4º Primaria]
+    P --> P5[5º Primaria]
+    P --> P6[6º Primaria]
+
+    P1 --> P1M[Matemáticas]
+    P1 --> P1L[Lenguaje]
+    P1 --> P1C[Conocimiento del Medio]
+    P1 --> P1Ing[Inglés]
+
+    P2 --> P2M[Matemáticas]
+    P2 --> P2L[Lenguaje]
+    P2 --> P2C[Conocimiento del Medio]
+    P2 --> P2Ing[Inglés]
+
+    P3 --> P3M[Matemáticas]
+    P3 --> P3L[Lenguaje]
+    P3 --> P3C[Conocimiento del Medio]
+    P3 --> P3Ing[Inglés]
+
+    P4 --> P4M[Matemáticas]
+    P4 --> P4L[Lenguaje]
+    P4 --> P4C[Conocimiento del Medio]
+    P4 --> P4Ing[Inglés]
+
+    P5 --> P5M[Matemáticas]
+    P5 --> P5L[Lenguaje]
+    P5 --> P5C[Conocimiento del Medio]
+    P5 --> P5Ing[Inglés]
+
+    P6 --> P6M[Matemáticas]
+    P6 --> P6L[Lenguaje]
+    P6 --> P6C[Conocimiento del Medio]
+    P6 --> P6Ing[Inglés]
+  end
+
+  A --> I
+  A --> P

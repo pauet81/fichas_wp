@@ -1,0 +1,32 @@
+# Composer
+# IMPORTANTE: vendor/ SÍ se incluye porque es un producto comercial
+# composer.lock SÍ se incluye para garantizar versiones exactas
+
+# WordPress
+.DS_Store
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/
+wp-content/themes/
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+

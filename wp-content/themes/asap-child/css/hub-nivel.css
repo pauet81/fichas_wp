@@ -1,0 +1,466 @@
+/**
+ * HUB-NIVEL.CSS
+ * Estilos específicos para page-hub-nivel.php (Primaria, Infantil, Secundaria)
+ * Versión 1.1 - Enero 2026
+ */
+
+/* ============================================
+   CARDS DE CURSOS - MEJORADAS
+   ============================================ */
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.curso-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid #e5e7eb;
+    text-decoration: none !important;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto hover sin subrayado */
+.curso-card * {
+    text-decoration: none !important;
+}
+
+.curso-card:hover,
+.curso-card:focus {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(37, 113, 163, 0.25);
+    border-color: #2571A3;
+    text-decoration: none !important;
+}
+
+/* Efecto gradiente en hover */
+.curso-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(37, 113, 163, 0.03) 0%, rgba(26, 82, 118, 0.05) 100%);
+    transition: left 0.5s ease;
+    z-index: 0;
+}
+
+.curso-card:hover::before {
+    left: 0;
+}
+
+/* Todos los elementos por encima del pseudo-elemento */
+.curso-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icono del curso */
+.curso-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+    line-height: 1;
+    transition: transform 0.4s ease;
+}
+
+.curso-card:hover .curso-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* Nombre del curso */
+.curso-nombre {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #2d3748;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+    text-decoration: none !important;
+}
+
+/* Descripción del curso */
+.curso-descripcion-card {
+    font-size: 0.95em;
+    color: #6b7280;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    flex: 1;
+    text-decoration: none !important;
+}
+
+/* Contador de fichas */
+.curso-fichas-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bfdbfe 100%);
+    border-radius: 12px;
+    font-size: 0.9em;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.curso-card:hover .curso-fichas-count {
+    background: linear-gradient(135deg, #2571A3 0%, #1a5276 100%);
+}
+
+.curso-fichas-count .fichas-number {
+    font-weight: 800;
+    color: #2571A3;
+    font-size: 1.4em;
+    transition: color 0.3s ease;
+}
+
+.curso-card:hover .fichas-number {
+    color: white;
+}
+
+.curso-fichas-count .fichas-label {
+    color: #1e40af;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.curso-card:hover .fichas-label {
+    color: white;
+}
+
+.curso-arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+    color: #2571A3;
+}
+
+.curso-card:hover .curso-arrow {
+    transform: translateX(5px);
+    color: white;
+}
+
+/* Curso deshabilitado */
+.curso-card.curso-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.curso-card.curso-disabled::before {
+    display: none;
+}
+
+
+/* ============================================
+   CARDS DE TEMÁTICAS ESTACIONALES - DISEÑO ELEGANTE
+   ============================================ */
+
+.nivel-tematicas-estacionales {
+    padding: 50px 0 60px 0;
+    margin: 30px 0 60px 0; /* Más cerca del bloque de cursos */
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(240, 147, 251, 0.3) 20%, 
+        rgba(240, 147, 251, 0.6) 50%, 
+        rgba(240, 147, 251, 0.3) 80%, 
+        transparent 100%
+    ) 1;
+    position: relative;
+}
+
+/* Detalle decorativo superior sutil */
+.nivel-tematicas-estacionales::before {
+    content: '✦';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: #f093fb;
+    background: white;
+    padding: 0 15px;
+}
+
+.nivel-tematicas-estacionales .section-titulo {
+    color: #2d3748;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Subrayado rosa elegante */
+.nivel-tematicas-estacionales .section-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #f093fb, transparent);
+    border-radius: 2px;
+}
+
+.nivel-tematicas-estacionales .section-descripcion {
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.tematicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.tematica-card {
+    background: white;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid #f3f4f6;
+    text-decoration: none !important;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.tematica-card * {
+    text-decoration: none !important;
+}
+
+/* Borde rosa sutil en hover */
+.tematica-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    border-radius: 16px 16px 0 0;
+}
+
+.tematica-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tematica-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(240, 147, 251, 0.25);
+    border-color: rgba(240, 147, 251, 0.4);
+    text-decoration: none !important;
+}
+
+/* Fondo rosa muy sutil en hover */
+.tematica-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(252, 231, 243, 0) 0%, 
+        rgba(252, 231, 243, 0.3) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    border-radius: 16px;
+}
+
+.tematica-card:hover::after {
+    opacity: 1;
+}
+
+.tematica-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.tematica-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+    line-height: 1;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08));
+}
+
+.tematica-card:hover .tematica-icon {
+    transform: scale(1.15) translateY(-5px);
+}
+
+.tematica-nombre {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 10px 0;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+.tematica-card:hover .tematica-nombre {
+    color: #f093fb;
+}
+
+.tematica-descripcion {
+    font-size: 0.9em;
+    color: #9ca3af;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex: 1;
+    text-decoration: none !important;
+}
+
+.tematica-fichas-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #f9fafb;
+    border-radius: 10px;
+    font-size: 0.9em;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.tematica-card:hover .tematica-fichas-count {
+    background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+    border-color: rgba(240, 147, 251, 0.3);
+}
+
+.tematica-fichas-count .fichas-number {
+    font-weight: 800;
+    color: #f093fb;
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+}
+
+.tematica-card:hover .fichas-number {
+    transform: scale(1.1);
+}
+
+.tematica-fichas-count .fichas-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.tematica-arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    font-size: 1em;
+    color: #f093fb;
+    opacity: 0;
+}
+
+.tematica-card:hover .tematica-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+
+/* ============================================
+   RESPONSIVE - TABLETS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .cursos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .curso-card {
+        padding: 30px 20px;
+    }
+    
+    .curso-icon {
+        font-size: 3.5em;
+    }
+    
+    .curso-nombre {
+        font-size: 1.3em;
+    }
+    
+    .nivel-tematicas-estacionales {
+        padding: 40px 0 50px 0;
+        margin: 25px 0 50px 0;
+    }
+    
+    .tematicas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .tematica-card {
+        padding: 28px 20px;
+    }
+    
+    .tematica-icon {
+        font-size: 3.5em;
+    }
+    
+    .tematica-nombre {
+        font-size: 1.2em;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVILES
+   ============================================ */
+
+@media (max-width: 480px) {
+    .cursos-grid,
+    .tematicas-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .curso-card,
+    .tematica-card {
+        padding: 25px 18px;
+    }
+    
+    .curso-icon,
+    .tematica-icon {
+        font-size: 3em;
+    }
+    
+    .curso-nombre,
+    .tematica-nombre {
+        font-size: 1.2em;
+    }
+    
+    .curso-descripcion-card,
+    .tematica-descripcion {
+        font-size: 0.9em;
+    }
+    
+    .nivel-tematicas-estacionales {
+        padding: 35px 0 40px 0;
+        margin: 20px 0 40px 0;
+    }
+}
+

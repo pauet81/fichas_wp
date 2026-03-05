@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<id><![CDATA[INF001]]></id>
+		<post_title><![CDATA[Contar hasta 5]]></post_title>
+		<tema><![CDATA[Números 1-5]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Contar objetos del 1 al 5|Identificar cantidades pequeñas|Asociar número con cantidad visual]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa cada grupo de objetos|Cuenta con tus deditos|Señala el número correcto]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha interactiva para los más pequeños que aprenden a contar hasta 5. Incluye 4 tipologías de ejercicios:
+    - 5 preguntas simples de opción múltiple con objetos visuales grandes (estrellas, corazones, círculos, flores, mano)
+    - 1 ejercicio drag & drop: arrastrar números (2, 3, 5) a grupos de objetos
+    - 2 ejercicios fill-in-the-blanks: escribir el número que falta
+    - 1 memory game de 6 parejas: números 1-5 con objetos + parejas bonus
+    Duración: 3 minutos. Edad: 3-4 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Primera <strong>ficha de números</strong> para niños de <strong>3 años</strong>. Aprende a contar del 1 al 5 con dibujos grandes y bonitos. Perfecta para <strong>Infantil 3 años</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Contar hasta 5 | 3 Años (3-4) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha interactiva con 8 ejercicios para contar del 1 al 5. 3 Años Infantil, nivel fácil. ¡Aprende contando objetos coloridos! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF002]]></id>
+		<post_title><![CDATA[Número 1]]></post_title>
+		<tema><![CDATA[Números 1-5]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el número 1|Contar un solo objeto|Identificar el número 1 en diferentes contextos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el número 1|Busca grupos de 1 objeto|Elige la respuesta correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha dedicada al número 1. El niño aprende a reconocer su grafía y asociarlo con un solo objeto. 6 ejercicios con estrella sola, corazón solo, círculo solo. Muy visual y repetitivo para reforzar el concepto.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende el <strong>número 1</strong> con esta ficha para <strong>3 años</strong>. Perfecta para empezar con los números en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Número 1 | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del número 1 con 6 ejercicios de reconocimiento y conteo. 3 Años Infantil, nivel fácil. ¡Aprende el primer número! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF003]]></id>
+		<post_title><![CDATA[Número 2]]></post_title>
+		<tema><![CDATA[Números 1-5]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el número 2|Contar dos objetos|Identificar parejas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Busca el número 2|Cuenta dos objetos iguales|Señala la respuesta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del número 2. Presenta parejas de objetos (dos estrellas, dos corazones). El niño cuenta hasta dos y reconoce el número. 6 ejercicios simples y repetitivos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Ficha del <strong>número 2</strong> para <strong>3 años</strong>. Aprende a contar parejas de objetos en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Número 2 | 3 Años (3-4) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del número 2 con 6 ejercicios de parejas y conteo. 3 Años Infantil, nivel fácil. ¡Cuenta de dos en dos! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF004]]></id>
+		<post_title><![CDATA[Número 3]]></post_title>
+		<tema><![CDATA[Números 1-5]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el número 3|Contar tres objetos|Asociar número con cantidad]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa el número 3|Cuenta tres objetos|Elige la respuesta correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del número 3. Grupos de tres objetos visuales. El niño cuenta y selecciona el número correcto entre opciones. 6 ejercicios progresivos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Número 3</strong> para <strong>Infantil 3 años</strong>. Aprende contando tres objetos coloridos.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Número 3 | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del número 3 con 6 ejercicios de conteo visual. 3 Años Infantil, nivel fácil. ¡Practica el número 3! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF005]]></id>
+		<post_title><![CDATA[Círculo y cuadrado]]></post_title>
+		<tema><![CDATA[Formas Geométricas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Espacial]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer círculo y cuadrado|Diferenciar formas básicas|Nombrar formas geométricas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira cada forma|¿Es redonda o tiene esquinas?|Señala la respuesta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de geometría. Presenta círculo y cuadrado de forma aislada y en objetos cotidianos (pelota, dado). Incluye:
+    - 6 preguntas de opción múltiple para reconocer formas
+    - 1 ejercicio drag & drop: clasificar objetos por forma (círculos a un lado, cuadrados a otro)
+    - 1 ejercicio de colorear formas
+    8 ejercicios totales de reconocimiento visual. Duración: 3 minutos. Edad: 3-4 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende las formas: <strong>círculo y cuadrado</strong>. Ficha para <strong>3 años</strong> con dibujos grandes.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Círculo y Cuadrado | 3 Años (3-4) Infantil]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de formas geométricas con 8 ejercicios de círculo y cuadrado. 3 Años Infantil, nivel fácil. ¡Aprende formas básicas! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF006]]></id>
+		<post_title><![CDATA[Series de colores]]></post_title>
+		<tema><![CDATA[Series]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer patrones simples|Completar series de colores|Desarrollar lógica básica]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa los colores|¿Cuál viene después?|Señala la respuesta correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de series con dos colores alternos (rojo-azul-rojo-azul). El niño debe identificar qué color sigue. 6 ejercicios con patrones visuales simples.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Series de colores</strong> para <strong>3 años</strong>. Aprende patrones sencillos en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Series de Colores | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de series con 6 ejercicios de patrones de colores. 3 Años Infantil, nivel fácil. ¡Completa las series! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF007]]></id>
+		<post_title><![CDATA[Reconocer vocal A]]></post_title>
+		<tema><![CDATA[Vocales]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la vocal A|Identificar sonido /a/|Señalar la letra A]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la letra A|Busca la A grande|Señala dónde está]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de vocales. El niño aprende a reconocer la A mayúscula en diferentes tamaños y colores. 5 ejercicios de identificación visual.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende la <strong>vocal A</strong> con esta ficha para <strong>3 años</strong>. Primera letra en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Vocal A | 3 Años (3-4) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la vocal A con 5 ejercicios de reconocimiento visual. 3 Años Infantil, nivel fácil. ¡Primera vocal! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF008]]></id>
+		<post_title><![CDATA[Reconocer vocal E]]></post_title>
+		<tema><![CDATA[Vocales]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la vocal E|Identificar sonido /e/|Señalar la letra E]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa la letra E|Busca la E grande|Señala dónde está]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de la vocal E. Reconocimiento visual de E mayúscula en contextos variados. 5 ejercicios simples.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Vocal E</strong> para <strong>Infantil 3 años</strong>. Aprende la segunda vocal.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Vocal E | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la vocal E con 5 ejercicios de reconocimiento. 3 Años Infantil, nivel fácil. ¡Segunda vocal! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF009]]></id>
+		<post_title><![CDATA[Trazos verticales]]></post_title>
+		<tema><![CDATA[Grafomotricidad]]></tema>
+		<bloque_lomloe><![CDATA[Expresión Gráfica]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Realizar trazos verticales|Controlar movimiento de arriba a abajo|Preparar escritura]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Pon el dedo arriba|Baja en línea recta|Repite el trazo]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de grafomotricidad con líneas verticales. Incluye:
+    - 1 ejercicio interactivo de trazo con canvas: el niño repasa líneas verticales de arriba hacia abajo con dedo/ratón. Incluye guía de fondo, botón borrar y feedback visual.
+    - 5 preguntas de reconocimiento de líneas verticales en objetos cotidianos
+    El niño practica el movimiento de arriba hacia abajo para preparar la escritura. 6 ejercicios progresivos. Duración: 3 minutos. Edad: 3-4 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Trazos verticales</strong> para <strong>3 años</strong>. Preparación para la escritura en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Trazos Verticales | 3 Años (3-4) Infantil]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de grafomotricidad con 6 ejercicios de trazos verticales. 3 Años Infantil, nivel fácil. ¡Prepara la escritura! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF010]]></id>
+		<post_title><![CDATA[Trazos horizontales]]></post_title>
+		<tema><![CDATA[Grafomotricidad]]></tema>
+		<bloque_lomloe><![CDATA[Expresión Gráfica]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Realizar trazos horizontales|Controlar movimiento de izquierda a derecha|Coordinar mano]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Pon el dedo a la izquierda|Ve hacia la derecha|Repasa la línea]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de líneas horizontales. Incluye:
+    - 1 ejercicio interactivo de trazo con canvas: el niño traza de izquierda a derecha siguiendo guías. Canvas grande con botón borrar.
+    - 5 preguntas de identificación de líneas horizontales
+    Preparación para la escritura con líneas cada vez más largas. 6 ejercicios totales. Duración: 3 minutos. Edad: 3-4 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Trazos horizontales</strong> para <strong>3 años</strong>. Ejercicios de grafomotricidad para <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Trazos Horizontales | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha con 6 ejercicios de trazos horizontales. 3 Años Infantil, nivel fácil. ¡Mejora la coordinación! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF011]]></id>
+		<post_title><![CDATA[Colors - Red]]></post_title>
+		<tema><![CDATA[Colores]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender el color rojo en inglés|Reconocer objetos rojos|Decir 'red']]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the red color|Find red objects|Point to red]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de inglés. Presenta el color rojo (red) con objetos cotidianos rojos: manzana, corazón, globo. 5 ejercicios de reconocimiento.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende <strong>red (rojo)</strong> en inglés. Ficha para <strong>3 años</strong> en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Color Red | 3 Años (3-4) Infantil Inglés]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de inglés del color red (rojo) con 5 ejercicios visuales. 3 Años Infantil, nivel fácil. ¡First color! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF012]]></id>
+		<post_title><![CDATA[Colors - Blue]]></post_title>
+		<tema><![CDATA[Colores]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender el color azul en inglés|Reconocer objetos azules|Decir 'blue']]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the blue color|Find blue objects|Point to blue]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del color azul (blue). Objetos azules: cielo, mar, pelota. 5 ejercicios de identificación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Blue (azul)</strong> en inglés para <strong>3 años</strong>. Segunda ficha de colores en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Color Blue | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del color blue (azul) con 5 ejercicios de reconocimiento. 3 Años Infantil, nivel fácil. ¡Learn colors! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF013]]></id>
+		<post_title><![CDATA[Animals - Dog]]></post_title>
+		<tema><![CDATA[Animales]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender 'dog' en inglés|Reconocer perros|Imitar sonido del perro]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the dog|Say 'woof woof'|Point to the dog]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de animales. El perro (dog). Presenta diferentes razas de perros y el niño los identifica. 5 ejercicios con imágenes grandes.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende <strong>dog (perro)</strong> en inglés. Ficha de animales para <strong>3 años</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Animal Dog | 3 Años (3-4) Infantil Inglés]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de inglés del animal dog (perro) con 5 ejercicios. 3 Años Infantil, nivel fácil. ¡First animal! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF014]]></id>
+		<post_title><![CDATA[El cuerpo humano - Cabeza]]></post_title>
+		<tema><![CDATA[El Cuerpo Humano]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar la cabeza|Señalar partes de la cara|Nombrar cabeza]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Toca tu cabeza|Señala la cabeza en el dibujo|¿Dónde está la cabeza?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha del cuerpo humano. Presenta la cabeza y sus partes principales: ojos, boca, nariz. 5 ejercicios de reconocimiento.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Aprende las partes del cuerpo: <strong>la cabeza</strong>. Ficha para <strong>3 años</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[La Cabeza | 3 Años (3-4) Infantil Cuerpo Humano]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del cuerpo humano: la cabeza con 5 ejercicios. 3 Años Infantil, nivel fácil. ¡Aprende tu cuerpo! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF015]]></id>
+		<post_title><![CDATA[El cuerpo humano - Manos]]></post_title>
+		<tema><![CDATA[El Cuerpo Humano]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[2]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar las manos|Contar dedos|Usar las manos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Levanta tus manos|Cuenta tus dedos|¿Para qué sirven?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha sobre las manos. El niño las reconoce, cuenta dedos (5 en cada mano) y aprende para qué sirven. 5 ejercicios interactivos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Las manos</strong> y sus funciones. Ficha del cuerpo humano para <strong>3 años</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Las Manos | 3 Años (3-4) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de las manos con 5 ejercicios de reconocimiento y conteo de dedos. 3 Años Infantil, nivel fácil. ¡Conoce tu cuerpo! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF016]]></id>
+		<post_title><![CDATA[Animales domésticos]]></post_title>
+		<tema><![CDATA[Animales]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-4 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer animales domésticos|Nombrar perro, gato, pez|Identificar dónde viven]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira cada animal|¿Vive en tu casa?|Señala los animales domésticos]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de animales que viven en casa: perro, gato, pez, pájaro. Incluye:
+    - 4 preguntas de reconocimiento de animales domésticos
+    - 1 ejercicio drag & drop: arrastrar animales domésticos a "casa" y salvajes a "naturaleza"
+    - 1 ejercicio de sonidos de animales
+    El niño los reconoce y diferencia de animales salvajes. 6 ejercicios totales. Duración: 3 minutos. Edad: 3-4 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Animales domésticos</strong> para <strong>3 años</strong>. Aprende qué animales viven en casa.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[3 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Animales Domésticos | 3 Años (3-4) Infantil]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de animales domésticos con 6 ejercicios de reconocimiento. 3 Años Infantil, nivel fácil. ¡Aprende animales de casa! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF017]]></id>
+		<post_title><![CDATA[Contar hasta 10]]></post_title>
+		<tema><![CDATA[Números 1-10]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Contar objetos del 1 al 10|Identificar cantidades|Asociar número con cantidad]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa cada grupo|Cuenta despacio|Elige el número correcto]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha para contar hasta 10. Presenta grupos visuales de objetos del 1 al 10. Incluye:
+    - 8 preguntas simples de opción múltiple con conteo progresivo
+    - 1 ejercicio drag & drop: clasificar números pequeños (1-5) y grandes (6-10)
+    - 1 memory game de 5 parejas: números 6-10 con sus cantidades
+    El niño cuenta y selecciona el número correcto. 10 ejercicios progresivos. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Contar hasta 10</strong> para <strong>4 años</strong>. Amplia el rango numérico en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Contar hasta 10 | 4 Años (4-5) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha interactiva con 10 ejercicios para contar del 1 al 10. 4 Años Infantil, nivel fácil. ¡Cuenta hasta 10! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF018]]></id>
+		<post_title><![CDATA[Números 1-5 Completo]]></post_title>
+		<tema><![CDATA[Números 1-5]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer números del 1 al 5|Ordenar números|Comparar cantidades pequeñas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Lee cada número|Ordénalos de menor a mayor|Compara las cantidades]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha completa de números 1-5. Incluye reconocimiento, ordenamiento y comparación. 10 ejercicios variados de dificultad media.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Repaso completo de <strong>números 1-5</strong> para <strong>4 años</strong>. Ficha más avanzada en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Números 1-5 Completo | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de números 1-5 con 10 ejercicios de reconocimiento y orden. 4 Años Infantil, nivel medio. ¡Domina los primeros números! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF019]]></id>
+		<post_title><![CDATA[Número 4]]></post_title>
+		<tema><![CDATA[Números 1-10]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el número 4|Contar cuatro objetos|Escribir el 4]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa el número 4|Cuenta cuatro objetos|Traza el número]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha dedicada al número 4. Incluye:
+    - 5 preguntas de reconocimiento visual y conteo de grupos de 4
+    - 1 ejercicio de trazo del número 4 con canvas interactivo
+    - 2 ejercicios fill-in-the-blanks con grupos de 4 objetos
+    Reconocimiento visual, conteo y trazo del número. 8 ejercicios totales. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Número 4</strong> para <strong>4 años</strong>. Aprende el cuatro en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Número 4 | 4 Años (4-5) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del número 4 con 6 ejercicios de conteo y trazo. 4 Años Infantil, nivel fácil. ¡Aprende el 4! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF020]]></id>
+		<post_title><![CDATA[Número 5]]></post_title>
+		<tema><![CDATA[Números 1-10]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el número 5|Contar cinco objetos|Asociar con los dedos de la mano]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira tus dedos|Cuenta hasta cinco|Busca grupos de 5]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del número 5. Asociación con los dedos de la mano. Incluye:
+    - 5 preguntas de reconocimiento y conteo hasta 5
+    - 1 ejercicio de trazo del número 5 con canvas
+    - 2 ejercicios relacionando el 5 con los dedos de la mano
+    8 ejercicios de reconocimiento y conteo. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Número 5</strong> para <strong>4 años</strong>. Usa tus dedos para contar en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Número 5 | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del número 5 con 6 ejercicios usando dedos de la mano. 4 Años Infantil, nivel fácil. ¡Cuenta con tus manos! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF021]]></id>
+		<post_title><![CDATA[Triángulo]]></post_title>
+		<tema><![CDATA[Formas Geométricas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Espacial]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el triángulo|Contar tres lados|Identificar triángulos en objetos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira los tres lados|Cuenta las esquinas|Busca triángulos]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del triángulo. El niño aprende que tiene 3 lados y 3 esquinas. Incluye:
+    - 6 preguntas de reconocimiento de triángulos en objetos cotidianos
+    - 1 ejercicio drag & drop: clasificar formas (círculo, cuadrado, triángulo)
+    - 1 ejercicio de contar lados y vértices
+    8 ejercicios de reconocimiento visual. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Triángulo</strong> para <strong>4 años</strong>. Nueva forma geométrica en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Triángulo | 4 Años (4-5) Infantil Geometría]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del triángulo con 7 ejercicios de reconocimiento y conteo de lados. 4 Años Infantil, nivel fácil. ¡Aprende formas! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF022]]></id>
+		<post_title><![CDATA[Series complejas]]></post_title>
+		<tema><![CDATA[Series]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Completar series de tres elementos|Reconocer patrones complejos|Desarrollar lógica]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa el patrón|¿Qué sigue?|Completa la serie]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de series con tres elementos (rojo-azul-verde-rojo-azul-verde). Patrones más complejos que en 3 años. 8 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Series complejas</strong> para <strong>4 años</strong>. Patrones de tres colores en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Series Complejas | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de series con 8 ejercicios de patrones de 3 elementos. 4 Años Infantil, nivel medio. ¡Completa las series! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF023]]></id>
+		<post_title><![CDATA[Sumas sencillas hasta 5]]></post_title>
+		<tema><![CDATA[Sumas y Restas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Sumar dos números pequeños|Comprender adición básica|Resolver sumas visuales]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Cuenta el primer grupo|Cuenta el segundo grupo|¿Cuántos hay en total?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de sumas. Operaciones tipo 2+1, 3+2 con apoyo visual de objetos. 8 ejercicios de iniciación a la suma.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Primeras <strong>sumas</strong> para <strong>4 años</strong>. Introducción a la adición en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Sumas Sencillas | 4 Años (4-5) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de sumas con 8 ejercicios visuales hasta 5. 4 Años Infantil, nivel medio. ¡Primeras sumas! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF024]]></id>
+		<post_title><![CDATA[Vocales A, E, I]]></post_title>
+		<tema><![CDATA[Vocales]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer vocales A, E, I|Diferenciar entre las tres vocales|Identificar sonidos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira cada vocal|¿Cuál es?|Señala la correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de repaso de las tres primeras vocales. El niño las diferencia visualmente y por sonido. 8 ejercicios mixtos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Repaso de <strong>vocales A, E, I</strong> para <strong>4 años</strong>. Tres vocales juntas en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Vocales A E I | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de 3 vocales (A, E, I) con 8 ejercicios de reconocimiento. 4 Años Infantil, nivel fácil. ¡Aprende las vocales! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF025]]></id>
+		<post_title><![CDATA[Lectoescritura - M]]></post_title>
+		<tema><![CDATA[Lectoescritura]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la letra M|Asociar con sonido /m/|Leer sílabas ma, me, mi]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la letra M|Di 'mmm'|Lee ma, me, mi]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera letra consonante. La M con sus sílabas ma, me, mi, mo, mu. 7 ejercicios de reconocimiento y lectura inicial.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Primera consonante: <strong>letra M</strong> para <strong>4 años</strong>. Inicio de lectoescritura en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Letra M | 4 Años (4-5) Infantil Lectoescritura]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la letra M con 7 ejercicios de sílabas ma-me-mi-mo-mu. 4 Años Infantil, nivel fácil. ¡Primera consonante! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF026]]></id>
+		<post_title><![CDATA[Lectoescritura - P]]></post_title>
+		<tema><![CDATA[Lectoescritura]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la letra P|Asociar con sonido /p/|Leer sílabas pa, pe, pi]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa la letra P|Di 'ppp'|Lee pa, pe, pi]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Segunda consonante. La P con sus sílabas pa, pe, pi, po, pu. 7 ejercicios progresivos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Letra P</strong> para <strong>4 años</strong>. Segunda consonante en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Letra P | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la letra P con 7 ejercicios de sílabas pa-pe-pi-po-pu. 4 Años Infantil, nivel fácil. ¡Segunda consonante! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF027]]></id>
+		<post_title><![CDATA[Trazos oblicuos]]></post_title>
+		<tema><![CDATA[Grafomotricidad]]></tema>
+		<bloque_lomloe><![CDATA[Expresión Gráfica]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Realizar trazos oblicuos|Controlar movimiento diagonal|Preparar escritura de letras]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Traza desde arriba hacia abajo|Sigue la línea inclinada|Repasa el trazo]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de trazos diagonales. Preparación para letras como A, V, N. Incluye:
+    - 1 ejercicio interactivo de trazo con canvas: líneas oblicuas de diferentes ángulos
+    - 6 preguntas de reconocimiento de líneas inclinadas en letras y objetos
+    7 ejercicios de líneas oblicuas. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Trazos oblicuos</strong> para <strong>4 años</strong>. Grafomotricidad más avanzada en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Trazos Oblicuos | 4 Años (4-5) Infantil Grafomotricidad]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de grafomotricidad con 7 ejercicios de trazos diagonales. 4 Años Infantil, nivel fácil. ¡Mejora tu trazo! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF028]]></id>
+		<post_title><![CDATA[Colors completo]]></post_title>
+		<tema><![CDATA[Colores]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender 5 colores en inglés|Red, blue, yellow, green, orange|Nombrar colores]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at each color|Say the name|Point to the color]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha completa de colores básicos en inglés. Red, blue, yellow, green, orange. 8 ejercicios de reconocimiento.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>5 colores en inglés</strong> para <strong>4 años</strong>. Vocabulario completo de colores en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Colors Completo | 4 Años (4-5) Infantil Inglés]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de 5 colores en inglés con 8 ejercicios. 4 Años Infantil, nivel fácil. ¡Learn all colors! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF029]]></id>
+		<post_title><![CDATA[Animals - Cat]]></post_title>
+		<tema><![CDATA[Animales]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender 'cat' en inglés|Reconocer gatos|Imitar sonido del gato]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the cat|Say 'meow'|Point to cats]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del gato (cat). Diferentes tipos de gatos. 5 ejercicios de identificación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Cat (gato)</strong> en inglés para <strong>4 años</strong>. Segundo animal en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Animal Cat | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del animal cat (gato) con 5 ejercicios de reconocimiento. 4 Años Infantil, nivel fácil. ¡Second animal! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF030]]></id>
+		<post_title><![CDATA[Animals - Duck]]></post_title>
+		<tema><![CDATA[Animales]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender 'duck' en inglés|Reconocer patos|Imitar sonido del pato]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the duck|Say 'quack quack'|Find the duck]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del pato (duck). El niño reconoce patos en diferentes contextos. 5 ejercicios visuales.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Duck (pato)</strong> en inglés para <strong>4 años</strong>. Tercer animal en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Animal Duck | 4 Años (4-5) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del pato (duck) con 5 ejercicios de reconocimiento. 4 Años Infantil, nivel fácil. ¡Third animal! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF031]]></id>
+		<post_title><![CDATA[Body Parts - Head]]></post_title>
+		<tema><![CDATA[Partes del Cuerpo]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender 'head' en inglés|Identificar la cabeza|Señalar partes de la cara en inglés]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Touch your head|Say 'head'|Point to the head]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de partes del cuerpo en inglés. La cabeza (head). 5 ejercicios de identificación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Head (cabeza)</strong> en inglés para <strong>4 años</strong>. Partes del cuerpo en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Body Part Head | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de body part 'head' (cabeza) con 5 ejercicios. 4 Años Infantil, nivel fácil. ¡Learn body parts! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF032]]></id>
+		<post_title><![CDATA[Los cinco sentidos]]></post_title>
+		<tema><![CDATA[Sentidos]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar los 5 sentidos|Vista, oído, olfato, gusto, tacto|Relacionar con órganos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Toca con tu mano|Escucha con tus oídos|Huele con tu nariz]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha completa de los cinco sentidos. El niño los identifica y asocia con sus órganos. 10 ejercicios variados.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Los cinco sentidos</strong> para <strong>4 años</strong>. Aprende cómo percibimos el mundo en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Los Cinco Sentidos | 4 Años (4-5) Infantil]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de los 5 sentidos con 10 ejercicios de reconocimiento. 4 Años Infantil, nivel medio. ¡Descubre tus sentidos! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF033]]></id>
+		<post_title><![CDATA[Animales salvajes]]></post_title>
+		<tema><![CDATA[Animales]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer animales salvajes|León, elefante, jirafa|Diferenciar de animales domésticos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira cada animal|¿Vive en la selva?|Señala los salvajes]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de animales salvajes: león, elefante, jirafa, cebra. Incluye:
+    - 5 preguntas de reconocimiento de animales de la selva
+    - 1 ejercicio drag & drop: clasificar animales domésticos vs salvajes
+    - 2 ejercicios de hábitats (dónde viven)
+    8 ejercicios de reconocimiento y diferenciación. Duración: 3 minutos. Edad: 4-5 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Animales salvajes</strong> para <strong>4 años</strong>. Diferencia animales de casa y selva en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Animales Salvajes | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de animales salvajes con 7 ejercicios de reconocimiento. 4 Años Infantil, nivel fácil. ¡Animales de la selva! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF034]]></id>
+		<post_title><![CDATA[Estaciones - Primavera]]></post_title>
+		<tema><![CDATA[Estaciones]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la primavera|Flores, mariposas, clima|Identificar características]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira las flores|¿Hace frío o calor?|Señala cosas de primavera]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de la estación de primavera. Características: flores, árboles verdes, mariposas, buen tiempo. 7 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Primavera</strong> para <strong>4 años</strong>. Aprende las estaciones del año en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Primavera | 4 Años (4-5) Infantil Estaciones]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la primavera con 7 ejercicios de reconocimiento. 4 Años Infantil, nivel fácil. ¡Aprende las estaciones! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF035]]></id>
+		<post_title><![CDATA[Plantas y flores]]></post_title>
+		<tema><![CDATA[Naturaleza]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[4-5 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar partes de una planta|Raíz, tallo, hojas, flor|Cuidado de plantas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la planta|¿Dónde están las hojas?|¿Qué necesita para crecer?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de plantas y flores. Partes de la planta y sus necesidades (agua, sol). 7 ejercicios educativos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Plantas y flores</strong> para <strong>4 años</strong>. Aprende sobre la naturaleza en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[4 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Plantas y Flores | 4 Años (4-5) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de plantas con 7 ejercicios de partes y cuidados. 4 Años Infantil, nivel fácil. ¡Aprende de la naturaleza! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF036]]></id>
+		<post_title><![CDATA[Números hasta 20]]></post_title>
+		<tema><![CDATA[Números 1-20]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Contar hasta 20|Reconocer números de dos cifras|Ordenar números hasta 20]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Cuenta despacio hasta 20|Observa los números|Ordénalos de menor a mayor]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha para ampliar hasta el 20. Incluye:
+    - 10 preguntas de reconocimiento de números de dos cifras y conteo extendido
+    - 1 ejercicio drag & drop: ordenar números del 1 al 20
+    - 1 memory game de 6 parejas: números pares del 2 al 20
+    Reconocimiento de números de dos cifras y conteo extendido. 12 ejercicios progresivos. Duración: 4 minutos. Edad: 5-6 años. Nivel: Medio.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Números hasta 20</strong> para <strong>5 años</strong>. Amplia el rango numérico en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Números hasta 20 | 5 Años (5-6) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de números hasta 20 con 12 ejercicios de conteo y orden. 5 Años Infantil, nivel medio. ¡Cuenta hasta 20! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF037]]></id>
+		<post_title><![CDATA[Sumas hasta 10]]></post_title>
+		<tema><![CDATA[Sumas y Restas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[5]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Sumar números hasta 10|Resolver sumas sin apoyo visual|Calcular mentalmente]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Lee la suma|Piensa en el resultado|Elige la respuesta correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de sumas con resultados hasta 10. Tipo 3+4, 5+2, 6+3. Menos apoyo visual para fomentar cálculo mental. 12 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Sumas hasta 10</strong> para <strong>5 años</strong>. Cálculo más avanzado en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Sumas hasta 10 | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de sumas con 12 ejercicios hasta 10. 5 Años Infantil, nivel medio. ¡Suma sin ayuda visual! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF038]]></id>
+		<post_title><![CDATA[Restas sencillas]]></post_title>
+		<tema><![CDATA[Sumas y Restas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Numérico]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[5]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Restar números pequeños|Comprender la resta|Resolver restas hasta 10]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Lee la resta|¿Cuántos quedan?|Elige el resultado]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de restas. Operaciones tipo 5-2, 7-3, 10-4. Con apoyo visual mínimo. 10 ejercicios de iniciación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p>Primeras <strong>restas</strong> para <strong>5 años</strong>. Introducción a la resta en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Restas Sencillas | 5 Años (5-6) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de restas con 10 ejercicios sencillos hasta 10. 5 Años Infantil, nivel medio. ¡Primeras restas! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF039]]></id>
+		<post_title><![CDATA[Formas y figuras 3D]]></post_title>
+		<tema><![CDATA[Formas Geométricas]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Espacial]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer figuras tridimensionales|Cubo, esfera, cilindro|Diferenciar 2D y 3D]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la figura|¿Tiene volumen?|¿Puedes tocarla por todos lados?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de geometría 3D. Presenta cubo, esfera, cilindro y los relaciona con objetos cotidianos. 10 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Figuras 3D</strong> para <strong>5 años</strong>. Geometría tridimensional en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Figuras 3D | 5 Años (5-6) Infantil Geometría]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de figuras 3D con 10 ejercicios de cubo, esfera y cilindro. 5 Años Infantil, nivel medio. ¡Geometría avanzada! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF040]]></id>
+		<post_title><![CDATA[Derecha e Izquierda]]></post_title>
+		<tema><![CDATA[Orientación Espacial]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Espacial]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar derecha e izquierda|Diferenciar lateralidad|Señalar objetos a cada lado]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Levanta tu mano derecha|Levanta tu mano izquierda|¿Qué hay a tu derecha?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de lateralidad. El niño aprende a diferenciar derecha e izquierda. Incluye:
+    - 6 preguntas de reconocimiento con su propio cuerpo
+    - 1 ejercicio drag & drop: arrastrar objetos a la derecha o izquierda de una imagen
+    - 1 ejercicio de señalar objetos según posición
+    8 ejercicios con su propio cuerpo y objetos. Duración: 3 minutos. Edad: 5-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Derecha e izquierda</strong> para <strong>5 años</strong>. Aprende lateralidad en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Derecha e Izquierda | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de lateralidad con 8 ejercicios de derecha e izquierda. 5 Años Infantil, nivel fácil. ¡Aprende tu orientación! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF041]]></id>
+		<post_title><![CDATA[Dentro y Fuera]]></post_title>
+		<tema><![CDATA[Orientación Espacial]]></tema>
+		<bloque_lomloe><![CDATA[Sentido Espacial]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Comprender dentro y fuera|Identificar posiciones espaciales|Aplicar conceptos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[¿Está dentro de la caja?|¿Está fuera del círculo?|Señala la posición]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de conceptos espaciales dentro/fuera. 8 ejercicios con objetos en diferentes posiciones.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Dentro y fuera</strong> para <strong>5 años</strong>. Conceptos espaciales en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Matemáticas]]></asignatura>
+		<metatitulo><![CDATA[Dentro y Fuera | 5 Años (5-6) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de orientación espacial con 8 ejercicios de dentro/fuera. 5 Años Infantil, nivel fácil. ¡Aprende posiciones! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF042]]></id>
+		<post_title><![CDATA[Todas las vocales]]></post_title>
+		<tema><![CDATA[Vocales]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer las 5 vocales|A, E, I, O, U|Diferenciar mayúsculas y minúsculas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa cada vocal|¿Cuál es?|Señala la correcta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha completa de las cinco vocales. Mayúsculas y minúsculas. 10 ejercicios de repaso total.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Las 5 vocales</strong> para <strong>5 años</strong>. Repaso completo de vocales en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Todas las Vocales | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de las 5 vocales con 10 ejercicios completos. 5 Años Infantil, nivel fácil. ¡Domina las vocales! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF043]]></id>
+		<post_title><![CDATA[Lectoescritura - L]]></post_title>
+		<tema><![CDATA[Lectoescritura]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la letra L|Leer sílabas la, le, li|Escribir palabras con L]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la letra L|Lee la, le, li, lo, lu|Escribe palabras simples]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de la consonante L. Incluye:
+    - 6 preguntas de reconocimiento de sílabas la-le-li-lo-lu
+    - 1 ejercicio de trazo interactivo de la letra L con canvas
+    - 1 ejercicio fill-in-the-blanks: completar palabras con L
+    Sílabas y primeras palabras. 8 ejercicios progresivos. Duración: 3 minutos. Edad: 5-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Letra L</strong> para <strong>5 años</strong>. Nueva consonante en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Letra L | 5 Años (5-6) Infantil Lectoescritura]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la letra L con 8 ejercicios de sílabas y palabras. 5 Años Infantil, nivel fácil. ¡Aprende la L! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF044]]></id>
+		<post_title><![CDATA[Lectoescritura - S]]></post_title>
+		<tema><![CDATA[Lectoescritura]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer la letra S|Leer sílabas sa, se, si|Formar palabras con S]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Observa la letra S|Di 'sss'|Lee sa, se, si, so, su]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de la consonante S. Incluye:
+    - 6 preguntas de reconocimiento de sílabas sa-se-si-so-su
+    - 1 ejercicio de trazo de la letra S (forma de serpiente) con canvas
+    - 1 ejercicio de lectura de palabras simples con S
+    Sonido y sílabas. 8 ejercicios de lectura inicial. Duración: 3 minutos. Edad: 5-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Letra S</strong> para <strong>5 años</strong>. Continúa la lectoescritura en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Letra S | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de la letra S con 8 ejercicios de sílabas sa-se-si-so-su. 5 Años Infantil, nivel fácil. ¡Aprende la S! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF045]]></id>
+		<post_title><![CDATA[Leer palabras sencillas]]></post_title>
+		<tema><![CDATA[Lectoescritura]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Leer palabras de 2 sílabas|Reconocer palabras completas|Asociar palabra con imagen]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Lee la palabra despacio|Junta las sílabas|¿Qué dice?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de lectura de palabras simples: mama, papa, pala, sala. 10 ejercicios de lectura con apoyo visual.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Leer palabras sencillas</strong> para <strong>5 años</strong>. Primeras lecturas en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Leer Palabras | 5 Años (5-6) Infantil Lectura]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de lectura con 10 ejercicios de palabras sencillas. 5 Años Infantil, nivel medio. ¡Primeras lecturas! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF046]]></id>
+		<post_title><![CDATA[Comprensión lectora]]></post_title>
+		<tema><![CDATA[Comprensión Lectora]]></tema>
+		<bloque_lomloe><![CDATA[Comunicación Verbal]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[5]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Comprender frases simples|Responder preguntas sobre lo leído|Relacionar texto con imagen]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Lee la frase|Piensa en lo que dice|Responde la pregunta]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Primera ficha de comprensión. Frases cortas con pregunta. Ejemplo: 'El gato es rojo. ¿De qué color es el gato?' 8 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Comprensión lectora</strong> para <strong>5 años</strong>. Entiende lo que lees en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Lenguaje]]></asignatura>
+		<metatitulo><![CDATA[Comprensión Lectora | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de comprensión con 8 ejercicios de frases simples. 5 Años Infantil, nivel medio. ¡Entiende lo que lees! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF047]]></id>
+		<post_title><![CDATA[Family members]]></post_title>
+		<tema><![CDATA[Familia]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender miembros de la familia en inglés|Mother, father, sister, brother|Identificar roles familiares]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at your family|Say mother, father|Who is your sister?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de la familia en inglés. Mother, father, sister, brother, baby. 8 ejercicios de vocabulario familiar.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Family (familia)</strong> en inglés para <strong>5 años</strong>. Vocabulario familiar en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Family Members | 5 Años (5-6) Infantil Inglés]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de family members con 8 ejercicios en inglés. 5 Años Infantil, nivel fácil. ¡Learn about family! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF048]]></id>
+		<post_title><![CDATA[Food vocabulary]]></post_title>
+		<tema><![CDATA[Comida]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender alimentos en inglés|Apple, banana, bread, milk|Nombrar comidas básicas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look at the food|Say the name|What do you like?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de vocabulario de comida. Apple, banana, bread, milk, water. 8 ejercicios de alimentos básicos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Food (comida)</strong> en inglés para <strong>5 años</strong>. Vocabulario de alimentos en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Food Vocabulary | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de food vocabulary con 8 ejercicios en inglés. 5 Años Infantil, nivel fácil. ¡Learn food names! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF049]]></id>
+		<post_title><![CDATA[Weather - Weather words]]></post_title>
+		<tema><![CDATA[Clima]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender el clima en inglés|Sunny, rainy, cloudy, windy|Describir el tiempo]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Look outside|Is it sunny or rainy?|Say the weather]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del tiempo meteorológico. Sunny, rainy, cloudy, windy, snowy. 8 ejercicios de clima.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Weather (clima)</strong> en inglés para <strong>5 años</strong>. Aprende el tiempo en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Weather Words | 5 Años (5-6) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de weather con 8 ejercicios de clima en inglés. 5 Años Infantil, nivel fácil. ¡Learn about weather! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF050]]></id>
+		<post_title><![CDATA[Days of the week]]></post_title>
+		<tema><![CDATA[Tiempo]]></tema>
+		<bloque_lomloe><![CDATA[Lengua Extranjera]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Aprender los días de la semana en inglés|Monday to Sunday|Ordenar los días]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Say the days|Monday, Tuesday, Wednesday...|What day is today?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de los días de la semana en inglés. Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. 7 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Days of the week</strong> en inglés para <strong>5 años</strong>. Aprende los días en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Inglés]]></asignatura>
+		<metatitulo><![CDATA[Days of the Week | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de days of the week con 7 ejercicios en inglés. 5 Años Infantil, nivel fácil. ¡Learn the days! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF051]]></id>
+		<post_title><![CDATA[El ciclo del agua]]></post_title>
+		<tema><![CDATA[Agua y Naturaleza]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[5]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Comprender el ciclo del agua|Evaporación, condensación, precipitación|Identificar fases]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[El agua sube como vapor|Forma nubes|Cae como lluvia]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del ciclo del agua simplificado. Las fases principales explicadas visualmente. 10 ejercicios educativos.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Ciclo del agua</strong> para <strong>5 años</strong>. Aprende cómo circula el agua en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Ciclo del Agua | 5 Años (5-6) Infantil Naturaleza]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del ciclo del agua con 10 ejercicios de las fases. 5 Años Infantil, nivel medio. ¡Aprende el ciclo! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF052]]></id>
+		<post_title><![CDATA[Reciclaje]]></post_title>
+		<tema><![CDATA[Medio Ambiente]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Comprender la importancia del reciclaje|Contenedores de colores|Clasificar residuos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el contenedor amarillo, azul, verde|¿Dónde va el plástico?|Clasifica la basura]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de reciclaje. Los tres contenedores básicos y qué va en cada uno. Incluye:
+    - 6 preguntas de identificación de residuos y contenedores
+    - 1 ejercicio drag & drop interactivo: arrastrar residuos (plástico, papel, vidrio, orgánico) a los contenedores correctos (amarillo, azul, verde, marrón)
+    - 3 preguntas sobre la importancia del reciclaje
+    10 ejercicios de clasificación. Duración: 4 minutos. Edad: 5-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Reciclaje</strong> para <strong>5 años</strong>. Cuida el medio ambiente en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Reciclaje | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de reciclaje con 10 ejercicios de clasificación de residuos. 5 Años Infantil, nivel fácil. ¡Aprende a reciclar! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF053]]></id>
+		<post_title><![CDATA[Profesiones]]></post_title>
+		<tema><![CDATA[Sociedad]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer profesiones básicas|Médico, profesor, bombero, policía|Identificar oficios]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[¿Quién cura a la gente?|¿Quién apaga fuegos?|Señala cada profesión]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de profesiones. Médico, profesor, bombero, policía, cocinero. 10 ejercicios de identificación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Profesiones</strong> para <strong>5 años</strong>. Aprende diferentes oficios en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Profesiones | 5 Años (5-6) Infantil Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de profesiones con 10 ejercicios de reconocimiento de oficios. 5 Años Infantil, nivel fácil. ¡Conoce las profesiones! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF054]]></id>
+		<post_title><![CDATA[El espacio y planetas]]></post_title>
+		<tema><![CDATA[Espacio]]></tema>
+		<bloque_lomloe><![CDATA[Conocimiento del Entorno]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[5-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Medio]]></dificultad>
+		<objetivos_raw><![CDATA[Conocer el sistema solar|Identificar planetas|Sol, luna, estrellas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el cielo|¿Qué ves de noche?|Señala los planetas]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del espacio. El sol, la luna, estrellas y planetas principales. 10 ejercicios sobre el universo.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>El espacio</strong> para <strong>5 años</strong>. Descubre el universo en <strong>Infantil</strong>.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[5 Años]]></curso>
+		<asignatura><![CDATA[Conocimiento del Entorno]]></asignatura>
+		<metatitulo><![CDATA[Espacio y Planetas | 5 Años (5-6) Infantil PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del espacio con 10 ejercicios de planetas y sistema solar. 5 Años Infantil, nivel medio. ¡Descubre el universo! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF055]]></id>
+		<post_title><![CDATA[Calabaza Halloween]]></post_title>
+		<tema><![CDATA[Halloween]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer símbolos de Halloween|Calabaza, fantasma, bruja|Decorar calabaza]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la calabaza|¿De qué color es?|Decórala con caras divertidas]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha temática de Halloween. La calabaza como símbolo principal. Incluye:
+    - 3 preguntas de conteo de calabazas
+    - 1 ejercicio drag & drop: decorar calabaza con ojos/boca/nariz
+    - 1 memory de 4 parejas: símbolos de Halloween (calabaza, fantasma, bruja, gato negro)
+    - 1 ejercicio de trazo: repasar el contorno de una calabaza
+    8 ejercicios mixtos de decoración y reconocimiento. Duración: 3 minutos. Edad: 3-6 años (transversal). Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Halloween - Calabaza</strong> para <strong>Infantil</strong>. Ficha estacional transversal para 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Calabaza Halloween | Infantil (3-6) Temática]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de Halloween con 6 ejercicios de calabazas. Infantil 3-6 años, nivel fácil. ¡Especial Halloween! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Halloween]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF056]]></id>
+		<post_title><![CDATA[Fantasma Halloween]]></post_title>
+		<tema><![CDATA[Halloween]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer fantasmas|Contar fantasmas|Dibujar fantasmas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Busca los fantasmas|¿Cuántos hay?|Dibuja tu propio fantasma]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de fantasmas de Halloween. Incluye:
+    - 4 preguntas de conteo de fantasmas
+    - 1 ejercicio drag & drop: vestir fantasmas con diferentes accesorios
+    - 1 memory de 4 parejas: fantasmas con diferentes expresiones
+    - 1 ejercicio de colorear/dibujar fantasmas
+    8 ejercicios de conteo y creatividad. Duración: 3 minutos. Edad: 3-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Fantasma de Halloween</strong> para <strong>Infantil</strong>. Ficha especial 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Fantasma Halloween | Infantil (3-6) PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de fantasmas Halloween con 6 ejercicios de conteo. Infantil 3-6 años, nivel fácil. ¡Boo! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Halloween]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF057]]></id>
+		<post_title><![CDATA[Monstruo Halloween]]></post_title>
+		<tema><![CDATA[Halloween]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Crear monstruos divertidos|Contar partes del cuerpo del monstruo|Colorear monstruos]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el monstruo|¿Cuántos ojos tiene?|Coloréalo]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de monstruos de Halloween. Incluye:
+    - 4 preguntas de conteo de partes del cuerpo del monstruo (ojos, brazos, cuernos)
+    - 1 ejercicio drag & drop: crear tu propio monstruo con partes arrastrables
+    - 1 memory de 4 parejas: monstruos de diferentes colores
+    - 1 ejercicio de colorear monstruos
+    8 ejercicios creativos. Duración: 3 minutos. Edad: 3-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Monstruos de Halloween</strong> para <strong>Infantil</strong>. Diversión asegurada 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Monstruo Halloween | Infantil (3-6) Interactiva]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de monstruos Halloween con 6 ejercicios creativos. Infantil 3-6 años, nivel fácil. ¡Monstruos divertidos! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Halloween]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF058]]></id>
+		<post_title><![CDATA[Árbol Navidad]]></post_title>
+		<tema><![CDATA[Navidad]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Decorar árbol de Navidad|Contar adornos|Identificar colores navideños]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el árbol|¿Cuántos adornos tiene?|Decóralo tú también]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del árbol de Navidad. Incluye:
+    - 4 preguntas de conteo de adornos
+    - 1 ejercicio drag & drop: decorar el árbol con bolas, estrellas y regalos arrastrables
+    - 1 memory de 4 parejas: adornos navideños
+    - 1 ejercicio de colorear el árbol
+    8 ejercicios de decoración y conteo. Duración: 3 minutos. Edad: 3-6 años. Nivel: Fácil.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Árbol de Navidad</strong> para <strong>Infantil</strong>. Ficha especial navideña 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Árbol Navidad | Infantil (3-6) Navideña]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de árbol de Navidad con 6 ejercicios de decoración. Infantil 3-6 años, nivel fácil. ¡Feliz Navidad! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Navidad]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF059]]></id>
+		<post_title><![CDATA[Reno Navidad]]></post_title>
+		<tema><![CDATA[Navidad]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el reno de Navidad|Contar renos|Identificar Rudolph]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Busca el reno|¿Cuántos renos hay?|¿Cuál tiene la nariz roja?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del reno navideño. Conteo y reconocimiento de Rudolph. 6 ejercicios.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Reno de Navidad</strong> para <strong>Infantil</strong>. Ficha especial 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Reno Navidad | Infantil (3-6) PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de renos de Navidad con 6 ejercicios de conteo. Infantil 3-6 años, nivel fácil. ¡Rudolph! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Navidad]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF060]]></id>
+		<post_title><![CDATA[Trineo Papá Noel]]></post_title>
+		<tema><![CDATA[Navidad]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer el trineo de Papá Noel|Contar regalos|Identificar a Papá Noel]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira el trineo|¿Cuántos regalos lleva?|¿Dónde está Papá Noel?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del trineo y Papá Noel. Conteo de regalos. 6 ejercicios navideños.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Trineo de Papá Noel</strong> para <strong>Infantil</strong>. Navidad mágica 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Trineo Papá Noel | Infantil (3-6) Navidad]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha del trineo de Papá Noel con 6 ejercicios. Infantil 3-6 años, nivel fácil. ¡Ho ho ho! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Navidad]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF061]]></id>
+		<post_title><![CDATA[Muñeco de nieve]]></post_title>
+		<tema><![CDATA[Invierno]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Crear muñeco de nieve|Contar bolas de nieve|Identificar partes]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Haz un muñeco de nieve|¿Cuántas bolas tiene?|Ponle bufanda y gorro]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha del muñeco de nieve. Construcción y decoración. 6 ejercicios invernales.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Muñeco de nieve</strong> para <strong>Infantil</strong>. Ficha de invierno 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Muñeco de Nieve | Infantil (3-6) Invierno]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de muñeco de nieve con 6 ejercicios de construcción. Infantil 3-6 años, nivel fácil. ¡Diversión invernal! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Invierno]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF062]]></id>
+		<post_title><![CDATA[Ropa de invierno]]></post_title>
+		<tema><![CDATA[Invierno]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[4]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Identificar ropa de invierno|Abrigo, bufanda, gorro, guantes|Vestirse para el frío]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la ropa|¿Qué usas cuando hace frío?|Señala la ropa de invierno]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de ropa invernal. Abrigo, bufanda, gorro, guantes, botas. 8 ejercicios de identificación.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Ropa de invierno</strong> para <strong>Infantil</strong>. Aprende a vestirte en invierno 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Ropa de Invierno | Infantil (3-6) PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de ropa de invierno con 8 ejercicios de identificación. Infantil 3-6 años, nivel fácil. ¡Abrígate bien! Descarga PDF.]]></metadescripcion>
+		<temaestacional><![CDATA[Invierno]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF063]]></id>
+		<post_title><![CDATA[Flores primavera]]></post_title>
+		<tema><![CDATA[Primavera]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer flores de primavera|Contar pétalos|Identificar colores]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira las flores|¿Cuántos pétalos tiene?|¿De qué color es?]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de flores primaverales. Conteo de pétalos y colores. 6 ejercicios florales.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Flores de primavera</strong> para <strong>Infantil</strong>. Celebra la primavera 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Flores Primavera | Infantil (3-6) Estacional]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de flores de primavera con 6 ejercicios de conteo. Infantil 3-6 años, nivel fácil. ¡Llega la primavera! Descarga gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Primavera]]></temaestacional>
+	</node>
+	<node>
+		<id><![CDATA[INF064]]></id>
+		<post_title><![CDATA[Mariposas]]></post_title>
+		<tema><![CDATA[Primavera]]></tema>
+		<bloque_lomloe><![CDATA[Tema Estacional]]></bloque_lomloe>
+		<edad_recomendada><![CDATA[3-6 años]]></edad_recomendada>
+		<tiempo_estimado><![CDATA[3]]></tiempo_estimado>
+		<dificultad><![CDATA[Fácil]]></dificultad>
+		<objetivos_raw><![CDATA[Reconocer mariposas|Contar alas|Identificar colores de mariposas]]></objetivos_raw>
+		<instrucciones_raw><![CDATA[Mira la mariposa|¿Cuántas alas tiene?|Colorea las alas]]></instrucciones_raw>
+		<descripcion_referencia><![CDATA[Ficha de mariposas. Anatomía básica y coloración. 6 ejercicios primaverales.]]></descripcion_referencia>
+		<contenido_ficha_html><![CDATA[]]></contenido_ficha_html>
+		<descripcion><![CDATA[<p><strong>Mariposas de primavera</strong> para <strong>Infantil</strong>. Belleza primaveral 3-6 años.</p>]]></descripcion>
+		<status><![CDATA[pending]]></status>
+		<niveleducativo><![CDATA[Infantil]]></niveleducativo>
+		<curso><![CDATA[Estacional]]></curso>
+		<asignatura><![CDATA[Todas]]></asignatura>
+		<metatitulo><![CDATA[Mariposas Primavera | Infantil (3-6) PDF]]></metatitulo>
+		<metadescripcion><![CDATA[Ficha de mariposas con 6 ejercicios de colores y formas. Infantil 3-6 años, nivel fácil. ¡Mariposas bonitas! Descarga PDF gratis.]]></metadescripcion>
+		<temaestacional><![CDATA[Primavera]]></temaestacional>
+	</node>
+</data>

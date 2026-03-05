@@ -1,0 +1,130 @@
+id,post_title,tema,bloque_lomloe,edad_recomendada,tiempo_estimado,dificultad,objetivos_raw,instrucciones_raw,descripcion_referencia,contenido_ficha_html,descripcion,status,Nivel Educativo,Curso ,Asignatura,Meta Titulo,Meta Descripcion
+MAT001,Contar hasta 10,Números 1-10,Sentido Numérico,6-7 años,15,Muy Fácil,Contar objetos del 1 al 10|Identificar cantidades|Asociar número con cantidad,Observa cada grupo de objetos|Cuenta cuántos hay|Escribe el número en la casilla,"Ficha interactiva para aprender a contar hasta 10. Muestra grupos de objetos visuales (círculos, estrellas, corazones). El alumno cuenta y selecciona el número correcto entre 3 opciones. 12 ejercicios con mix de selección múltiple (50%) y verdadero/falso (50%). Duración: 15 minutos. Edad: 6-7 años. Nivel: Muy fácil, iniciación.","<div class=""ficha-educativa"">
+  
+  <div class=""instrucciones"">
+    Test de compatibilidad de emojis - Verifica cuáles se ven correctamente
+  </div>
+
+  <div class=""contenedor-preguntas"">
+    
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">FRUTAS Y COMIDA</div>
+      <div class=""visual"">
+        🍎 🍊 🍋 🍌 🍉 🍇 🍓 🍒 🍑 🍐 🥝 🥥
+        <br>🍕 🍔 🍟 🍿 🍩 🍪 🍰 🎂 🍬 🍭 🧁 🍦
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">ANIMALES</div>
+      <div class=""visual"">
+        🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼 🐨 🐯 🦁 🐮
+        <br>🐷 🐸 🐵 🐔 🐧 🐦 🐤 🦆 🦉 🐝 🐞 🦋
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">OBJETOS Y JUGUETES</div>
+      <div class=""visual"">
+        ⚽ 🏀 🎈 🎁 📚 ✏️ 🖍️ 🎨 🧸 🎲 🪁 🧩
+        <br>⭐ 💫 🌟 ✨ 🎯 🎪 🎭 🎬 🎮 🕹️
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">NATURALEZA</div>
+      <div class=""visual"">
+        🌸 🌺 🌻 🌷 🌹 🌼 💐 🌿 🍀 🌱
+        <br>☀️ 🌙 ⭐ ✨ 🌈 ☁️ ⛅ 🌤️ ⛈️ 🌧️
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">SÍMBOLOS GEOMÉTRICOS</div>
+      <div class=""visual"">
+        ● ○ ■ □ ▲ △ ◆ ◇ ★ ☆
+        <br>♥ ♡ ♠ ♣ ♦ ◉ ◎ ⬤ ⬜ ⬛
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">CARAS Y GESTOS</div>
+      <div class=""visual"">
+        😀 😃 😄 😁 😊 😍 🥰 😎 🤔 😮
+        <br>😢 😭 😡 😴 🤗 👍 👎 👋 🙌 👏
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">VEHÍCULOS Y TRANSPORTE</div>
+      <div class=""visual"">
+        🚗 🚕 🚙 🚌 🚎 🏎️ 🚓 🚑 🚒 🚐
+        <br>🚲 🛴 ✈️ 🚁 🚂 🚃 🚊 🚢 ⛵ 🛶
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">NÚMEROS Y SÍMBOLOS</div>
+      <div class=""visual"">
+        0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
+        <br>➕ ➖ ✖️ ➗ 🟰 ✔️ ❌ ⭕ 🔴 🟢
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">CASA Y OBJETOS</div>
+      <div class=""visual"">
+        🏠 🏡 🏢 🏫 🏥 🏪 🏭 🏗️
+        <br>🪑 🛏️ 🚪 🪟 💡 🕯️ 🧯 🧲
+      </div>
+    </div>
+
+    <div class=""bloque-ejercicio"">
+      <div class=""pregunta"">ROPA Y ACCESORIOS</div>
+      <div class=""visual"">
+        👕 👔 👗 👘 👙 👚 🧥 🥼
+        <br>👒 🎩 🧢 👑 💍 👓 🕶️ 🎒
+      </div>
+    </div>
+
+  </div>
+
+  <div class=""acciones"">
+    <button class=""btn-comprobar"">Test completado</button>
+  </div>
+
+  <div class=""feedback""></div>
+
+</div>
+","<p>Esta <strong>ficha interactiva de Números 1-10</strong> está diseñada para reforzar los conocimientos de <a href=""/primaria/1-primaria/matematicas/"">Matemáticas de 1º Primaria</a>. Con <strong>12 ejercicios progresivos</strong>, los estudiantes trabajarán el bloque de Sentido Numérico de forma autónoma y divertida.</p>
+
+<p>La actividad incluye ejercicios variados de <strong>conteo directo, comparación de números y verificación de escritura numérica</strong> con feedback inmediato, perfectos para practicar en el aula o en casa. Los niños de 6-7 años podrán contar objetos visuales como frutas, animales y formas geométricas, desarrollando su comprensión numérica básica. Forma parte de nuestro catálogo de <a href=""/primaria/"">fichas educativas de Primaria</a> adaptadas al currículo LOMLOE.</p>
+
+<p>Nivel de dificultad: <strong>Muy Fácil</strong>. Tiempo estimado: 15 minutos. Los ejercicios combinan selección múltiple y verdadero/falso para mantener el interés. Disponible en formato interactivo y descargable en PDF.</p>",pending,Primaria,1º Primaria,Matemáticas,Ficha Contar 1-10 | 1º Primaria (6-7 años) PDF,"Ficha interactiva para aprender a contar hasta 10. 1º Primaria, nivel muy fácil. 12 ejercicios con soluciones. ¡Descarga gratis en PDF!"
+MAT002,Escribir números 1-10,Números 1-10,Sentido Numérico,6-7 años,20,Fácil,Escribir números del 1 al 10|Reconocer la grafía de cada número|Practicar trazos,Observa el número|Repasa con el dedo|Escribe el número tú solo,"Ficha para escribir números del 1 al 10. Presenta cada número con guía visual y puntos de referencia. El alumno debe reconocer la grafía correcta y seleccionarla. Incluye trazos punteados como apoyo visual. 10 ejercicios interactivos con selección múltiple. Visuales con símbolos básicos (●, ★, ■).",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT003,Ordenar números 1-10,Números 1-10,Sentido Numérico,6-7 años,15,Media,Ordenar números de menor a mayor|Comprender la secuencia numérica|Identificar posición de números,Lee los números desordenados|Piensa en el orden correcto|Selecciona la secuencia ordenada,Ficha de ordenamiento numérico. Muestra 5-6 números desordenados del 1 al 10. El alumno debe identificar la secuencia correcta de menor a mayor seleccionando entre 3 opciones. 8 ejercicios progresivos. Incluye números consecutivos y no consecutivos para aumentar dificultad. Valida secuencia completa.,,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT004,"Comparar números (<, >, =)",Números 1-10,Sentido Numérico,6-7 años,20,Media,"Comparar cantidades|Usar símbolos <, > e =|Identificar mayor, menor e igual",Observa los dos números|Decide cuál es mayor|Selecciona el símbolo correcto,"Ficha de comparación numérica con símbolos matemáticos. Presenta pares de números del 1 al 10 y el alumno debe elegir entre <, > o = según corresponda. 12 ejercicios: 70% selección múltiple (elegir símbolo correcto entre 3 opciones), 30% verdadero/falso (validar si comparación es correcta). Introduce conceptos de mayor, menor e igual.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT005,Sumar números pequeños,Sumas y Restas,Sentido Numérico,6-7 años,20,Fácil,Sumar dos números hasta 5|Comprender concepto de adición|Resolver sumas sencillas,Lee la suma|Cuenta con los dedos si necesitas|Selecciona el resultado,"Ficha de iniciación a la suma. Operaciones simples con números 1-5 (ej: 2+1, 3+2). Muestra apoyo visual con símbolos contables (●●+●=?). El alumno selecciona resultado entre 3 opciones. 12 ejercicios: 10 sumas directas (MC) + 2 verificaciones (V/F). Nivel: fácil, con soporte visual.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT006,Restar números pequeños,Sumas y Restas,Sentido Numérico,6-7 años,20,Media,Restar números hasta 5|Entender concepto de sustracción|Resolver restas básicas,Lee la resta|Piensa cuántos quedan|Elige la respuesta correcta,"Ficha de iniciación a la resta. Operaciones con números 1-5 (ej: 5-2, 4-1). Usa visuales de objetos que ""desaparecen"" (ej: ★★★★★ → ★★★). El alumno calcula y selecciona resultado. 12 ejercicios: 8 restas directas + 4 problemas contextuales sencillos (""Tenía 5 manzanas, comí 2...""). Dificultad media por introducción de contexto.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT007,Sumas hasta 10,Sumas y Restas,Sentido Numérico,6-7 años,25,Media,Sumar números hasta 10|Memorizar sumas básicas|Resolver sin apoyo visual,Calcula mentalmente|Verifica tu respuesta|Selecciona el resultado,"Ficha de sumas con resultados hasta 10. Operaciones tipo 3+4, 5+5, 6+2. Menos apoyo visual que fichas anteriores para fomentar cálculo mental. 15 ejercicios: 12 sumas directas (MC con 4 opciones) + 3 problemas (""En el parque hay 4 niños y llegan 3 más. ¿Cuántos hay?""). Dificultad media.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT008,Restas hasta 10,Sumas y Restas,Sentido Numérico,6-7 años,25,Media-Alta,Restar números hasta 10|Resolver restas mentalmente|Aplicar en problemas,Calcula la resta|Piensa bien antes de responder|Elige el resultado correcto,"Ficha de restas con números hasta 10. Operaciones tipo 10-3, 8-5, 7-4. Sin apoyo visual extenso. 15 ejercicios: 10 restas directas + 5 problemas contextuales (""Tengo 10 euros, gasto 6...""). Mix 70% MC (4 opciones) / 30% V/F. Dificultad media-alta por abstracción y problemas verbales.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT009,Contar hasta 100,Números 1-100,Sentido Numérico,6-7 años,20,Media,Contar hasta 100|Reconocer decenas|Identificar números de dos cifras,Observa el número|Identifica las decenas y unidades|Responde correctamente,"Ficha para números de dos cifras. Presenta grupos organizados en decenas (ej: 10 filas de 3 = 30). El alumno cuenta por decenas completas y suma unidades. 10 ejercicios progresivos: empezar con decenas exactas (10, 20, 30) y avanzar a números intermedios (23, 47, 68). Mix 60% MC / 40% V/F. Dificultad media.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT010,Decenas y unidades,Números 1-100,Sentido Numérico,6-7 años,25,Media-Alta,Identificar decenas y unidades|Descomponer números|Comprender valor posicional,Observa el número|Separa decenas de unidades|Selecciona la descomposición correcta,"Ficha de descomposición numérica. Presenta número (ej: 45) y alumno debe identificar ""4 decenas + 5 unidades"". 12 ejercicios: 8 descomposiciones directas (MC con 3 opciones) + 4 composiciones inversas (""¿Qué número es 7 decenas + 3 unidades?""). Concepto abstracto, dificultad media-alta.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT011,Ordenar números hasta 100,Números 1-100,Sentido Numérico,6-7 años,20,Media,Ordenar números de dos cifras|Comparar decenas|Usar secuencia numérica ampliada,Lee los números|Ordénalos de menor a mayor|Verifica tu respuesta,"Ficha de ordenamiento con números 1-100. Muestra 4-5 números de dos cifras desordenados (ej: 67, 23, 89, 45). Alumno debe ordenar de menor a mayor. 8 ejercicios con dificultad creciente: empezar con números muy distantes (10, 40, 70) y terminar con números cercanos (34, 37, 39). MC con 3 secuencias posibles.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT012,Comparar números hasta 100,Números 1-100,Sentido Numérico,6-7 años,20,Media-Alta,"Comparar números de dos cifras|Usar símbolos <, >, =|Razonar con decenas",Compara los números|Piensa en las decenas primero|Elige el símbolo correcto,"Ficha de comparación con números hasta 100. Pares como 45 vs 52, 78 vs 73. Alumno elige <, > o =. 12 ejercicios: 8 comparaciones directas + 4 tramposas (ej: 45 vs 54, donde las cifras están invertidas). Requiere atención al valor posicional. Mix 70% MC / 30% V/F. Dificultad media-alta.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT013,Problemas de suma,Problemas,Sentido Numérico,6-7 años,25,Media-Alta,Resolver problemas verbales|Identificar datos relevantes|Aplicar sumas,Lee el problema con atención|Identifica qué operación necesitas|Resuelve y elige la respuesta,"Ficha de resolución de problemas con sumas. Situaciones cotidianas (compras, juegos, animales). Ejemplo: ""María tiene 5 caramelos y su amiga le da 3 más. ¿Cuántos tiene ahora?"". 10 problemas progresivos: empezar con enunciados cortos y datos claros, avanzar a enunciados más largos con información adicional (distractores). MC con 4 opciones. Dificultad media-alta por comprensión lectora.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT014,Problemas de resta,Problemas,Sentido Numérico,6-7 años,25,Alta,Resolver problemas de resta|Comprender situaciones de pérdida|Razonar lógicamente,Lee el problema despacio|Piensa qué información es importante|Calcula y responde,"Ficha de problemas con restas. Situaciones de ""quitar"", ""perder"", ""gastar"". Ejemplo: ""Tengo 10 lápices, regalo 4 a mi hermano. ¿Cuántos me quedan?"". 10 problemas con estructura variada: algunos directos, otros con datos en diferente orden. Incluye 2 problemas con trampa (información innecesaria). MC con 4 opciones. Dificultad alta por abstracción y comprensión.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT015,Problemas mixtos,Problemas,Sentido Numérico,6-7 años,30,Alta,Identificar operación necesaria|Resolver problemas de suma y resta|Razonar de forma autónoma,Lee con mucha atención|Decide si es suma o resta|Resuelve y verifica,"Ficha desafiante con problemas mixtos. Alumno debe decidir si usar suma o resta según contexto. 12 problemas variados: compras, juegos, situaciones escolares. Algunos con lenguaje engañoso (ej: ""pierdo"" sugiere resta pero contexto requiere suma). Mix 60% MC (4 opciones) / 40% V/F (""¿Es correcto que la respuesta es 7?""). Dificultad alta, requiere análisis y comprensión profunda.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT016,Reconocer formas básicas,Formas Geométricas,Sentido Espacial,6-7 años,15,Muy Fácil,"Identificar círculo, cuadrado, triángulo|Nombrar formas geométricas|Reconocer en contexto",Observa cada forma|Identifica su nombre|Selecciona la respuesta correcta,"Ficha de reconocimiento de formas básicas: círculo (○), cuadrado (■), triángulo (△). Muestra forma y alumno elige nombre entre 3 opciones. 10 ejercicios: formas aisladas + formas en objetos cotidianos (pelota=círculo, dado=cuadrado). Mix 70% MC / 30% V/F. Muy fácil, iniciación geométrica.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT017,Contar lados y vértices,Formas Geométricas,Sentido Espacial,6-7 años,20,Media,Contar lados de figuras|Identificar vértices|Clasificar por número de lados,Cuenta los lados de la figura|Cuenta los vértices (esquinas)|Responde las preguntas,"Ficha para contar elementos de figuras geométricas. Presenta triángulo, cuadrado, rectángulo, pentágono. Alumno cuenta lados y vértices. 12 ejercicios: 6 de contar lados, 4 de contar vértices, 2 de clasificación (""¿Qué figura tiene 4 lados?""). MC con 3-4 opciones. Introduce vocabulario: lado, vértice. Dificultad media.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT018,Clasificar figuras,Formas Geométricas,Sentido Espacial,6-7 años,20,Media-Alta,Clasificar figuras por características|Identificar similitudes|Agrupar formas,Observa las características|Agrupa las figuras similares|Elige la clasificación correcta,"Ficha de clasificación geométrica. Muestra conjunto de figuras variadas y alumno debe agrupar por: número de lados, tamaño, color, o forma. Ejercicios tipo: ""Agrupa las figuras que tienen 4 lados"" o ""¿Cuál no pertenece al grupo?"". 10 ejercicios con criterios variables. Requiere análisis y razonamiento. MC con 3-4 opciones. Dificultad media-alta.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT019,Comparar tamaños,Longitud y Peso,Sentido de la Medida,6-7 años,15,Fácil,"Comparar objetos por tamaño|Usar términos: grande, pequeño, mediano|Ordenar por tamaño",Observa los objetos|Compara sus tamaños|Ordénalos de menor a mayor,"Ficha de comparación visual de tamaños. Muestra 3-4 objetos cotidianos (lápices, pelotas, libros) con diferentes tamaños. Alumno debe ordenar de pequeño a grande. 10 ejercicios: 6 ordenamientos + 4 identificaciones (""¿Cuál es el más grande?""). Visuales claros con diferencias obvias. MC con 3 opciones. Fácil, basado en percepción visual.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT020,Medir con objetos,Longitud y Peso,Sentido de la Medida,6-7 años,20,Media,Medir longitud con unidades no estándar|Comparar longitudes|Contar unidades,Cuenta cuántos clips mide el objeto|Compara las medidas|Responde correctamente,"Ficha de medición con unidades no estándar (clips, cubos, palitos). Muestra objeto y escala de medida. Alumno cuenta unidades y responde. Ejemplo: lápiz que mide 5 clips de largo. 12 ejercicios: 8 mediciones directas + 4 comparaciones (""¿Cuál es más largo?""). Introduce concepto de unidad de medida. MC con 3-4 opciones. Dificultad media.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT021,Comparar pesos,Longitud y Peso,Sentido de la Medida,6-7 años,20,Media-Alta,"Comparar objetos por peso|Usar términos: pesado, ligero|Ordenar por peso",Imagina el peso de cada objeto|Piensa cuál pesa más|Ordena de ligero a pesado,"Ficha sobre peso con balanzas visuales. Muestra 2-3 objetos en balanza (un lado baja = más pesado). Alumno deduce cuál pesa más. 10 ejercicios: 6 comparaciones directas con balanza + 4 razonamientos (""¿Qué pesa más: pluma o piedra?""). Incluye conceptos abstractos (peso no siempre relacionado con tamaño). MC + V/F (50/50). Dificultad media-alta por abstracción.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT022,Las horas en punto,El Tiempo y el Reloj,Sentido de la Medida,6-7 años,20,Fácil,Leer horas en punto|Identificar manecillas del reloj|Reconocer horario,Observa las manecillas|La pequeña marca la hora|Identifica qué hora es,"Ficha de iniciación al reloj analógico. Solo horas en punto (1:00, 3:00, 7:00, etc.). Muestra reloj con manecillas y alumno selecciona hora correcta entre 3 opciones. 10 ejercicios todos con minutos en :00. Introduce vocabulario: manecilla corta (horas), manecilla larga (minutos). Visuales claros. MC simple. Fácil, solo horas completas.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT023,Las medias horas,El Tiempo y el Reloj,Sentido de la Medida,6-7 años,25,Media,"Leer horas y medias|Identificar :30 minutos|Usar terminología ""y media""","Mira dónde apuntan las manecillas|Si la larga está en el 6, son ""y media""|Selecciona la hora correcta","Ficha de medias horas. Relojes marcando :30 (2:30, 5:30, 9:30). Alumno lee y selecciona entre opciones. 12 ejercicios: 8 lecturas directas + 4 de dibujar manecillas (""Marca las 4:30""). Introduce concepto ""y media"". Requiere entender posición de ambas manecillas. MC con 4 opciones. Dificultad media.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT024,Ordenar momentos del día,El Tiempo y el Reloj,Sentido de la Medida,6-7 años,15,Fácil,"Secuenciar eventos diarios|Usar términos: mañana, tarde, noche|Comprender orden temporal",Lee las actividades|Piensa en cuándo las haces|Ordénalas correctamente,"Ficha de secuencia temporal con rutinas diarias. Muestra 3-4 actividades (desayunar, ir al colegio, cenar, dormir) y alumno las ordena cronológicamente. 8 ejercicios de ordenamiento + 4 de identificación (""¿Qué haces por la noche?""). Usa iconos y texto. Introduce vocabulario temporal. MC con 3 secuencias. Fácil, basado en experiencia cotidiana.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT025,"Antes, durante y después",El Tiempo y el Reloj,Sentido de la Medida,6-7 años,20,Media,Usar conceptos temporales|Identificar secuencia de eventos|Razonar temporalmente,"Lee la situación|Piensa qué ocurre antes, durante o después|Selecciona la respuesta","Ficha de conceptos temporales abstractos. Presenta situaciones y alumno identifica qué ocurre antes/durante/después. Ejemplo: ""Antes de comer, me lavo las manos"" → ¿Qué hago primero?. 12 ejercicios con situaciones variadas. Requiere comprensión lectora y razonamiento temporal. Mix 60% MC / 40% V/F. Dificultad media por abstracción.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT026,Reconocer monedas,El Dinero,Sentido de la Medida,6-7 años,15,Fácil,"Identificar monedas de euro|Reconocer valores: 1€, 2€, 5€|Nombrar monedas",Observa cada moneda|Lee su valor|Identifícala correctamente,"Ficha de reconocimiento de monedas de euro. Muestra monedas de 1€, 2€ (enfoque en euros, no céntimos). Alumno identifica valor. 10 ejercicios: 6 identificaciones directas (""¿Cuánto vale esta moneda?"") + 4 comparaciones (""¿Cuál vale más?""). Visuales realistas de monedas. MC con 3 opciones. Fácil, reconocimiento visual.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT027,Sumar cantidades de dinero,El Dinero,Sentido de la Medida,6-7 años,25,Media-Alta,Sumar monedas|Calcular totales|Resolver problemas con dinero,Suma el valor de las monedas|Calcula el total|Selecciona la respuesta correcta,"Ficha de suma con dinero. Muestra 2-4 monedas (ej: 1€ + 2€ + 1€) y alumno calcula total. 12 ejercicios progresivos: empezar con 2 monedas iguales, avanzar a combinaciones variadas. Incluye 3 problemas contextuales (""Compro chicle de 2€, pago con 5€, ¿cuánto me devuelven?""). MC con 4 opciones. Dificultad media-alta por aplicación práctica.",,,pending,Primaria,1º Primaria,Matemáticas,,
+MAT028,Problemas con dinero,El Dinero,Sentido de la Medida,6-7 años,30,Alta,Resolver situaciones de compra|Calcular cambio|Aplicar sumas y restas con dinero,Lee el problema con atención|Identifica qué operación necesitas|Calcula y responde,"Ficha desafiante con problemas de dinero en contexto real. Situaciones de compra, ahorro, cambio. Ejemplo: ""Quiero comprar un juguete de 7€. Tengo 5€ ahorrados. ¿Cuánto me falta?"". 10 problemas variados que requieren suma, resta o ambas. Incluye 2 problemas con trampa (información innecesaria). MC con 4 opciones. Dificultad alta por comprensión, múltiples operaciones y contexto realista.",,,pending,Primaria,1º Primaria,Matemáticas,,

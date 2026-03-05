@@ -1,0 +1,13 @@
+﻿HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: text/html; charset=UTF-8
+Link: <https://fichas.es/>; rel=shortlink
+X-LiteSpeed-Cache-Control: public,max-age=604800
+X-LiteSpeed-Tag: fb8_front,fb8_URL.6666cd76f96956469e7be39d750cc7d9,fb8_F,fb8_Po.143,fb8_PGS,fb8_
+Etag: "4789-1770390661;;;"
+X-Litespeed-Cache: miss
+Transfer-Encoding: chunked
+Date: Fri, 06 Feb 2026 15:11:01 GMT
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+

@@ -1,0 +1,136 @@
+id,nivel_educativo,curso,asignatura,tema,bloque_lomloe,dificultad,editorial,post_title,edad_recomendada,tiempo_estimado,destacada,descripcion,objetivos_raw,instrucciones_raw,post_content,contenido_ficha_html,featured_image_url,post_status,post_date
+001,Primaria,1º Primaria,Matemáticas,Números 1-10,Sentido Numérico,Fácil,Genérica,Contar hasta 10,6-7 años,15,1,Ficha interactiva para contar objetos y asociar con números del 1 al 10.,Contar objetos del 1 al 10|Identificar cantidades|Asociar número con cantidad,Observa cada grupo de objetos|Cuenta cuántos hay|Escribe el número en la casilla,,"<div id=""ficha_001"" class=""ficha-educativa"">
+  <div class=""titulo-ficha"">Contar hasta 10</div>
+  <div class=""instrucciones"">¡Cuenta los objetos y escoge el número correcto! 🔢</div>
+  <div class=""progreso"">
+    <div class=""barra-progreso"">
+      <div class=""progreso-actual"" id=""progreso_001""></div>
+    </div>
+    <span id=""contador_001"">0 de 10</span>
+  </div>
+  <div class=""contenedor-preguntas"" id=""contenedor_001""></div>
+  <button class=""btn-comprobar"" id=""comprobar_001"">✅ ¡YA TERMINÉ!</button>
+  <div class=""feedback"" id=""feedback_001""></div>
+</div>
+
+<script>
+(function(){
+  const preguntas_001 = [
+    {id: 1, texto: ""¿Cuántas manzanas hay?"", visual: ""🍎🍎🍎"", opciones: [""2"", ""3"", ""4""], correcta: 1},
+    {id: 2, texto: ""Cuenta las estrellas"", visual: ""⭐⭐⭐⭐⭐"", opciones: [""4"", ""5"", ""6""], correcta: 1},
+    {id: 3, texto: ""¿Cuántos corazones ves?"", visual: ""❤️❤️"", opciones: [""1"", ""2"", ""3""], correcta: 1},
+    {id: 4, texto: ""Cuenta los globos"", visual: ""🎈🎈🎈🎈🎈🎈🎈"", opciones: [""6"", ""7"", ""8""], correcta: 1},
+    {id: 5, texto: ""¿Cuántas flores hay?"", visual: ""🌸🌸🌸🌸"", opciones: [""3"", ""4"", ""5""], correcta: 1},
+    {id: 6, texto: ""Cuenta los peces"", visual: ""🐠🐠🐠🐠🐠🐠🐠🐠"", opciones: [""7"", ""8"", ""9""], correcta: 1},
+    {id: 7, texto: ""¿Cuántos dulces ves?"", visual: ""🍬"", opciones: [""0"", ""1"", ""2""], correcta: 1},
+    {id: 8, texto: ""Cuenta las pelotas"", visual: ""⚽⚽⚽⚽⚽⚽"", opciones: [""5"", ""6"", ""7""], correcta: 1},
+    {id: 9, texto: ""¿Cuántas mariposas hay?"", visual: ""🦋🦋🦋🦋🦋🦋🦋🦋🦋"", opciones: [""8"", ""9"", ""10""], correcta: 1},
+    {id: 10, texto: ""Cuenta todos los gatitos"", visual: ""🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱"", opciones: [""9"", ""10"", ""11""], correcta: 1}
+  ];
+
+  let respuestas_001 = {};
+
+  function generarHTML_001() {
+    const contenedor = document.getElementById('contenedor_001');
+    let html = '';
+    for (let i = 0; i < preguntas_001.length; i++) {
+      const p = preguntas_001[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + p.texto + '</div>';
+      html += '<div class=""visual"" style=""font-size: 2.5em; text-align: center; margin: 15px 0;"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+      }
+      html += '</div></div>';
+    }
+    contenedor.innerHTML = html;
+  }
+
+  function actualizarProgreso_001() {
+    const respondidas = Object.keys(respuestas_001).length;
+    const total = preguntas_001.length;
+    const porcentaje = (respondidas / total) * 100;
+    
+    document.getElementById('progreso_001').style.width = porcentaje + '%';
+    document.getElementById('contador_001').textContent = respondidas + ' de ' + total;
+  }
+
+  function manejarRespuesta_001(event) {
+    if (!event.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(event.target.dataset.pregunta);
+    const valorSeleccionado = parseInt(event.target.dataset.valor);
+    
+    const botonesGrupo = document.querySelectorAll('[data-pregunta=""' + preguntaId + '""]');
+    botonesGrupo.forEach(btn => btn.classList.remove('seleccionado'));
+    
+    event.target.classList.add('seleccionado');
+    respuestas_001[preguntaId] = valorSeleccionado;
+    
+    actualizarProgreso_001();
+  }
+
+  function comprobarRespuestas_001() {
+    let aciertos = 0;
+    
+    for (let i = 0; i < preguntas_001.length; i++) {
+      const pregunta = preguntas_001[i];
+      const respuestaUsuario = respuestas_001[pregunta.id];
+      
+      const botonesGrupo = document.querySelectorAll('[data-pregunta=""' + pregunta.id + '""]');
+      
+      botonesGrupo.forEach((btn, index) => {
+        btn.classList.remove('correcto', 'incorrecto');
+        
+        if (index === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (respuestaUsuario === index) {
+          btn.classList.add('incorrecto');
+        }
+      });
+      
+      if (respuestaUsuario === pregunta.correcta) {
+        aciertos++;
+      }
+    }
+    
+    const feedback = document.getElementById('feedback_001');
+    const total = preguntas_001.length;
+    
+    feedback.classList.remove('exito', 'mejorar');
+    
+    if (aciertos >= 8) {
+      feedback.textContent = '⭐ ¡Genial! ' + aciertos + ' de ' + total + ' correctas';
+      feedback.classList.add('exito');
+    } else {
+      feedback.textContent = '💪 ¡Sigue practicando! ' + aciertos + ' de ' + total + ' correctas';
+      feedback.classList.add('mejorar');
+    }
+  }
+
+  function init_001() {
+    generarHTML_001();
+    
+    document.getElementById('contenedor_001').addEventListener('click', manejarRespuesta_001);
+    document.getElementById('comprobar_001').addEventListener('click', comprobarRespuestas_001);
+    
+    actualizarProgreso_001();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init_001);
+  } else {
+    init_001();
+  }
+})();
+</script>",,publish,2026-01-15
+002,Primaria,1º Primaria,Matemáticas,Sumas y Restas,Sentido Numérico,Fácil,Genérica,Sumas sin llevar hasta 10,6-7 años,20,1,Ejercicios de sumas sencillas con apoyo visual para primero de primaria.,Realizar sumas sin llevar|Comprender concepto de adición|Resolver problemas sencillos,Lee cada suma|Cuenta con los dedos si es necesario|Escribe el resultado|Comprueba con dibujos,,,,publish,2026-01-15
+003,Primaria,1º Primaria,Lengua,Vocales,Las Letras,Fácil,Genérica,Reconocer vocales,6-7 años,15,1,Identifica y reconoce las cinco vocales en diferentes contextos.,Identificar las cinco vocales|Distinguir mayúscula y minúscula|Reconocer sonido,Lee en voz alta cada vocal|Rodea las vocales que encuentres|Escribe las vocales que faltan|Une cada vocal con su sonido,,,,publish,2026-01-15
+004,Primaria,1º Primaria,Lengua,Consonantes,Las Letras,Medio,Genérica,"Las letras P, M y L",6-7 años,20,0,"Aprende las letras P, M y L formando sílabas y palabras simples.","Aprender consonantes P, M, L|Formar sílabas directas|Iniciarse en lectoescritura",Repite en voz alta cada sílaba|Escribe las sílabas siguiendo modelo|Une las sílabas para formar palabras,,,,publish,2026-01-15
+005,Primaria,1º Primaria,Matemáticas,Números 1-100,Sentido Numérico,Medio,Genérica,Números del 1 al 20,6-7 años,15,0,Practica los números del 11 al 20 con ejercicios variados.,Contar del 11 al 20|Escribir números de dos cifras|Comprender segunda decena,Lee los números en orden|Completa la serie|Escribe el número que falta|Cuenta hacia adelante y atrás,,,,publish,2026-01-15
+006,Primaria,1º Primaria,Matemáticas,Sumas y Restas,Sentido Numérico,Medio,Genérica,Restas sin llevar,6-7 años,20,0,Iniciación a las restas con ejercicios sin llevar adaptados.,Realizar restas sin llevar|Comprender concepto sustracción|Resolver problemas de quitar,Lee cada resta|Puedes usar objetos para quitar|Escribe el resultado|Comprueba tu respuesta,,,,publish,2026-01-15
+007,Primaria,1º Primaria,Lengua,Caligrafía,Expresión Escrita,Fácil,Genérica,Escribir vocales mayúsculas,6-7 años,15,0,Mejora tu caligrafía escribiendo las vocales en mayúscula.,Mejorar grafomotricidad|Escribir vocales correctamente|Seguir trazo adecuado,Observa el trazo de cada vocal|Repasa con lápiz vocales punteadas|Copia las vocales en pautas|Practica varias veces,,,,publish,2026-01-15
+008,Primaria,1º Primaria,Lengua,Lectoescritura,Las Letras,Medio,Genérica,Formar palabras sencillas,6-7 años,20,0,Combina sílabas para formar tus primeras palabras.,Combinar sílabas|Formar palabras simples|Desarrollar lectoescritura,Lee cada sílaba|Une las sílabas que forman palabra|Escribe la palabra completa|Dibuja lo que representa,,,,publish,2026-01-15
+009,Primaria,1º Primaria,Matemáticas,Formas Geométricas,Sentido Espacial,Fácil,Genérica,Formas geométricas básicas,6-7 años,15,1,Reconoce las formas geométricas básicas en objetos cotidianos.,Identificar formas geométricas|Clasificar objetos por forma|Reconocer figuras en entorno,Observa cada forma geométrica|Repasa sus lados con dedo|Cuenta los lados de cada figura|Busca objetos con esas formas,,,,publish,2026-01-15
+010,Primaria,1º Primaria,Matemáticas,Tiempo y Reloj,Sentido de la Medida,Medio,Genérica,El reloj - horas en punto,6-7 años,15,0,Lee la hora en punto usando el reloj analógico.,Leer las horas en punto|Comprender reloj analógico|Relacionar agujas con hora,Observa dónde señalan agujas|La aguja corta marca hora|Escribe qué hora es|Dibuja agujas en relojes vacíos,,,,publish,2026-01-15

@@ -1,0 +1,1392 @@
+/**
+ * FRONT-PAGE.CSS v2.1
+ * Estilos exclusivos para la homepage (front-page.php)
+ * 
+ * Versión: 2.1.0
+ * Fecha: 22 Enero 2026
+ * 
+ * CAMBIOS v2.1:
+ * - Padding-top móvil en home-wrapper (100px)
+ * - Hero y CTA final 100% azul #2571A3 (eliminado todo morado)
+ */
+
+/* ============================================
+   WRAPPER GENERAL
+   ============================================ */
+.home-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ============================================
+   1. HERO SECTION
+   ============================================ */
+.hero-home {
+    background: linear-gradient(135deg, #2571A3 0%, #1a5276 100%);
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 40px rgba(37, 113, 163, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero con imagen de fondo (opcional - añadir clase .hero-con-imagen) */
+.hero-home.hero-con-imagen {
+    background-image: url('../images/hero-primaria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-home h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-descripcion {
+    font-size: 1.4em;
+    margin: 0 0 30px 0;
+    opacity: 0.95;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* Hero Features */
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.hero-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-feature-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.hero-feature-item span:first-child {
+    font-size: 1.5em;
+}
+
+/* Hero CTA */
+
+.cta-primary {
+    display: inline-block;
+    background: white;
+    color: #2571A3;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: #f9fafb;
+    color: #2571A3;
+    text-decoration: none;
+}
+
+.cta-large {
+    padding: 18px 48px;
+    font-size: 1.2em;
+}
+
+.cta-arrow {
+    margin-left: 8px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cta-primary:hover .cta-arrow {
+    transform: translateX(5px);
+}
+
+
+
+/* ============================================
+   2. INTRO SEO
+   ============================================ */
+.intro-seo {
+    margin-bottom: 50px;
+    max-width: 1200px;  /* ← MISMO ANCHO QUE .home-wrapper */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.intro-seo p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.intro-seo p:last-child {
+    font-size: 1.05em;
+    color: #4a5568;
+}
+
+.intro-seo strong {
+    color: #2571A3;
+    font-weight: 700;
+}
+
+/* ============================================
+   3. GRID NIVELES EDUCATIVOS CON IMÁGENES
+   ============================================ */
+
+.niveles-educativos-home {
+    margin-bottom: 60px;
+}
+
+.niveles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Card con imagen de fondo */
+.nivel-card-imagen {
+    position: relative;
+    background: #f9fafb;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 400px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+
+/* Hover solo en activos */
+.nivel-card-imagen.nivel-activo {
+    cursor: pointer;
+}
+
+.nivel-card-imagen.nivel-activo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(37, 113, 163, 0.25);
+}
+
+/* Disabled con menor opacidad */
+.nivel-card-imagen.nivel-disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.nivel-card-imagen.nivel-disabled:hover {
+    transform: none;
+}
+
+/* Wrapper de imagen */
+.nivel-imagen-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Imagen de fondo */
+.nivel-imagen-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.nivel-card-imagen:hover .nivel-imagen-bg {
+    transform: scale(1.08);
+}
+
+/* Overlay gradiente oscuro para legibilidad del texto */
+.nivel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    transition: background 0.4s ease;
+    z-index: 2;
+}
+
+.nivel-card-imagen.nivel-activo:hover .nivel-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(37, 113, 163, 0.2) 0%,
+        rgba(37, 113, 163, 0.5) 60%,
+        rgba(37, 113, 163, 0.8) 100%
+    );
+}
+
+/* Fallback sin imagen (icono grande) */
+.nivel-imagen-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nivel-fallback-icon {
+    font-size: 8em;
+    opacity: 0.6;
+}
+
+/* Contenido sobre la imagen */
+.nivel-contenido {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    z-index: 3;
+    color: white;
+    transition: padding 0.3s ease;
+}
+
+.nivel-card-imagen.nivel-activo:hover .nivel-contenido {
+    padding-bottom: 35px;
+}
+
+/* Badge de estado */
+.nivel-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    z-index: 4;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.badge-prox {
+    background: rgba(251, 191, 36, 0.95);
+    color: #78350f;
+}
+
+.badge-activa {
+    background: rgba(16, 185, 129, 0.95);
+    color: white;
+}
+
+/* Título */
+.nivel-titulo {
+    font-size: 2em;
+    margin: 0 0 8px 0;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+/* Subtítulo (edad) */
+.nivel-subtitulo {
+    font-size: 1.1em;
+    margin: 0 0 12px 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Descripción */
+.nivel-descripcion {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA texto (solo activos) */
+.nivel-cta-texto {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #2571A3;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.nivel-card-imagen.nivel-activo:hover .nivel-cta-texto {
+    background: #2571A3;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* ============================================
+   RESPONSIVE - NIVELES CON IMÁGENES
+   ============================================ */
+
+@media (max-width: 768px) {
+    .niveles-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .nivel-card-imagen {
+        height: 350px;
+    }
+    
+    .nivel-contenido {
+        padding: 25px;
+    }
+    
+    .nivel-titulo {
+        font-size: 1.7em;
+    }
+    
+    .nivel-subtitulo {
+        font-size: 1em;
+    }
+    
+    .nivel-descripcion {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nivel-card-imagen {
+        height: 320px;
+    }
+    
+    .nivel-contenido {
+        padding: 20px;
+    }
+    
+    .nivel-titulo {
+        font-size: 1.5em;
+    }
+    
+    .nivel-badge {
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+    
+    .nivel-fallback-icon {
+        font-size: 6em;
+    }
+}
+
+
+/* ============================================
+   4. SECCIONES COMUNES (Títulos)
+   ============================================ */
+.section-titulo {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.section-subtitulo {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* ============================================
+   5. FICHAS DESTACADAS
+   ============================================ */
+.fichas-destacadas-home {
+    margin-bottom: 60px;
+}
+
+.fichas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Las fichas usan .ficha-card-mini de fichas.css */
+
+.fichas-destacadas-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+/* ============================================
+   6. VENTAJAS FICHAS INTERACTIVAS
+   ============================================ */
+.ventajas-fichas {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 50px 40px;
+    margin-bottom: 60px;
+}
+
+.ventajas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ventaja-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ventaja-item:hover {
+    transform: translateY(-5px);
+}
+
+.ventaja-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ventaja-item:hover .ventaja-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradientes por ventaja - ACTUALIZADOS CON AZUL TEMA */
+.ventaja-icon-1 {
+    background: linear-gradient(135deg, #2571A3 0%, #1a5276 100%);
+}
+
+.ventaja-icon-2 {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.ventaja-icon-3 {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.ventaja-icon-4 {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.ventaja-icon-5 {
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+}
+
+.ventaja-icon-6 {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.ventaja-titulo {
+    font-size: 1.25em;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.ventaja-descripcion {
+    margin: 0;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 0.98em;
+}
+
+/* ============================================
+   7. CONTENIDO SEO ADICIONAL
+   ============================================ */
+.contenido-adicional-seo {
+    margin-bottom: 60px;
+}
+
+.contenido-seo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.seo-block {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.seo-block:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #2571A3;
+}
+
+.seo-block h2 {
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.seo-block p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #4a5568;
+    margin: 0;
+}
+
+.seo-block strong {
+    color: #2571A3;
+    font-weight: 700;
+}
+
+/* ============================================
+   CTAs por Nivel Educativo
+   ============================================ */
+.hero-niveles-cta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.nivel-cta-card {
+    background: white;
+    color: #2d3748;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-decoration: none !important; /* Ya lo tienes, pero reforzar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+}
+
+
+.nivel-cta-card * {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.nivel-cta-card:hover {
+    text-decoration: none !important;
+}
+
+
+/* Nivel Activo (Primaria) */
+.nivel-cta-card.nivel-activo {
+    border-color: #10b981;
+    cursor: pointer;
+}
+
+.nivel-cta-card.nivel-activo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.3);
+    border-color: #059669;
+}
+
+/* Nivel Próximamente (Infantil, Secundaria) */
+.nivel-cta-card.nivel-proximo {
+    opacity: 0.75;
+    cursor: default;
+    border-color: #e5e7eb;
+}
+
+/* Icono del nivel */
+.nivel-icono {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.nivel-icono.nivel-thumb {
+    width: 84px;
+    height: 84px;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.nivel-icono.nivel-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.02);
+}
+
+/* Nombre del nivel */
+.nivel-nombre {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1;
+}
+
+/* Edad (nuevo) */
+.nivel-edad {
+    font-size: 0.9em;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Contador de fichas (solo activos) */
+.nivel-count {
+    font-size: 0.95em;
+    color: #10b981;
+    font-weight: 700;
+    background: #d1fae5;
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin-top: 4px;
+}
+
+/* Badge próximamente */
+.nivel-badge-prox {
+    font-size: 0.8em;
+    background: #fbbf24;
+    color: #78350f;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* ============================================
+   8. RESPONSIVE
+   ============================================ */
+   @media (max-width: 768px) {
+    .nivel-imagen {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nivel-imagen {
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* PADDING-TOP PARA EVITAR SOLAPAMIENTO CON HEADER */
+    .home-wrapper {
+        padding: 100px 15px 15px 15px;
+    }
+
+    /* Hero - MÁS COMPACTO EN MÓVIL */
+    .hero-home {
+        padding: 35px 20px;
+        margin-bottom: 40px;
+    }
+
+    .hero-home h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .hero-descripcion {
+        font-size: 1.05em;
+        margin-bottom: 20px;
+    }
+
+    .hero-features {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .hero-feature-item {
+        font-size: 0.85em;
+        padding: 8px 14px;
+    }
+
+    .hero-feature-item span:first-child {
+        font-size: 1.3em;
+    }
+
+   
+
+/* ============================================
+   RESPONSIVE - CTAs Niveles
+   ============================================ */
+@media (max-width: 768px) {
+    .hero-niveles-cta {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .nivel-cta-card {
+        padding: 25px 20px;
+    }
+
+    .nivel-icono {
+        font-size: 2.5em;
+    }
+
+    .nivel-nombre {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nivel-cta-card {
+        padding: 20px 15px;
+    }
+
+    .nivel-icono {
+        font-size: 2.2em;
+    }
+
+    .nivel-nombre {
+        font-size: 1.1em;
+    }
+}
+
+
+    .hero-cta-container {
+        margin-top: 25px;
+    }
+
+    .cta-large {
+        padding: 14px 30px;
+        font-size: 1em;
+    }
+
+    /* Intro SEO */
+    .intro-seo p {
+        font-size: 1.05em;
+    }
+
+    /* Niveles */
+    .niveles-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .nivel-card {
+        padding: 30px 20px;
+    }
+
+    /* Sección títulos */
+    .section-titulo {
+        font-size: 1.8em;
+    }
+
+    .section-subtitulo {
+        font-size: 1em;
+    }
+
+    /* Fichas grid */
+    .fichas-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* Ventajas */
+    .ventajas-fichas {
+        padding: 40px 20px;
+    }
+
+    .ventajas-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* SEO blocks */
+    .contenido-seo-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .seo-block {
+        padding: 25px 20px;
+    }
+
+    .seo-block h2 {
+        font-size: 1.3em;
+    }
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* PADDING-TOP AÚN MAYOR EN MÓVILES PEQUEÑOS */
+    .home-wrapper {
+        padding: 110px 15px 15px 15px;
+    }
+
+    /* Hero - ULTRA COMPACTO EN MÓVILES PEQUEÑOS */
+    .hero-home {
+        padding: 30px 18px;
+    }
+
+    .hero-home h1 {
+        font-size: 1.75em;
+    }
+
+    .hero-descripcion {
+        font-size: 0.95em;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-feature-item {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+
+    .section-titulo {
+        font-size: 1.5em;
+    }
+
+    .nivel-titulo {
+        font-size: 1.5em;
+    }
+
+    .cta-primary {
+        padding: 12px 24px;
+        font-size: 0.95em;
+    }
+
+    .cta-large {
+        padding: 13px 28px;
+        font-size: 0.95em;
+    }
+        padding: 35px 18px;
+    }
+}
+
+/* ============================================
+   9. PRINT STYLES (opcional)
+   ============================================ */
+@media print {
+    .hero-cta-container,
+    .hero-features {
+        display: none;
+    }
+
+    .hero-home {
+        background: white;
+        color: black;
+        box-shadow: none;
+    }
+}
+/* Mantener padding original de home-wrapper - NO sobreescribir */
+.home-wrapper {
+    padding: 20px !important; /* Desktop */
+}
+
+@media (max-width: 768px) {
+    .home-wrapper {
+        padding: 100px 15px 15px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-wrapper {
+        padding: 110px 15px 15px 15px !important;
+    }
+}
+
+/* Con admin bar */
+.admin-bar .home-wrapper {
+    padding: calc(20px + 32px) 20px 20px 20px !important;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .home-wrapper {
+        padding: calc(100px + 46px) 15px 15px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-bar .home-wrapper {
+        padding: calc(110px + 46px) 15px 15px 15px !important;
+    }
+}
+/* ============================================
+   BLOQUES ACF - NUEVOS ESTILOS
+   ============================================ */
+
+/* ============================================
+   BLOQUE 1: ¿Qué son las Fichas Interactivas?
+   ============================================ */
+.bloque-que-son-fichas {
+    margin-bottom: 60px;
+}
+
+.bloque-que-son-fichas .contenido-wrapper {
+    max-width: 1200px;  /* ← MISMO ANCHO QUE EL HERO */
+    margin: 0 auto;
+}
+
+
+.bloque-que-son-fichas .section-titulo {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.bloque-que-son-fichas .que-son-contenido {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.bloque-que-son-fichas .que-son-contenido p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.bloque-que-son-fichas .que-son-contenido p:last-child {
+    margin-bottom: 0;
+}
+
+.bloque-que-son-fichas .que-son-contenido strong {
+    color: #2571A3;
+    font-weight: 700;
+}
+
+/* ============================================
+   BLOQUE 2: Ventajas (Ya estaba, pero añadir intro)
+   ============================================ */
+.ventajas-fichas .contenido-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ventajas-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.ventajas-intro p {
+    font-size: 1.15em;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+/* ============================================
+   BLOQUE 4: Cómo Funcionan las Fichas
+   ============================================ */
+.bloque-como-funciona {
+    background: #f9fafb;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+    border-radius: 16px;
+}
+
+.bloque-como-funciona .contenido-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bloque-como-funciona .section-titulo {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.pasos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+@media (min-width: 1100px) {
+    .pasos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.paso-item {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.paso-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border-color: #2571A3;
+}
+
+.paso-numero {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2571A3 0%, #1a5276 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(37, 113, 163, 0.4);
+}
+
+.paso-contenido {
+    padding-top: 15px;
+}
+
+.paso-titulo {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 15px 0;
+}
+
+.paso-descripcion {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* ============================================
+   BLOQUE 5: Mini-FAQ (Acordeón)
+   ============================================ */
+.bloque-mini-faq {
+    margin-bottom: 60px;
+}
+
+.bloque-mini-faq .contenido-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hubs: FAQ mas ancho (igual que fichas destacadas) */
+.nivel-wrapper .bloque-mini-faq .contenido-wrapper,
+.curso-wrapper .bloque-mini-faq .contenido-wrapper,
+.curso-asignatura-wrapper .bloque-mini-faq .contenido-wrapper {
+    max-width: 1400px;
+}
+
+.bloque-mini-faq .section-titulo {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.faq-acordeon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home-wrapper .faq-acordeon {
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.faq-item {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #2571A3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item.active {
+    border-color: #2571A3;
+    box-shadow: 0 6px 20px rgba(37, 113, 163, 0.15);
+}
+
+/* Botón pregunta - CLASE .faq-question (sin -pregunta) */
+.faq-question {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 20px 25px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #2d3748;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #f9fafb;
+    color: #2571A3;
+}
+
+.faq-item.active .faq-question {
+    color: #2571A3;
+    background: #f9fafb;
+}
+
+.faq-pregunta-texto {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.faq-icono {
+    font-size: 1.5em;
+    color: #2571A3;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ede9fe;
+    border-radius: 50%;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.faq-item.active .faq-icono {
+    transform: rotate(45deg);
+    background: #2571A3;
+    color: white;
+}
+
+/* Respuesta - CLASE .faq-answer (sin -respuesta) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease 0.1s, 
+                transform 0.3s ease 0.1s;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.faq-answer p {
+    padding: 0 25px 20px;
+    margin: 0;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 1em;
+}
+
+.faq-answer p:first-child {
+    padding-top: 10px;
+}
+
+.faq-answer p strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.faq-link-completo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.faq-link-completo a {
+    color: #2571A3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: color 0.2s ease;
+}
+
+.faq-link-completo a:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+
+
+
+/* ============================================
+   RESPONSIVE - BLOQUES ACF
+   ============================================ */
+@media (max-width: 768px) {
+    /* Qué son */
+    .bloque-que-son-fichas .que-son-contenido {
+        padding: 25px 20px;
+    }
+
+    .bloque-que-son-fichas .section-titulo {
+        font-size: 1.8em;
+    }
+    /* Cómo funciona */
+    .bloque-como-funciona {
+        padding: 40px 15px;
+    }
+
+    .pasos-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .paso-item {
+        padding: 25px 20px;
+    }
+
+    .paso-numero {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+        top: -18px;
+        left: 20px;
+    }
+
+    .paso-titulo {
+        font-size: 1.15em;
+    }
+
+    /* FAQ */
+        .faq-question {
+        padding: 15px 18px;
+        font-size: 1em;
+    }
+
+    .faq-answer p {
+        padding: 0 18px 18px;
+        font-size: 0.95em;
+    }
+
+    .faq-icono {
+        width: 26px;
+        height: 26px;
+        font-size: 1.2em;
+    }
+    .faq-pregunta {
+        padding: 15px 18px;
+        font-size: 1em;
+    }
+
+    .faq-respuesta-contenido {
+        padding: 0 18px 18px;
+    }
+
+    .faq-respuesta-contenido p {
+        font-size: 0.95em;
+    }
+
+    .faq-icono {
+        width: 26px;
+        height: 26px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .bloque-que-son-fichas .section-titulo,
+    .bloque-como-funciona .section-titulo,
+    .bloque-mini-faq .section-titulo {
+        font-size: 1.5em;
+    }
+
+    .pasos-grid {
+        gap: 35px;
+    }
+}
+
+
+
+
+
+

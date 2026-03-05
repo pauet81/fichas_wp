@@ -1,0 +1,1296 @@
+/**
+ * ASAP Megamenu - Frontend Styles
+ * Full Screen Professional Megamenu
+ */
+
+/* =========================================================================
+ * MEGAMENU TRIGGER & OVERLAY
+ * ========================================================================= */
+
+/* ✅ Contenedor padre con flex para centrado vertical */
+.asap-menu-container-flex {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Logo izquierda, hamburguesa derecha */
+}
+
+/* Trigger Button - Menú Hamburguesa */
+.asap-megamenu-trigger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* ✅ En mobile, agregar margin-right al trigger para que no quede pegado */
+@media (max-width: 1050px) {
+    .asap-megamenu-trigger {
+        margin-right: 1rem;
+    }
+}
+
+.asap-megamenu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.asap-megamenu-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.asap-megamenu-toggle:focus {
+    outline: 2px solid var(--megamenu-trigger-color, #FFFFFF);
+    outline-offset: 2px;
+}
+
+.asap-megamenu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 24px;
+    height: 18px;
+    position: relative;
+}
+
+.asap-megamenu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--megamenu-trigger-color, #333);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animación del menú hamburguesa (conviértelo en X) */
+.asap-megamenu-toggle.active .asap-megamenu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.asap-megamenu-toggle.active .asap-megamenu-icon span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.asap-megamenu-toggle.active .asap-megamenu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================================================================
+ * OVERLAY BASE (común para todos los estilos)
+ * ========================================================================= */
+
+.asap-megamenu-overlay {
+    z-index: 999999;
+    display: flex;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* =========================================================================
+ * ESTILO 1: FULLSCREEN (Por defecto)
+ * ========================================================================= */
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--megamenu-bg-1, #667eea) 0%, var(--megamenu-bg-2, #764ba2) 100%);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.asap-megamenu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos SOLO para fullscreen */
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-container {
+    background: white;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transform: scale(0.9) translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen.active .asap-megamenu-container {
+    transform: scale(1) translateY(0);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e1e5e9;
+    background: var(--megamenu-column-bg, #f8f9fa);
+}
+
+/* Si no hay logo, centrar el botón de cerrar */
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-header:has(.asap-megamenu-close:only-child) {
+    justify-content: flex-end;
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-logo h2 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--megamenu-header-text, #ffffff); /* ✅ Usar color de texto del header */
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-close {
+    background: rgba(255, 255, 255, 0.1); /* ✅ Fondo semi-transparente */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--megamenu-header-text, #ffffff); /* ✅ Usar color de texto del header */
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-close:hover {
+    background: rgba(255, 255, 255, 0.2); /* ✅ Hover más visible */
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    display: grid;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Grid para fullscreen */
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content.asap-megamenu-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content.asap-megamenu-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content.asap-megamenu-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content.asap-megamenu-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content.asap-megamenu-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-column {
+    background: var(--megamenu-card-bg, rgba(255, 255, 255, 0.98));
+    padding: 30px;
+    border-radius: 16px;
+    transition: box-shadow 0.2s ease;
+}
+
+.asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-column:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layouts */
+.asap-megamenu-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.asap-megamenu-grid[data-layout="grid"][data-columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.asap-megamenu-grid[data-layout="grid"][data-columns="3"] {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.asap-megamenu-grid[data-layout="grid"][data-columns="4"] {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.asap-megamenu-grid[data-layout="grid"][data-columns="5"] {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.asap-megamenu-grid[data-layout="grid"][data-columns="6"] {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Column Styles */
+.asap-megamenu-column {
+    text-align: center;
+    background: var(--megamenu-column-bg, #f8f9fa);
+}
+
+.asap-megamenu-column-image {
+    margin-bottom: 20px;
+}
+
+.asap-megamenu-column-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.asap-megamenu-column-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: var(--megamenu-text, #333333); /* ✅ Toma el color de texto del megamenu */
+}
+
+.asap-megamenu-column-title {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.asap-megamenu-column-description {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color: #646970;
+    line-height: 1.5;
+}
+
+.asap-megamenu-column-items {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.asap-megamenu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.asap-megamenu-item:last-child {
+    border-bottom: none;
+}
+
+.asap-megamenu-item-icon {
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    color: var(--megamenu-text, #333333); /* ✅ Toma el color de texto del megamenu */
+}
+
+/* ✅ SVG icons toman el color de texto del megamenu */
+.asap-megamenu-item-icon svg,
+.asap-megamenu-column-icon svg {
+    stroke: var(--megamenu-text, #333333);
+    fill: none;
+}
+
+/* Si el SVG usa fill en lugar de stroke */
+.asap-megamenu-item-icon svg[fill]:not([fill="none"]),
+.asap-megamenu-column-icon svg[fill]:not([fill="none"]) {
+    fill: var(--megamenu-text, #333333);
+    stroke: none;
+}
+
+.asap-megamenu-item a {
+    color: #2271b1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.asap-megamenu-item a:hover {
+    color: var(--megamenu-link-hover, #135e96);
+    text-decoration: underline;
+}
+
+.asap-megamenu-cta-button {
+    display: inline-block;
+    background: var(--megamenu-bg-1, #2271b1); /* ✅ Color sólido, no gradiente */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.asap-megamenu-cta-button:hover {
+    opacity: 0.9;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive para Fullscreen */
+@media (max-width: 768px) {
+    .asap-megamenu-overlay.asap-megamenu-fullscreen {
+        padding: 10px;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-container {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content {
+        padding: 20px;
+    }
+}
+
+/* =========================================================================
+ * MENU ITEM INDICATOR
+ * ========================================================================= */
+
+.menu-item.has-megamenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.menu-item.has-megamenu.is-active > a::after {
+    transform: rotate(180deg);
+}
+
+/* =========================================================================
+ * MEGAMENU OVERLAY - ELIMINADO (Definición duplicada)
+ * Los estilos específicos están definidos arriba con clases:
+ * .asap-megamenu-fullscreen, .asap-megamenu-dropdown, .asap-megamenu-sidebar
+ * ========================================================================= */
+
+.menu-item.is-active .asap-megamenu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================================================================
+ * MEGAMENU CONTAINER
+ * ========================================================================= */
+
+.asap-megamenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item.is-active .asap-megamenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.asap-megamenu-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    position: relative;
+    transform: translateY(30px);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item.is-active .asap-megamenu-inner {
+    transform: translateY(0);
+}
+
+/* Estos estilos genéricos ya NO se usan - cada estilo tiene los suyos propios */
+
+/* =========================================================================
+ * GRID LAYOUT (Layout Base)
+ * ========================================================================= */
+
+/* Grid Layout - Columnas iguales */
+.asap-megamenu-content {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Columnas dinámicas */
+.asap-megamenu-content.asap-megamenu-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.asap-megamenu-content.asap-megamenu-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.asap-megamenu-content.asap-megamenu-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.asap-megamenu-content.asap-megamenu-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.asap-megamenu-content.asap-megamenu-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* =========================================================================
+ * FEATURED LAYOUT (Primera columna destacada + Grid)
+ * ========================================================================= */
+
+/* Container con layout featured mantiene el grid */
+.asap-megamenu-featured.asap-megamenu-content {
+    display: grid;
+    gap: 30px;
+}
+
+/* La primera columna tiene clase .asap-megamenu-featured */
+.asap-megamenu-column.asap-megamenu-featured {
+    background: linear-gradient(135deg, var(--megamenu-bg-1, #667eea) 0%, var(--megamenu-bg-2, #764ba2) 100%);
+    padding: 20px; /* ✅ Reducido de 40px a 20px */
+    border-radius: 16px;
+    color: var(--megamenu-text, #333333); /* ✅ Usar color de texto del megamenu */
+    grid-column: 1 / -1 !important; /* Ocupa toda la fila */
+    margin-bottom: 20px;
+}
+
+/* =========================================================================
+ * COLUMN STYLES
+ * ========================================================================= */
+
+.asap-megamenu-column {
+    background: var(--megamenu-column-bg, rgba(255, 255, 255, 0.98));
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideUp 0.5s ease backwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation */
+.asap-megamenu-column:nth-child(1) { animation-delay: 0.05s; }
+.asap-megamenu-column:nth-child(2) { animation-delay: 0.1s; }
+.asap-megamenu-column:nth-child(3) { animation-delay: 0.15s; }
+.asap-megamenu-column:nth-child(4) { animation-delay: 0.2s; }
+.asap-megamenu-column:nth-child(5) { animation-delay: 0.25s; }
+.asap-megamenu-column:nth-child(6) { animation-delay: 0.3s; }
+
+.asap-megamenu-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Featured Column */
+.asap-megamenu-column.is-featured {
+    background: transparent;
+    padding: 0;
+}
+
+.asap-megamenu-column.is-featured:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* =========================================================================
+ * COLUMN ELEMENTS
+ * ========================================================================= */
+
+/* Image */
+.asap-megamenu-column-image {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.asap-megamenu-column-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.asap-megamenu-column:hover .asap-megamenu-column-image img {
+    transform: scale(1.05);
+}
+
+/* Icon */
+.asap-megamenu-column-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.asap-megamenu-column-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--megamenu-text, #333333); /* ✅ Usar color de texto del megamenu */
+}
+
+/* Description */
+.asap-megamenu-column-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 0 20px 0;
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-description {
+    font-size: 16px;
+    color: var(--megamenu-text, #333333); /* ✅ Usar color de texto del megamenu */
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Items List */
+.asap-megamenu-column-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* ✅ Siempre alineado a la izquierda */
+}
+
+.asap-megamenu-column-items li {
+    margin-bottom: 0; /* ✅ Sin margin-bottom */
+}
+
+.asap-megamenu-column-items a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    color: var(--megamenu-text, #333);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: color 0.2s ease;
+    font-size: 14px;
+}
+
+.asap-megamenu-column-items a:hover {
+    color: var(--megamenu-hover, #667eea);
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-items a {
+    color: var(--megamenu-text, #333333); /* ✅ Usar color de texto del megamenu */
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-items a:hover {
+    background: var(--megamenu-hover, rgba(0, 0, 0, 0.05));
+    color: var(--megamenu-text, #333333);
+}
+
+.asap-megamenu-column-items .item-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* CTA Container */
+.asap-megamenu-column-cta {
+    margin-top: 1rem; /* ✅ Separación del contenido */
+    text-align: left; /* ✅ Alineado a la izquierda */
+}
+
+/* CTA Button */
+.asap-megamenu-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--megamenu-bg-1, #667eea) 0%, var(--megamenu-bg-2, #764ba2) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.asap-megamenu-cta:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    color: white;
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-cta {
+    background: var(--megamenu-bg-1, #2271b1);
+    color: white;
+}
+
+.asap-megamenu-column.asap-megamenu-featured .asap-megamenu-cta:hover {
+    opacity: 0.9;
+}
+
+/* =========================================================================
+ * CARDS LAYOUT (Con imágenes destacadas)
+ * ========================================================================= */
+
+.asap-megamenu-cards .asap-megamenu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.asap-megamenu-cards .asap-megamenu-column-image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    order: -1; /* Imagen siempre arriba */
+}
+
+.asap-megamenu-cards .asap-megamenu-column-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.asap-megamenu-cards .asap-megamenu-column-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.asap-megamenu-cards .asap-megamenu-column-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* =========================================================================
+ * CARDS LAYOUT
+ * ========================================================================= */
+
+.asap-megamenu-layout-cards .asap-megamenu-column {
+    text-align: center;
+}
+
+.asap-megamenu-layout-cards .asap-megamenu-column-image img {
+    height: 180px;
+}
+
+.asap-megamenu-layout-cards .asap-megamenu-column-title {
+    font-size: 18px;
+}
+
+.asap-megamenu-layout-cards .asap-megamenu-column-description {
+    font-size: 13px;
+}
+
+.asap-megamenu-layout-cards .asap-megamenu-column-items {
+    display: none; /* En cards, ocultamos la lista de items */
+}
+
+/* =========================================================================
+ * RESPONSIVE
+ * ========================================================================= */
+
+@media (max-width: 1400px) {
+    .asap-megamenu-content {
+        gap: 20px;
+    }
+    
+    .asap-megamenu-column {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .asap-megamenu-content {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    
+    .asap-megamenu-column.asap-megamenu-featured {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Fullscreen en mobile */
+    .asap-megamenu-overlay.asap-megamenu-fullscreen {
+        padding: 10px;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-container {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-fullscreen .asap-megamenu-content {
+        padding: 20px;
+    }
+    
+    /* Grid en mobile - 1 columna */
+    .asap-megamenu-content {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+    
+    .asap-megamenu-column {
+        animation: none;
+    }
+    
+    .asap-megamenu-column:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .asap-megamenu-inner {
+        padding: 15px 0;
+    }
+    
+    .asap-megamenu-column {
+        padding: 15px;
+    }
+    
+    .asap-megamenu-column-title {
+        font-size: 18px;
+    }
+    
+    .asap-megamenu-column.asap-megamenu-featured .asap-megamenu-column-title {
+        font-size: 24px;
+    }
+    
+    /* RESPONSIVE: Header del megamenu en móviles */
+    .asap-megamenu-overlay .asap-megamenu-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 15px 20px !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    .asap-megamenu-overlay .asap-megamenu-logo {
+        flex: 0 0 auto !important;
+        order: 1 !important;
+    }
+    
+    .asap-megamenu-overlay .asap-megamenu-close {
+        flex: 0 0 auto !important;
+        order: 2 !important;
+        margin-left: auto !important;
+    }
+    
+    /* Si no hay logo, el botón de cerrar se mueve a la derecha */
+    .asap-megamenu-overlay .asap-megamenu-header:has(.asap-megamenu-close:only-child) {
+        justify-content: flex-end !important;
+    }
+    
+    /* Hacer el botón de cerrar más visible en móviles */
+    .asap-megamenu-close {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+        padding: 10px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .asap-megamenu-close svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+/* =========================================================================
+ * ACCESSIBILITY
+ * ========================================================================= */
+
+.asap-megamenu-column:focus-within {
+    outline: 2px solid #667eea;
+    outline-offset: 4px;
+}
+
+.asap-megamenu-close:focus {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .asap-megamenu,
+    .asap-megamenu-overlay,
+    .asap-megamenu-inner,
+    .asap-megamenu-column,
+    .asap-megamenu-column-items a,
+    .asap-megamenu-cta {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* =========================================================================
+ * PRINT STYLES
+ * ========================================================================= */
+
+@media print {
+    .asap-megamenu-overlay,
+    .asap-megamenu {
+        display: none !important;
+    }
+}
+
+/* =========================================================================
+ * ESTILO 2: DROPDOWN COMPACT (Minimalista integrado)
+ * ========================================================================= */
+
+.asap-megamenu-overlay.asap-megamenu-dropdown {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    z-index: 999999;
+}
+
+/* Ajuste para admin bar de WordPress */
+body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown {
+    top: 92px; /* 60px header + 32px admin bar */
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown {
+        top: 106px; /* 60px header + 46px admin bar mobile */
+    }
+}
+
+/* ✅ Overlay oscuro cuando el menú está abierto (solo dropdown) */
+.asap-megamenu-overlay.asap-megamenu-dropdown.active {
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro que cubre desde el header hacia abajo */
+    bottom: 0; /* Asegurar que cubra hasta abajo */
+}
+
+/* Ajuste para admin bar de WordPress */
+body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown {
+    top: 92px; /* 60px header + 32px admin bar */
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown {
+        top: 106px; /* 60px header + 46px admin bar mobile */
+    }
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-container {
+    background: white;
+    border-radius: 0 0 6px 6px; /* ✅ Border-radius solo en esquinas inferiores */
+    max-width: 100%;
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.25); /* ✅ Sombra sutil */
+    border-top: 1px solid #e5e7eb; /* Borde sutil */
+    margin: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative; /* Para que esté por encima del overlay oscuro */
+    z-index: 1;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown.active .asap-megamenu-container {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e1e5e9;
+    background: white;
+}
+
+/* ❌ Ocultar header completo cuando "Ocultar texto del logo" está activo */
+body.asap-hide-logo-text .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-header {
+    display: none !important;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-logo h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1d2327;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-close {
+    display: none !important; /* ❌ Ocultar botón X (ya está en el header) */
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown > .asap-megamenu-container > .asap-megamenu-content {
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-grid {
+    padding: 0; /* ❌ Sin padding en el grid interno */
+    display: grid;
+    gap: 30px; /* Más espacio entre columnas */
+}
+
+/* Heredar las clases de columnas del grid */
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content.asap-megamenu-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column {
+    padding: 0 !important; /* ❌ Sin padding extra */
+    background: none !important; /* ❌ Sin fondo */
+    border-radius: 0 !important;
+    transition: none !important; /* ❌ Sin transiciones */
+    box-shadow: none !important; /* ❌ Sin sombra */
+    animation: none !important; /* ❌ Sin animaciones */
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column:hover {
+    transform: none !important; /* ❌ Sin hover effects */
+    box-shadow: none !important;
+    background: none !important;
+}
+
+/* ✅ Títulos, subtítulos y CTA alineados a la izquierda */
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-title {
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-description {
+    text-align: left;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-items {
+    text-align: left;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-item {
+    padding: 8px 0 !important;
+    border-bottom: none !important; /* ❌ Sin línea abajo */
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-items a {
+    font-size: 14px;
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0 !important;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-items a:hover {
+    color: #111827;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-column-cta {
+    text-align: left;
+    margin-top: 20px; /* ✅ Más separación para que no quede pegado a los items con iconos */
+}
+
+/* ✅ CTA como strong sin fondo */
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-cta-button {
+    background: none;
+    padding: 0;
+    color: #374151;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: inline;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-cta-button:hover {
+    color: #111827;
+    opacity: 1;
+    box-shadow: none;
+}
+
+/* ✅ Iconos visibles con color de enlaces */
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-item-icon {
+    color: #374151;
+    font-size: 14px;
+}
+
+.asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-item:hover .asap-megamenu-item-icon {
+    color: #111827;
+}
+
+/* ❌ Quitar todos los estilos de focus del megamenu dropdown */
+.asap-megamenu-overlay.asap-megamenu-dropdown *:focus,
+.asap-megamenu-overlay.asap-megamenu-dropdown *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+}
+
+/* =========================================================================
+ * ESTILO 3: SIDEBAR SLIDE (Panel lateral moderno)
+ * ========================================================================= */
+
+.asap-megamenu-overlay.asap-megamenu-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0,0,0,0.6);
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 999999 !important;
+    transform: none !important;
+    max-width: none !important;
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-container {
+    position: fixed !important; /* ✅ Fixed para pegarlo al viewport */
+    top: 0 !important;
+    left: 0 !important;
+    background: var(--megamenu-card-bg, #ffffff);
+    border-radius: 0;
+    width: 450px !important;
+    max-width: 450px;
+    height: 100vh !important;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2) !important;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000000 !important; /* ✅ Por encima de todo */
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar.active .asap-megamenu-container {
+    transform: translateX(0);
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background: linear-gradient(135deg, var(--megamenu-bg-1, #667eea) 0%, var(--megamenu-bg-2, #764ba2) 100%);
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-logo h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-close {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-close:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* Columnas en sidebar apiladas verticalmente (ignorar grid) */
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-column {
+    width: 100%;
+    padding: 20px;
+    background: var(--megamenu-column-bg, #f8f9fa);
+    border-radius: 8px;
+}
+
+/* Asegurar que la columna featured en sidebar se ve normal */
+.asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-column.asap-megamenu-featured {
+    grid-column: auto;
+}
+
+/* =========================================================================
+ * RESPONSIVE - Estilos específicos para mobile
+ * ========================================================================= */
+
+@media (max-width: 992px) {
+    /* ✅ Dropdown en mobile: igual que desktop, pegado al header con scroll */
+    .asap-megamenu-overlay.asap-megamenu-dropdown {
+        top: 60px !important; /* Justo debajo del header */
+        padding: 0 !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+    
+    /* Ajuste para admin bar en mobile */
+    body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown {
+        top: 106px !important; /* 60px header + 46px admin bar mobile */
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        max-height: calc(100vh - 60px) !important; /* Altura disponible desde el header */
+        border-radius: 0 !important; /* Sin border-radius en mobile */
+        border-top: 1px solid #e5e7eb !important;
+        margin: 0 !important;
+    }
+    
+    /* Admin bar ajuste de altura */
+    body.admin-bar .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-container {
+        max-height: calc(100vh - 106px) !important;
+    }
+    
+    /* Header visible en mobile con botón X */
+    .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-header {
+        display: flex !important;
+        padding: 15px 20px !important;
+        border-bottom: 1px solid #e5e7eb !important;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-close {
+        display: flex !important;
+        background: #f3f4f6 !important;
+        color: #374151 !important;
+        width: 36px !important;
+        height: 36px !important;
+        padding: 8px !important;
+    }
+    
+    .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-close:hover {
+        background: #e5e7eb !important;
+    }
+    
+    /* Contenido con scroll en mobile */
+    .asap-megamenu-overlay.asap-megamenu-dropdown .asap-megamenu-content {
+        grid-template-columns: 1fr !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        padding: 20px !important;
+    }
+    
+    /* Sidebar en mobile: full width */
+    .asap-megamenu-overlay.asap-megamenu-sidebar .asap-megamenu-container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+

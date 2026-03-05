@@ -1,0 +1,126 @@
+
+# PROMPT: GENERACIÓN DE META TAGS SEO (FICHAS.ES)
+
+## REGLAS TÉCNICAS OBLIGATORIAS
+
+### METATÍTULO
+- Longitud: 50-60 caracteres (máximo 580 píxeles)
+- Keyword principal en primeros 10 caracteres
+- Sin keyword stuffing, mayúsculas abusivas ni caracteres especiales
+- Único por página
+
+### META DESCRIPCIÓN
+- Longitud: 150-160 caracteres (máximo 920 píxeles)
+- Incluir keyword principal + 1-2 secundarias naturalmente
+- Obligatorio: CTA + beneficio específico
+- No repetir el título textualmente
+
+---
+
+## FÓRMULAS POR TIPO DE PÁGINA
+
+### 1. FICHA INDIVIDUAL (single-ficha.php)
+**Título:** `[Tema] [Curso] - Ficha [Tipo] | Fichas.es`
+**Descripción:** `[Acción] [tema detallado] [curso] con [característica]. [Especificaciones]. [CTA]!`
+
+Ejemplo:
+- Título: `Sumas con Llevadas 2º Primaria - Ficha Interactiva` (52 car)
+- Descripción: `Practica sumas con llevadas de hasta 3 cifras para 2º de Primaria. Ejercicios progresivos con autocorrección. ¡Descarga PDF gratis!` (153 car)
+
+### 2. HUB ASIGNATURA
+**Título:** `Fichas de [Asignatura] [Nivel] | [Cantidad/Gratis]`
+**Descripción:** `[Cantidad] fichas de [asignatura] para [nivel]. Temas: [3-4 temas]. [Formato] y [beneficio]. [CTA].`
+
+Ejemplo:
+- Título: `Fichas de Matemáticas Primaria | 200+ Gratis` (48 car)
+- Descripción: `200+ fichas de Matemáticas para Primaria (1º a 6º). Numeración, operaciones, geometría y problemas. Interactivas y PDF. Entra gratis.` (154 car)
+
+### 3. HUB CURSO
+**Título:** `Fichas [Curso Completo] - [Característica] | Fichas.es`
+**Descripción:** `Fichas para [curso]: [asignaturas]. [Cantidad] ejercicios de [temas]. [Formato]. [CTA].`
+
+Ejemplo:
+- Título: `Fichas 3º Primaria - Interactivas y Gratis` (45 car)
+- Descripción: `Fichas para 3º Primaria: Matemáticas, Lengua, Inglés y Conocimiento. 150+ ejercicios de numeración y comprensión. Sin registro.` (149 car)
+
+### 4. HUB NIVEL (Primaria/Infantil/Secundaria)
+**Título:** `Fichas [Nivel] Interactivas | Gratis y [Característica]`
+**Descripción:** `[Cantidad] fichas para [nivel] ([cursos]). [Asignaturas]. [Características]. [CTA].`
+
+Ejemplo:
+- Título: `Fichas Primaria Interactivas | Gratis y PDF` (48 car)
+- Descripción: `500+ fichas para Primaria (1º a 6º). Matemáticas, Lengua, Inglés y Ciencias con autocorrección. Descarga PDF sin registro.` (144 car)
+
+### 5. HOMEPAGE
+**Título:** `Fichas Interactivas [Niveles] | Gratis y Autocorregibles`
+**Descripción:** `[Cantidad] fichas interactivas para [niveles]. [Asignaturas] con autocorrección. [Beneficios]. [CTA].`
+
+Ejemplo:
+- Título: `Fichas Interactivas Primaria | Gratis y Autocorregibles` (56 car)
+- Descripción: `800+ fichas interactivas para Infantil, Primaria y ESO. Matemáticas, Lengua, Inglés y Ciencias. Autocorrección y PDF gratis.` (144 car)
+
+---
+
+## MODIFICADORES DE ALTO CTR (usar 1-2 por meta)
+
+**Títulos:**
+- Gratis, Interactivas, PDF, Imprimibles, [Curso específico], Autocorregibles
+
+**Descripciones:**
+- Gratis, Sin registro, Inmediato, Autocorrección, Progresivos, Descarga PDF, Para imprimir
+
+**CTAs (obligatorio en descripción):**
+- Descarga, Prueba, Explora, Accede, Practica, Entra
+
+---
+
+## KEYWORDS POR CONTEXTO
+
+**Primaria:**
+- fichas [asignatura] primaria
+- ejercicios [tema] [curso]
+- fichas interactivas [curso]
+
+**Por asignatura:**
+- Matemáticas: sumas, restas, multiplicaciones, divisiones, numeración, geometría, problemas
+- Lengua: ortografía, comprensión lectora, gramática, vocabulario
+- Inglés: vocabulario, verbos, comprensión
+- Conocimiento: ciencias naturales, ciencias sociales
+
+---
+
+## CHECKLIST VALIDACIÓN
+
+**Título:**
+☑ 50-60 caracteres
+☑ Keyword al inicio
+☑ Modificador de valor incluido
+☑ Sin repeticiones en otras páginas
+
+**Descripción:**
+☑ 150-160 caracteres
+☑ Keyword principal + secundarias natural
+☑ CTA presente
+☑ Curso/nivel específico mencionado
+☑ Beneficio claro
+☑ No repite título
+
+---
+
+## EJEMPLOS MALOS (EVITAR)
+
+❌ Título: `Recursos Educativos de Matemáticas para Niños` (genérico, sin curso)
+❌ Descripción: `En esta página encontrarás recursos educativos.` (vago, sin CTA, corto)
+❌ Título: `FICHAS GRATIS MATEMÁTICAS PRIMARIA EJERCICIOS` (mayúsculas, stuffing)
+❌ Descripción: `Fichas de matemáticas fichas gratis fichas primaria` (repetitivo)
+
+---
+
+## INSTRUCCIÓN FINAL
+
+Genera SIEMPRE:
+1. Título: 50-60 caracteres con keyword al inicio + modificador
+2. Descripción: 150-160 caracteres con keyword + especificidad + CTA
+3. Valida longitudes con contador de caracteres
+4. Adapta fórmula según tipo de página
+5. Prioriza claridad sobre creatividad

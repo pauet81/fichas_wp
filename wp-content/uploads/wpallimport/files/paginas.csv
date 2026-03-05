@@ -1,0 +1,17 @@
+post_title,post_name,post_status,post_type,post_parent,post_content,menu_order,template
+Primaria,primaria,publish,page,,Fichas educativas de Primaria para imprimir en PDF. Descubre recursos para todos los cursos y asignaturas.,1,
+1º Primaria,1-primaria,publish,page,Primaria,Fichas educativas de 1º de Primaria. Recursos imprimibles de matemáticas lengua conocimiento del medio e inglés.,1,
+2º Primaria,2-primaria,publish,page,Primaria,Fichas educativas de 2º de Primaria. Recursos imprimibles de matemáticas lengua conocimiento del medio e inglés.,2,
+3º Primaria,3-primaria,publish,page,Primaria,Fichas educativas de 3º de Primaria. Recursos imprimibles de matemáticas lengua conocimiento del medio e inglés.,3,
+Matemáticas,matematicas,publish,page,1º Primaria,Fichas de matemáticas para 1º de Primaria. Números sumas restas problemas geometría y medidas.,1,page-asignatura.php
+Lengua,lengua,publish,page,1º Primaria,Fichas de lengua para 1º de Primaria. Lectoescritura vocales consonantes comprensión lectora y caligrafía.,2,page-asignatura.php
+Conocimiento del Medio,conocimiento-medio,publish,page,1º Primaria,Fichas de conocimiento del medio para 1º de Primaria. El cuerpo humano animales plantas y el entorno.,3,page-asignatura.php
+Inglés,ingles,publish,page,1º Primaria,Fichas de inglés para 1º de Primaria. Vocabulario básico colores números animales y familia.,4,page-asignatura.php
+Matemáticas,matematicas,publish,page,2º Primaria,Fichas de matemáticas para 2º de Primaria. Números hasta el 1000 sumas y restas con llevadas multiplicación.,1,page-asignatura.php
+Lengua,lengua,publish,page,2º Primaria,Fichas de lengua para 2º de Primaria. Ortografía gramática básica comprensión lectora y escritura.,2,page-asignatura.php
+Conocimiento del Medio,conocimiento-medio,publish,page,2º Primaria,Fichas de conocimiento del medio para 2º de Primaria. Seres vivos paisajes agua y reciclaje.,3,page-asignatura.php
+Inglés,ingles,publish,page,2º Primaria,Fichas de inglés para 2º de Primaria. Vocabulario básico verbos simples y expresiones cotidianas.,4,page-asignatura.php
+Matemáticas,matematicas,publish,page,3º Primaria,Fichas de matemáticas para 3º de Primaria. Operaciones combinadas multiplicación división fracciones y geometría.,1,page-asignatura.php
+Lengua,lengua,publish,page,3º Primaria,Fichas de lengua para 3º de Primaria. Ortografía gramática tiempos verbales y expresión escrita.,2,page-asignatura.php
+Conocimiento del Medio,conocimiento-medio,publish,page,3º Primaria,Fichas de conocimiento del medio para 3º de Primaria. Sistema solar historia geografía y sociedad.,3,page-asignatura.php
+Inglés,ingles,publish,page,3º Primaria,Fichas de inglés para 3º de Primaria. Gramática básica present simple vocabulario ampliado y comprensión.,4,page-asignatura.php

@@ -1,0 +1,745 @@
+/**
+ * Asap Theme - Dark Mode Styles
+ * Estilos mejorados para el modo oscuro
+ * 
+ * @package AsapTheme
+ */
+
+/* ============================================
+   CONFIGURACIÓN BASE
+   ============================================ */
+
+html.asap-dark-mode,
+body.asap-dark-mode {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.asap-dark-mode {
+    background-color: var(--dark-bg-primary, #121212) !important;
+}
+
+/* ============================================
+   HEADER Y NAVEGACIÓN
+   ============================================ */
+
+html.asap-dark-mode body.asap-dark-mode .site-header,
+body.asap-dark-mode .site-header {
+    background-color: #2c3e50 !important;
+    border-bottom: 1px solid var(--dark-border-color, #444);
+}
+
+body.asap-dark-mode .site-header,
+body.asap-dark-mode .site-header a {
+    color: #ffffff !important;
+}
+
+body.asap-dark-mode .cs-social-follow,
+body.asap-dark-mode .cs-social-follow *,
+body.asap-dark-mode .cs-button-seguir,
+body.asap-dark-mode .cs-button-seguir a {
+    color: #fff !important;
+}
+
+body.asap-dark-mode .search-header input:not([type=submit]):not([type=radio]):not([type=checkbox]):not([type=file]) {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border-color: var(--dark-border-color, #444) !important;
+}
+
+body.asap-dark-mode .asap-hero-content h1 {
+    color: var(--dark-heading-h1, #FDBE02) !important;
+}
+
+body.asap-dark-mode .site-header svg,
+body.asap-dark-mode .site-header path {
+    filter: brightness(1.2) !important;
+}
+
+body.asap-dark-mode .site-header button,
+body.asap-dark-mode .site-header input {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    border-color: var(--dark-border-color, #444) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+}
+
+/* ============================================
+   FONDOS Y TEXTO GENERAL
+   ============================================ */
+
+html.asap-dark-mode,
+html.asap-dark-mode body,
+body.asap-dark-mode,
+body.asap-dark-mode .asap-content-box,
+body.asap-dark-mode .the-content,
+body.asap-dark-mode .site,
+body.asap-dark-mode .entry-content {
+    background-color: var(--dark-bg-primary, #121212) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+}
+
+body.asap-dark-mode p,
+body.asap-dark-mode span,
+body.asap-dark-mode div,
+body.asap-dark-mode li,
+body.asap-dark-mode td,
+body.asap-dark-mode th {
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+}
+
+/* ============================================
+   ENCABEZADOS
+   ============================================ */
+
+body.asap-dark-mode h1 {
+    color: var(--dark-heading-h1, #FDBE02) !important;
+}
+
+body.asap-dark-mode h2 {
+    color: var(--dark-heading-h2, #FF8040) !important;
+}
+
+body.asap-dark-mode h3,
+body.asap-dark-mode h4,
+body.asap-dark-mode h5,
+body.asap-dark-mode h6 {
+    color: var(--dark-heading-other, #FDBE02) !important;
+}
+
+/* ============================================
+   ENLACES
+   ============================================ */
+
+body.asap-dark-mode a {
+    color: var(--dark-link-color, #80cbc4) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+body.asap-dark-mode a:hover {
+    color: var(--dark-link-hover, #4dd0e1) !important;
+}
+
+/* ============================================
+   FORMULARIOS E INPUTS
+   ============================================ */
+
+body.asap-dark-mode input,
+body.asap-dark-mode select,
+body.asap-dark-mode textarea {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    border-color: var(--dark-border-color, #444) !important;
+}
+
+body.asap-dark-mode input::placeholder,
+body.asap-dark-mode textarea::placeholder {
+    color: #aaa !important;
+}
+
+body.asap-dark-mode input:focus,
+body.asap-dark-mode select:focus,
+body.asap-dark-mode textarea:focus {
+    border-color: var(--dark-accent-color, #80cbc4) !important;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(128, 203, 196, 0.2) !important;
+}
+
+/* ============================================
+   BLOCKQUOTES Y CITAS
+   ============================================ */
+
+body.asap-dark-mode blockquote {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: #ccc !important;
+    border-left-color: var(--dark-accent-color, #80cbc4) !important;
+    border-left-width: 4px !important;
+}
+
+/* ============================================
+   TABLAS
+   ============================================ */
+
+body.asap-dark-mode table {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: #ddd !important;
+    border-collapse: collapse;
+}
+
+body.asap-dark-mode th,
+body.asap-dark-mode td {
+    border-color: var(--dark-border-color, #444) !important;
+    padding: 10px;
+}
+
+body.asap-dark-mode th {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    font-weight: bold;
+}
+
+body.asap-dark-mode tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ============================================
+   IMÁGENES
+   ============================================ */
+
+body.asap-dark-mode img {
+    filter: brightness(0.9) !important;
+    transition: filter 0.2s ease;
+}
+
+body.asap-dark-mode img:hover {
+    filter: brightness(1) !important;
+}
+
+/* ============================================
+   COMENTARIOS
+   ============================================ */
+
+body.asap-dark-mode .area-comentarios,
+body.asap-dark-mode #comentarios {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border-color: var(--dark-border-color, #333) !important;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+body.asap-dark-mode .area-comentarios .comment-body {
+    background-color: var(--dark-bg-tertiary, #202020) !important;
+    border: 1px solid var(--dark-border-color, #333) !important;
+    padding: 1.2em;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+body.asap-dark-mode .asap-user-comment-text {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--dark-border-color, #444);
+}
+
+body.asap-dark-mode .comment-author a,
+body.asap-dark-mode .commentmetadata a,
+body.asap-dark-mode .reply a {
+    color: var(--dark-link-color, #80cbc4) !important;
+}
+
+body.asap-dark-mode .comment-respond {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    padding: 20px;
+    border-radius: 6px;
+    color: #ddd;
+}
+
+body.asap-dark-mode .comment-respond input,
+body.asap-dark-mode .comment-respond textarea {
+    background-color: #2c2c2c !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+}
+
+body.asap-dark-mode .area-comentarios ol {
+    background-color: #181818 !important;
+    border: 1px solid var(--dark-border-color, #333) !important;
+    border-radius: 6px;
+    padding: 1.5em;
+    margin: 0;
+    list-style: none;
+}
+
+/* ============================================
+   ARTÍCULOS Y CAJAS
+   ============================================ */
+
+body.asap-dark-mode .article-loop,
+body.asap-dark-mode .article-loop .asap-box-container,
+body.asap-dark-mode .asap-box-container {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border: 1px solid var(--dark-border-color, #333);
+    border-radius: 8px;
+    padding: 1em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.asap-dark-mode .article-loop:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.asap-dark-mode .article-loop .entry-title,
+body.asap-dark-mode .asap-box-container .entry-title {
+    color: #ffffff !important;
+    transition: color 0.2s ease-in-out;
+}
+
+body.asap-dark-mode .article-loop:hover .entry-title,
+body.asap-dark-mode .article-loop a:hover .entry-title {
+    color: var(--dark-heading-h1, #FDBE02) !important;
+}
+
+/* ============================================
+   BLOQUES GUTENBERG - FAQ
+   ============================================ */
+
+body.asap-dark-mode .asap-faq-accordion {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border-radius: 8px;
+    padding: 10px 0 !important;
+}
+
+body.asap-dark-mode .asap-faq-accordion summary {
+    background-color: transparent !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    font-weight: bold;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid var(--dark-border-color, #444) !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+body.asap-dark-mode .asap-faq-accordion summary:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.asap-dark-mode .asap-faq-accordion summary h4 {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    margin: 0;
+}
+
+body.asap-dark-mode .asap-faq-accordion summary .faq-arrow {
+    color: var(--dark-text-primary, #f1f1f1) !important;
+}
+
+body.asap-dark-mode .asap-faq-accordion details > div {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    padding: 15px 20px !important;
+    border-left: 3px solid var(--dark-accent-color, #80cbc4) !important;
+}
+
+body.asap-dark-mode .asap-faq-accordion details {
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid var(--dark-border-color, #444) !important;
+    padding-bottom: 10px !important;
+}
+
+/* ============================================
+   PAGINACIÓN
+   ============================================ */
+
+body.asap-dark-mode .cspb-pagination-container {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    padding: 1.2em;
+    border-radius: 8px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+body.asap-dark-mode .cspb-pagination-text {
+    color: #cccccc !important;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+body.asap-dark-mode .cspb-pagination-link {
+    background-color: var(--dark-bg-tertiary, #2a2a2a) !important;
+    color: var(--dark-link-color, #80cbc4) !important;
+    border: 1px solid var(--dark-border-color, #444) !important;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+body.asap-dark-mode .cspb-pagination-link:hover {
+    background-color: #3b3b3b !important;
+    color: var(--dark-link-hover, #4dd0e1) !important;
+    transform: translateY(-1px);
+}
+
+body.asap-dark-mode .cspb-current-page {
+    background-color: var(--dark-accent-color, #555) !important;
+    color: #fff !important;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ============================================
+   CAJAS INFORMATIVAS
+   ============================================ */
+
+body.asap-dark-mode .asap-info-box-item {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    border: 1px solid var(--dark-border-color, #444) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+body.asap-dark-mode .asap-info-box-item h3 {
+    color: var(--dark-heading-other, #FDBE02) !important;
+}
+
+body.asap-dark-mode .asap-info-box-item div {
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+}
+
+body.asap-dark-mode .asap-info-box-icon {
+    color: var(--dark-accent-color, #80cbc4) !important;
+}
+
+/* ============================================
+   PROS Y CONTRAS
+   ============================================ */
+
+body.asap-dark-mode .asap-procons-section {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+body.asap-dark-mode .asap-procons-left h3,
+body.asap-dark-mode .asap-procons-right h3 {
+    color: var(--dark-heading-other, #FDBE02) !important;
+}
+
+body.asap-dark-mode .asap-procons-left div[style*="border"],
+body.asap-dark-mode .asap-procons-right div[style*="border"] {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    border-color: var(--dark-border-color, #444) !important;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05) !important;
+}
+
+body.asap-dark-mode .asap-procons-left div[style*="white-space"],
+body.asap-dark-mode .asap-procons-right div[style*="white-space"] {
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+}
+
+body.asap-dark-mode .asap-procons-left i {
+    color: #4caf50 !important;
+}
+
+body.asap-dark-mode .asap-procons-right i {
+    color: #ef5350 !important;
+}
+
+/* ============================================
+   NOTAS INFORMATIVAS
+   ============================================ */
+
+body.asap-dark-mode .asap-note-info {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    border: 2px solid var(--dark-accent-color, #80cbc4) !important;
+    color: var(--dark-link-color, #80cbc4) !important;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+body.asap-dark-mode .asap-note-info i {
+    color: var(--dark-link-hover, #4dd0e1) !important;
+}
+
+/* ============================================
+   SLIDER DE TESTIMONIOS
+   ============================================ */
+
+body.asap-dark-mode .asap-testimonial-slider,
+body.asap-dark-mode .asap-testimonial-slider .asap-slide {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    border: 1px solid var(--dark-border-color, #444) !important;
+    border-radius: 8px;
+}
+
+body.asap-dark-mode .asap-testimonial-slider h3 {
+    color: var(--dark-heading-other, #FDBE02) !important;
+}
+
+body.asap-dark-mode .asap-testimonial-slider div[style*="font-weight:bold"] {
+    color: #ffffff !important;
+}
+
+body.asap-dark-mode .asap-testimonial-slider div[style*="opacity:0.8"] {
+    color: #bbbbbb !important;
+}
+
+body.asap-dark-mode .asap-testimonial-slider span {
+    color: #FFD700 !important;
+}
+
+body.asap-dark-mode .asap-testimonial-slider .asap-nav label {
+    background: var(--dark-accent-color, #80cbc4) !important;
+}
+
+/* ============================================
+   CONTENIDO EXPANDIBLE
+   ============================================ */
+
+body.asap-dark-mode .asap-ce-wrapper {
+    background: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border: 1px solid var(--dark-border-color, #333) !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+body.asap-dark-mode .asap-ce-wrapper .asap-ce-excerpt p,
+body.asap-dark-mode .asap-ce-wrapper .asap-ce-extra p {
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+}
+
+body.asap-dark-mode .asap-ce-wrapper .asap-ce-fade {
+    background: linear-gradient(to bottom, transparent, var(--dark-bg-secondary, #1a1a1a)) !important;
+}
+
+body.asap-dark-mode .asap-ce-wrapper .asap-ce-btn {
+    background-color: var(--dark-accent-color, #80cbc4) !important;
+    color: #000 !important;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+body.asap-dark-mode .asap-ce-wrapper .asap-ce-btn:hover {
+    background-color: var(--dark-link-hover, #4dd0e1) !important;
+    transform: translateY(-1px);
+}
+
+/* ============================================
+   TABLA DE PRECIOS
+   ============================================ */
+
+body.asap-dark-mode .asap-pricing-table-wrap .asap-price-col {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid var(--dark-border-color, #333) !important;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+body.asap-dark-mode .asap-pricing-table-wrap .asap-price-col:hover {
+    transform: scale(1.02);
+}
+
+body.asap-dark-mode .asap-price-col h4 {
+    color: var(--dark-heading-other, #FDBE02) !important;
+}
+
+body.asap-dark-mode .asap-price-col > div[style*="color:#777"] {
+    color: #bbbbbb !important;
+}
+
+body.asap-dark-mode .asap-price-col > div[style*="font-size:32px"] {
+    color: #ffffff !important;
+}
+
+body.asap-dark-mode .asap-price-col ul li {
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+}
+
+body.asap-dark-mode .asap-price-col a {
+    background: var(--dark-accent-color, #80cbc4) !important;
+    color: #000 !important;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+body.asap-dark-mode .asap-price-col a:hover {
+    background: var(--dark-link-hover, #4dd0e1) !important;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   SOCIAL LOCKER
+   ============================================ */
+
+body.asap-dark-mode .asap-social-locker-wrapper,
+body.asap-dark-mode .asap-social-locker-overlay {
+    background-color: var(--dark-bg-tertiary, #1e1e1e) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border: 1px solid var(--dark-border-color, #444) !important;
+    border-radius: 10px !important;
+    padding: 1.5em !important;
+}
+
+body.asap-dark-mode .asap-social-locker-overlay h4,
+body.asap-dark-mode .asap-social-locker-overlay p {
+    color: var(--dark-text-primary, #f1f1f1) !important;
+}
+
+body.asap-dark-mode .asap-social-locker-overlay button {
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: bold !important;
+    padding: 12px 24px !important;
+    margin: 5px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.asap-dark-mode .asap-social-locker-overlay button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.asap-dark-mode .asap-social-locker-overlay svg {
+    stroke: #ffffff !important;
+}
+
+/* ============================================
+   SIDEBAR Y WIDGETS
+   ============================================ */
+
+body.asap-dark-mode .sidebar,
+body.asap-dark-mode .widget {
+    background-color: var(--dark-bg-secondary, #1a1a1a) !important;
+    color: var(--dark-text-primary, #f1f1f1) !important;
+    border: 1px solid var(--dark-border-color, #333);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+body.asap-dark-mode .widget-title {
+    color: var(--dark-heading-other, #FDBE02) !important;
+    border-bottom: 2px solid var(--dark-accent-color, #80cbc4);
+    padding-bottom: 10px;
+}
+
+body.asap-dark-mode .widget ul li {
+    border-bottom: 1px solid var(--dark-border-color, #444);
+    padding: 8px 0;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+body.asap-dark-mode .site-footer {
+    background-color: #0d0d0d !important;
+    color: var(--dark-text-secondary, #e0e0e0) !important;
+    border-top: 1px solid var(--dark-border-color, #333);
+}
+
+body.asap-dark-mode .site-footer a {
+    color: var(--dark-link-color, #80cbc4) !important;
+}
+
+/* ============================================
+   BOTÓN FLOTANTE DE MODO OSCURO
+   ============================================ */
+
+#asap-dark-mode-toggle {
+    position: fixed;
+    z-index: 9999;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+#asap-dark-mode-toggle:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+#asap-dark-mode-toggle:active {
+    transform: translateY(0);
+}
+
+/* Posiciones del botón */
+#asap-dark-mode-toggle.position-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+#asap-dark-mode-toggle.position-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+#asap-dark-mode-toggle.position-top-left {
+    top: 80px;
+    left: 20px;
+}
+
+#asap-dark-mode-toggle.position-top-right {
+    top: 80px;
+    right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #asap-dark-mode-toggle {
+        padding: 10px 14px;
+        font-size: 14px;
+        bottom: 15px !important;
+    }
+    
+    #asap-dark-mode-toggle.position-bottom-left {
+        left: 15px;
+    }
+    
+    #asap-dark-mode-toggle.position-bottom-right {
+        right: 15px;
+    }
+}
+
+/* ============================================
+   ANIMACIONES Y TRANSICIONES
+   ============================================ */
+
+body.asap-dark-mode * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.asap-dark-mode a,
+body.asap-dark-mode button,
+body.asap-dark-mode input,
+body.asap-dark-mode .article-loop {
+    transition: all 0.2s ease;
+}
+
+/* ============================================
+   MODO CLARO PRESERVADO
+   ============================================ */
+
+body:not(.asap-dark-mode) #asap-dark-mode-toggle {
+    background-color: #2c3e50;
+}
+
+body:not(.asap-dark-mode) #asap-dark-mode-toggle:hover {
+    background-color: #34495e;
+}
+

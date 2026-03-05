@@ -1,0 +1,22 @@
+[14-Jan-2026 16:26:25 UTC] PHP Warning:  Undefined variable $qsid in /home/favrnzzb/public_html/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 958
+[14-Jan-2026 16:26:25 UTC] PHP Warning:  Undefined variable $qsid in /home/favrnzzb/public_html/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 960
+[14-Jan-2026 16:26:25 UTC] PHP Warning:  Undefined variable $qsid in /home/favrnzzb/public_html/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 967
+[14-Jan-2026 16:26:25 UTC] PHP Warning:  Undefined variable $qsid in /home/favrnzzb/public_html/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 968
+[14-Jan-2026 16:26:25 UTC] PHP Warning:  Undefined variable $qsid in /home/favrnzzb/public_html/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 971
+[15-Jan-2026 08:44:31 UTC] PHP Warning:  Undefined variable $elements in /home/favrnzzb/public_html/wp-content/plugins/wp-all-import-pro/views/admin/import/filters.php on line 20
+[16-Jan-2026 11:41:11 UTC] PHP Warning:  Undefined variable $elements in /home/favrnzzb/public_html/wp-content/plugins/wp-all-import-pro/views/admin/import/filters.php on line 20
+[19-Jan-2026 08:46:59 UTC] PHP Warning:  Undefined variable $elements in /home/favrnzzb/public_html/wp-content/plugins/wp-all-import-pro/views/admin/import/filters.php on line 20
+[29-Jan-2026 09:50:45 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:46 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:47 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:48 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:49 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:50 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:51 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:53 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:54 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 09:50:55 UTC] PHP Warning:  Attempt to read property "action" on null in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/filters/pmxi_save_options.php on line 8
+[29-Jan-2026 10:26:36 UTC] PHP Warning:  Undefined variable $elements in /home/favrnzzb/fichas.es/wp-content/plugins/wp-all-import-pro/views/admin/import/filters.php on line 20
+[29-Jan-2026 11:39:33 UTC] PHP Warning:  Undefined variable $elements in /home/favrnzzb/fichas.es/wp-content/plugins/wp-all-import-pro/views/admin/import/filters.php on line 20
+[04-Feb-2026 15:54:37 UTC] PHP Warning:  Undefined array key "foreach" in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/src/fields/views/repeater/header.php on line 30
+[04-Feb-2026 16:20:38 UTC] PHP Warning:  Undefined array key "foreach" in /home/favrnzzb/fichas.es/wp-content/plugins/wpai-acf-add-on/src/fields/views/repeater/header.php on line 30

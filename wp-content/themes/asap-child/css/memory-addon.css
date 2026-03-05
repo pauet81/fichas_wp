@@ -1,0 +1,332 @@
+/* ============================================
+   MEMORY GAME CSS v2.4 - OVERFLOW FIX
+   ============================================
+   ✅ Fix para emojis que se salen de la carta
+   ✅ Transform forzado con !important
+   ============================================ */
+
+/* ============================================
+   FIX CRÍTICO - PRIORIDAD MÁXIMA
+   ============================================ */
+
+.memory-card.flipped {
+    transform: rotateY(180deg) !important;
+}
+
+.memory-card.matched {
+    transform: rotateY(180deg) !important;
+    animation: matched 0.6s ease;
+    pointer-events: none;
+}
+
+/* Prevenir que hover interfiera */
+.memory-card.flipped:hover,
+.memory-card.matched:hover {
+    transform: rotateY(180deg) !important;
+}
+
+/* ============================================
+   CONTENEDOR DEL EJERCICIO
+   ============================================ */
+
+.ejercicio-memory {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    border: 4px solid #6366f1;
+    border-radius: 16px;
+    padding: 40px;
+    margin: 30px 0;
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
+.pregunta-memory {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #312e81;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ============================================
+   ESTADÍSTICAS
+   ============================================ */
+
+.memory-stats {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 2px solid #818cf8;
+    font-weight: 700;
+    color: #4338ca;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    margin-right: 8px;
+    color: #6366f1;
+}
+
+.memory-moves,
+.memory-pairs {
+    font-size: 1.2em;
+    color: #312e81;
+}
+
+/* ============================================
+   GRID DE CARTAS
+   ============================================ */
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 auto 25px;
+    max-width: 600px;
+    perspective: 1000px;
+}
+
+/* ============================================
+   CARTAS - ESTRUCTURA BASE
+   ============================================ */
+
+.memory-card {
+    aspect-ratio: 1;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    border-radius: 12px;
+    transform: rotateY(0deg);
+}
+
+/* Hover solo si NO está flipped ni matched */
+.memory-card:not(.flipped):not(.matched):hover {
+    transform: scale(1.05) rotateY(0deg);
+}
+
+/* ============================================
+   CARAS DE LAS CARTAS - CON FIX OVERFLOW
+   ============================================ */
+
+.memory-card-front,
+.memory-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 3px solid #818cf8;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    
+    /* ✅ FIX OVERFLOW */
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+/* CARA FRONTAL (interrogación) */
+.memory-card-front {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    transform: rotateY(0deg);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* CARA TRASERA (contenido) */
+.memory-card-back {
+    background: white;
+    transform: rotateY(180deg);
+    color: #312e81;
+    
+    /* ✅ Tamaño ajustado para emojis múltiples */
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -1px; /* Juntar emojis ligeramente */
+}
+
+/* ============================================
+   ESTADOS DE CARTAS MATCHED
+   ============================================ */
+
+.memory-card.matched .memory-card-back {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    border-color: #10b981;
+    color: #065f46;
+}
+
+/* Animación de celebración */
+@keyframes matched {
+    0% {
+        transform: scale(1) rotateY(180deg);
+    }
+    50% {
+        transform: scale(1.15) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1) rotateY(180deg);
+    }
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+
+.memory-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-reiniciar-memory {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-reiniciar-memory:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.btn-reiniciar-memory:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   FEEDBACK
+   ============================================ */
+
+.feedback-memory {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+    animation: aparecer 0.5s ease;
+}
+
+.feedback-memory.exito {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    color: #065f46;
+    border: 3px solid #10b981;
+    display: block;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   RESPONSIVE - TABLETS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .ejercicio-memory {
+        padding: 30px 20px;
+    }
+
+    .memory-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .memory-card-front,
+    .memory-card-back {
+        font-size: 2.5em;
+    }
+    
+    .memory-card-back {
+        font-size: 1.8em; /* Reducir para tablets */
+        padding: 8px;
+    }
+
+    .memory-stats {
+        gap: 15px;
+    }
+
+    .stat-item {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVILES
+   ============================================ */
+
+@media (max-width: 480px) {
+    .ejercicio-memory {
+        padding: 25px 15px;
+    }
+
+    .pregunta-memory {
+        font-size: 1.2em;
+    }
+
+    .memory-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .memory-card-front {
+        font-size: 2.5em;
+    }
+    
+    .memory-card-back {
+        font-size: 1.5em; /* Más pequeño en móvil */
+        border-width: 2px;
+        padding: 6px;
+        letter-spacing: -2px; /* Comprimir más */
+    }
+
+    .memory-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stat-item {
+        padding: 8px 16px;
+        font-size: 0.85em;
+    }
+
+    .btn-reiniciar-memory {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
+
+

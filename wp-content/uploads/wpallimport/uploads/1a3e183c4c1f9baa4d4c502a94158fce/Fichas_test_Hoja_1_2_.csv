@@ -1,0 +1,341 @@
+id_ficha,titulo,curso,asignatura,tema_especifico,Codigo
+MAT-1-SUM-001,Sumas sencillas con dedos,1º Primaria,Matemáticas,Sumas de números del 1 al 10 usando dedos o imágenes visuales,"<div id=""ficha_MAT-1-SUM-001"" class=""ficha-educativa"">
+  <div class=""titulo-ficha"">🖐️ Sumas sencillas con dedos</div>
+  <div class=""instrucciones"">¡Cuenta con tus dedos y resuelve las sumas!</div>
+  <div class=""progreso"">
+    <div class=""barra-progreso"">
+      <div class=""progreso-actual"" id=""progreso_MAT-1-SUM-001""></div>
+    </div>
+    <span id=""contador_MAT-1-SUM-001"">0 de 12</span>
+  </div>
+  <div class=""contenedor-preguntas"" id=""contenedor_MAT-1-SUM-001""></div>
+  <button class=""btn-comprobar"" id=""comprobar_MAT-1-SUM-001"">🎯 Comprobar respuestas</button>
+  <div class=""feedback"" id=""feedback_MAT-1-SUM-001""></div>
+</div>
+
+<script>
+(function(){
+  const preguntas_MAT_1_SUM_001 = [
+    {id: 1, texto: '¿Cuánto es 1 + 1?', visual: '☝️ + ☝️ = ?', opciones: ['1', '2', '3'], correcta: 1},
+    {id: 2, texto: '¿Cuánto es 2 + 1?', visual: '✌️ + ☝️ = ?', opciones: ['2', '3', '4'], correcta: 1},
+    {id: 3, texto: '¿Cuánto es 1 + 2?', visual: '☝️ + ✌️ = ?', opciones: ['2', '3', '4'], correcta: 1},
+    {id: 4, texto: '¿Cuánto es 3 + 2?', visual: '🤟 + ✌️ = ?', opciones: ['4', '5', '6'], correcta: 1},
+    {id: 5, texto: '¿Cuánto es 4 + 1?', visual: '🖖 + ☝️ = ?', opciones: ['4', '5', '6'], correcta: 1},
+    {id: 6, texto: '¿Cuánto es 2 + 3?', visual: '✌️ + 🤟 = ?', opciones: ['4', '5', '6'], correcta: 1},
+    {id: 7, texto: '¿Es verdad que 3 + 3 = 6?', visual: '🤟 + 🤟 = 6', opciones: ['Sí', 'No'], correcta: 0},
+    {id: 8, texto: '¿Cuánto es 5 + 2?', visual: '🖐️ + ✌️ = ?', opciones: ['6', '7', '8'], correcta: 1},
+    {id: 9, texto: '¿Es verdad que 4 + 4 = 9?', visual: '🖖 + 🖖 = 9', opciones: ['Sí', 'No'], correcta: 1},
+    {id: 10, texto: '¿Cuánto es 3 + 4?', visual: '🤟 + 🖖 = ?', opciones: ['6', '7', '8'], correcta: 1},
+    {id: 11, texto: '¿Cuánto es 5 + 3?', visual: '🖐️ + 🤟 = ?', opciones: ['7', '8', '9'], correcta: 1},
+    {id: 12, texto: '¿Cuánto es 4 + 5?', visual: '🖖 + 🖐️ = ?', opciones: ['8', '9', '10'], correcta: 1}
+  ];
+
+  let respuestas_MAT_1_SUM_001 = {};
+
+  function generarHTML_MAT_1_SUM_001() {
+    const contenedor = document.getElementById('contenedor_MAT-1-SUM-001');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_MAT_1_SUM_001.length; i++) {
+      const p = preguntas_MAT_1_SUM_001[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+      }
+      
+      html += '</div></div>';
+    }
+    
+    contenedor.innerHTML = html;
+    actualizarProgreso_MAT_1_SUM_001();
+  }
+
+  function manejarClick_MAT_1_SUM_001(e) {
+    if (!e.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(e.target.dataset.pregunta);
+    const valor = parseInt(e.target.dataset.valor);
+    
+    const botones = document.querySelectorAll('[data-pregunta=""' + preguntaId + '""]');
+    botones.forEach(btn => {
+      if (btn.classList.contains('opcion-btn')) {
+        btn.classList.remove('seleccionado');
+      }
+    });
+    
+    e.target.classList.add('seleccionado');
+    respuestas_MAT_1_SUM_001[preguntaId] = valor;
+    
+    actualizarProgreso_MAT_1_SUM_001();
+  }
+
+  function actualizarProgreso_MAT_1_SUM_001() {
+    const respondidas = Object.keys(respuestas_MAT_1_SUM_001).length;
+    const total = preguntas_MAT_1_SUM_001.length;
+    const porcentaje = (respondidas / total) * 100;
+    
+    const barraProgreso = document.getElementById('progreso_MAT-1-SUM-001');
+    const contador = document.getElementById('contador_MAT-1-SUM-001');
+    
+    if (barraProgreso) barraProgreso.style.width = porcentaje + '%';
+    if (contador) contador.textContent = respondidas + ' de ' + total;
+  }
+
+  function comprobarRespuestas_MAT_1_SUM_001() {
+    let correctas = 0;
+    
+    preguntas_MAT_1_SUM_001.forEach(pregunta => {
+      const bloque = document.querySelector('[data-pregunta=""' + pregunta.id + '""]');
+      const botones = bloque.querySelectorAll('.opcion-btn');
+      const respuestaUsuario = respuestas_MAT_1_SUM_001[pregunta.id];
+      
+      botones.forEach((btn, index) => {
+        btn.classList.remove('correcto', 'incorrecto');
+        
+        if (index === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (index === respuestaUsuario && index !== pregunta.correcta) {
+          btn.classList.add('incorrecto');
+        }
+      });
+      
+      if (respuestaUsuario === pregunta.correcta) {
+        correctas++;
+      }
+    });
+    
+    mostrarFeedback_MAT_1_SUM_001(correctas);
+  }
+
+  function mostrarFeedback_MAT_1_SUM_001(correctas) {
+    const feedback = document.getElementById('feedback_MAT-1-SUM-001');
+    const total = preguntas_MAT_1_SUM_001.length;
+    
+    feedback.classList.remove('exito', 'mejorar');
+    
+    if (correctas >= 8) {
+      feedback.classList.add('exito');
+      feedback.innerHTML = '⭐ ' + correctas + ' de ' + total + ' ¡Genial! ¡Eres un campeón de las sumas!';
+    } else {
+      feedback.classList.add('mejorar');
+      feedback.innerHTML = '💪 ' + correctas + ' de ' + total + ' ¡Sigue practicando! ¡Puedes hacerlo mejor!';
+    }
+  }
+
+  function inicializar_MAT_1_SUM_001() {
+    generarHTML_MAT_1_SUM_001();
+    
+    const contenedor = document.getElementById('contenedor_MAT-1-SUM-001');
+    const btnComprobar = document.getElementById('comprobar_MAT-1-SUM-001');
+    
+    if (contenedor) {
+      contenedor.addEventListener('click', manejarClick_MAT_1_SUM_001);
+    }
+    
+    if (btnComprobar) {
+      btnComprobar.addEventListener('click', comprobarRespuestas_MAT_1_SUM_001);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_MAT_1_SUM_001);
+  } else {
+    inicializar_MAT_1_SUM_001();
+  }
+})();
+</script>"
+MAT-1-GEO-002,Formas geométricas básicas,1º Primaria,Matemáticas,"Identificar círculos, cuadrados y triángulos en objetos cotidianos","<div id=""ficha_MAT-1-GEO-002"" class=""ficha-educativa"">
+  <div class=""titulo-ficha"">Formas geométricas básicas</div>
+  <div class=""instrucciones"">¡Identifica las formas! Encuentra círculos, cuadrados y triángulos</div>
+  <div class=""progreso"">
+    <span id=""progreso_MAT-1-GEO-002"">0 de 12</span>
+  </div>
+  <div id=""contenedor_MAT-1-GEO-002"" class=""contenedor-preguntas""></div>
+  <button id=""comprobar_MAT-1-GEO-002"" class=""btn-comprobar"">¡Comprobar respuestas!</button>
+  <div id=""feedback_MAT-1-GEO-002"" class=""feedback""></div>
+</div>
+
+<script>
+(function(){
+  const preguntas_MAT_1_GEO_002 = [
+    {
+      id: 1,
+      texto: ""¿Qué forma tiene la pelota?"",
+      visual: ""⚽"",
+      opciones: [""Círculo"", ""Cuadrado"", ""Triángulo""],
+      correcta: 0
+    },
+    {
+      id: 2,
+      texto: ""¿Qué forma tiene esta ventana?"",
+      visual: ""🏠"",
+      opciones: [""Triángulo"", ""Cuadrado"", ""Círculo""],
+      correcta: 1
+    },
+    {
+      id: 3,
+      texto: ""¿Qué forma tiene el sombrero?"",
+      visual: ""🎩"",
+      opciones: [""Cuadrado"", ""Círculo"", ""Triángulo""],
+      correcta: 1
+    },
+    {
+      id: 4,
+      texto: ""La pizza tiene forma de:"",
+      visual: ""🍕"",
+      opciones: [""Círculo"", ""Cuadrado"", ""Triángulo""],
+      correcta: 2
+    },
+    {
+      id: 5,
+      texto: ""¿La moneda es redonda?"",
+      visual: ""🪙"",
+      opciones: [""Sí"", ""No""],
+      correcta: 0
+    },
+    {
+      id: 6,
+      texto: ""El dado tiene forma de:"",
+      visual: ""🎲"",
+      opciones: [""Círculo"", ""Cuadrado"", ""Triángulo""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""¿Qué forma tiene la señal?"",
+      visual: ""🛑"",
+      opciones: [""Triángulo"", ""Círculo"", ""Octágono""],
+      correcta: 2
+    },
+    {
+      id: 8,
+      texto: ""La rueda es:"",
+      visual: ""🛞"",
+      opciones: [""Cuadrada"", ""Redonda"", ""Triangular""],
+      correcta: 1
+    },
+    {
+      id: 9,
+      texto: ""¿El reloj tiene forma redonda?"",
+      visual: ""🕐"",
+      opciones: [""Sí"", ""No""],
+      correcta: 0
+    },
+    {
+      id: 10,
+      texto: ""La bandera tiene forma de:"",
+      visual: ""🚩"",
+      opciones: [""Cuadrado"", ""Triángulo"", ""Círculo""],
+      correcta: 1
+    },
+    {
+      id: 11,
+      texto: ""¿Qué forma tiene la caja?"",
+      visual: ""📦"",
+      opciones: [""Círculo"", ""Cuadrado"", ""Triángulo""],
+      correcta: 1
+    },
+    {
+      id: 12,
+      texto: ""El huevo tiene forma de:"",
+      visual: ""🥚"",
+      opciones: [""Óvalo"", ""Cuadrado"", ""Triángulo""],
+      correcta: 0
+    }
+  ];
+
+  function generarHTML_MAT_1_GEO_002() {
+    const contenedor = document.getElementById('contenedor_MAT-1-GEO-002');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_MAT_1_GEO_002.length; i++) {
+      const p = preguntas_MAT_1_GEO_002[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">';
+        html += p.opciones[j];
+        html += '</button>';
+      }
+      
+      html += '</div>';
+      html += '</div>';
+    }
+    
+    contenedor.innerHTML = html;
+    
+    const botones = contenedor.querySelectorAll('.opcion-btn');
+    botones.forEach(function(boton) {
+      boton.addEventListener('click', function() {
+        const preguntaId = this.getAttribute('data-pregunta');
+        const hermanos = contenedor.querySelectorAll('[data-pregunta=""' + preguntaId + '""]');
+        hermanos.forEach(function(hermano) {
+          hermano.classList.remove('seleccionado');
+        });
+        this.classList.add('seleccionado');
+        actualizarProgreso_MAT_1_GEO_002();
+      });
+    });
+  }
+
+  function actualizarProgreso_MAT_1_GEO_002() {
+    const seleccionados = document.querySelectorAll('#contenedor_MAT-1-GEO-002 .opcion-btn.seleccionado');
+    const total = preguntas_MAT_1_GEO_002.length;
+    const respondidas = seleccionados.length;
+    
+    document.getElementById('progreso_MAT-1-GEO-002').textContent = respondidas + ' de ' + total;
+  }
+
+  function comprobarRespuestas_MAT_1_GEO_002() {
+    let aciertos = 0;
+    const total = preguntas_MAT_1_GEO_002.length;
+    
+    for (let i = 0; i < preguntas_MAT_1_GEO_002.length; i++) {
+      const pregunta = preguntas_MAT_1_GEO_002[i];
+      const bloqueEjercicio = document.querySelector('[data-pregunta=""' + pregunta.id + '""]');
+      const botonSeleccionado = bloqueEjercicio.querySelector('.opcion-btn.seleccionado');
+      
+      if (botonSeleccionado) {
+        const valorSeleccionado = parseInt(botonSeleccionado.getAttribute('data-valor'));
+        const botones = bloqueEjercicio.querySelectorAll('.opcion-btn');
+        
+        botones.forEach(function(boton) {
+          boton.classList.remove('correcto', 'incorrecto');
+        });
+        
+        if (valorSeleccionado === pregunta.correcta) {
+          botonSeleccionado.classList.add('correcto');
+          aciertos++;
+        } else {
+          botonSeleccionado.classList.add('incorrecto');
+          botones[pregunta.correcta].classList.add('correcto');
+        }
+      }
+    }
+    
+    const feedback = document.getElementById('feedback_MAT-1-GEO-002');
+    feedback.innerHTML = '⭐ ' + aciertos + ' de ' + total + ' ¡Genial!';
+    
+    if (aciertos >= 8) {
+      feedback.className = 'feedback exito';
+    } else {
+      feedback.className = 'feedback mejorar';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    generarHTML_MAT_1_GEO_002();
+    
+    document.getElementById('comprobar_MAT-1-GEO-002').addEventListener('click', function() {
+      comprobarRespuestas_MAT_1_GEO_002();
+    });
+  });
+})();
+</script>"

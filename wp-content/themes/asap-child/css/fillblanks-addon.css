@@ -1,0 +1,157 @@
+/* ================================================================
+   FILL IN THE BLANKS ADDON v2.1 - INTEGRADO CON BOTÓN GLOBAL
+   Sin botones individuales - Se comprueba con .btn-comprobar global
+   ================================================================ */
+
+/* Contenedor principal - ESTILO CARD UNIFICADO */
+.ejercicio-fillblanks {
+    background: white;
+    border: 3px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    /* FORZAR ANCHO COMPLETO */
+    grid-column: 1 / -1 !important;
+    width: 100%;
+}
+
+.ejercicio-fillblanks:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+/* Título del bloque */
+.pregunta-fillblanks {
+    font-weight: 800;
+    font-size: 20px;
+    color: #2571A3;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e2e8f0;
+}
+
+/* Contenido con inputs */
+.fillblanks-contenido {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+}
+
+.fillblanks-texto {
+    font-size: 17px;
+    line-height: 2.2;
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+.fillblanks-texto:last-child {
+    margin-bottom: 0;
+}
+
+/* Inputs - DISEÑO MEJORADO */
+.fillblank-input {
+    display: inline-block;
+    min-width: 140px;
+    padding: 8px 16px;
+    border: 3px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+    color: #2571A3;
+}
+
+.fillblank-input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.fillblank-input:focus {
+    outline: none;
+    border-color: #2571A3;
+    background: #eff6ff;
+    box-shadow: 0 0 0 4px rgba(37, 113, 163, 0.1);
+    transform: scale(1.02);
+}
+
+.fillblank-input.correcto {
+    background: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+    animation: inputCorrecto 0.5s ease;
+}
+
+.fillblank-input.incorrecto {
+    background: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+    animation: inputIncorrecto 0.5s ease;
+}
+
+@keyframes inputCorrecto {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes inputIncorrecto {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.fillblank-input:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* OCULTAR botones de acción individuales */
+.acciones-fillblanks,
+.feedback-fillblanks {
+    display: none !important;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+    .ejercicio-fillblanks {
+        padding: 25px;
+    }
+
+    .fillblanks-contenido {
+        padding: 20px;
+    }
+
+    .fillblank-input {
+        min-width: 110px;
+        font-size: 16px;
+        padding: 7px 14px;
+    }
+
+    .fillblanks-texto {
+        font-size: 16px;
+        line-height: 2.3;
+    }
+
+    .pregunta-fillblanks {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ejercicio-fillblanks {
+        padding: 20px;
+    }
+
+    .fillblank-input {
+        min-width: 100px;
+        font-size: 15px;
+    }
+
+    .fillblanks-contenido {
+        padding: 18px;
+    }
+}

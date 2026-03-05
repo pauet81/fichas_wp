@@ -1,0 +1,23 @@
+{
+    "name": "asap/theme",
+    "description": "ASAP Theme with AI capabilities",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "fivefilters/readability.php": "^3.1"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "optimize-autoloader": true,
+        "classmap-authoritative": true
+    },
+    "autoload": {
+        "psr-4": {
+            "ASAP\\IA\\": "inc/ia/"
+        }
+    }
+}
+
+
+

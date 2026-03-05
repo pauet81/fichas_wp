@@ -1,0 +1,530 @@
+0000.000 (0) Opened log file at time: Fri, 06 Feb 2026 14:43:21 +0000 on https://fichas.es
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.26.1 WP: 6.9.1 PHP: 8.1.33 (litespeed, Linux com1200.raiolanetworks.es 5.14.0-284.1101.el9.tuxcare.7.els20.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Sep 24 16:11:55 UTC 2025 x86_64) MySQL: 11.4.9-MariaDB-cll-lve (max packet size=524288000) WPLANG: es_ES Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 10M | 12M) multisite: N openssl: OpenSSL 3.2.2 4 Jun 2024 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.035 (0) Free space on disk containing Updraft's temporary directory: 3744222.1 MB
+0000.037 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.038 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.039 (0) Set semaphore last lock (fd) time to 2026-02-06 14:43:21
+0000.039 (0) Semaphore lock (fd) complete
+0000.040 (0) Backup run: resumption=0, nonce=1b0f2b065d72, file_nonce=1b0f2b065d72 begun at=1770389001 (0s ago), job type=backup
+0000.041 (0) Scheduling a resumption (1) after 300 seconds (1770389301) in case this run gets aborted
+0000.056 (0) Checking if we have a zip executable available
+0000.056 (0) Testing: /usr/bin/zip
+0000.058 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.058 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.059 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.059 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.059 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.063 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.063 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.064 (0) Working binary zip found: /usr/bin/zip
+0000.065 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.065 (0) Creation of backups of directories: beginning
+0000.066 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.259 (0) Total entities for the zip file: 1716 directories, 9357 files (0 skipped as non-modified), 124.1 MB
+0000.261 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.263 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.264 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.266 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.267 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.269 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.270 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.272 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.273 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.275 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.275 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (4.6 MB, 9357 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0000.444 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: size is now: 2.40 MB
+0000.446 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1100 files added (on-disk size: 2459.3 KB)
+0000.447 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1200 files added (on-disk size: 2459.3 KB)
+0000.449 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1300 files added (on-disk size: 2459.3 KB)
+0000.450 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1400 files added (on-disk size: 2459.3 KB)
+0000.452 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1500 files added (on-disk size: 2459.3 KB)
+0000.453 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1600 files added (on-disk size: 2459.3 KB)
+0000.454 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1700 files added (on-disk size: 2459.3 KB)
+0000.456 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1800 files added (on-disk size: 2459.3 KB)
+0000.457 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 1900 files added (on-disk size: 2459.3 KB)
+0000.459 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.2 MB, 9357 files batched, 993 (1994) added so far); re-opening (prior size: 2459.3 KB)
+0001.270 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: size is now: 9.70 MB
+0001.271 (0) A useful amount of data was added after this amount of zip processing: 0.9 s (normalised: 0.9 s, rate: 27337.2 KB/s)
+0001.272 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.94478607177734, normalised_time=0.93645328649466, max_time=1.2715661525726, data points known=1, old_max_bytes=26214400, new_max_bytes=167959686)
+0001.273 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2000 files added (on-disk size: 9903.7 KB)
+0001.274 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2100 files added (on-disk size: 9903.7 KB)
+0001.276 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2200 files added (on-disk size: 9903.7 KB)
+0001.277 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2300 files added (on-disk size: 9903.7 KB)
+0001.279 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2400 files added (on-disk size: 9903.7 KB)
+0001.280 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2500 files added (on-disk size: 9903.7 KB)
+0001.282 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2600 files added (on-disk size: 9903.7 KB)
+0001.283 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2700 files added (on-disk size: 9903.7 KB)
+0001.285 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2800 files added (on-disk size: 9903.7 KB)
+0001.286 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 2900 files added (on-disk size: 9903.7 KB)
+0001.288 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (11.3 MB, 9357 files batched, 1001 (2995) added so far); re-opening (prior size: 9903.7 KB)
+0001.835 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: size is now: 13.00 MB
+0001.837 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3000 files added (on-disk size: 13332.7 KB)
+0001.839 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3100 files added (on-disk size: 13332.7 KB)
+0001.840 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3200 files added (on-disk size: 13332.7 KB)
+0001.841 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3300 files added (on-disk size: 13332.7 KB)
+0001.843 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3400 files added (on-disk size: 13332.7 KB)
+0001.845 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3500 files added (on-disk size: 13332.7 KB)
+0001.846 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3600 files added (on-disk size: 13332.7 KB)
+0001.847 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3700 files added (on-disk size: 13332.7 KB)
+0001.849 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3800 files added (on-disk size: 13332.7 KB)
+0001.850 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 3900 files added (on-disk size: 13332.7 KB)
+0001.852 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (22.2 MB, 9357 files batched, 1001 (3996) added so far); re-opening (prior size: 13332.7 KB)
+0004.091 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: size is now: 22.50 MB
+0004.092 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4000 files added (on-disk size: 23078.6 KB)
+0004.094 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4100 files added (on-disk size: 23078.6 KB)
+0004.095 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4200 files added (on-disk size: 23078.6 KB)
+0004.097 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4300 files added (on-disk size: 23078.6 KB)
+0004.099 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4400 files added (on-disk size: 23078.6 KB)
+0004.100 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4500 files added (on-disk size: 23078.6 KB)
+0004.102 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4600 files added (on-disk size: 23078.6 KB)
+0004.103 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4700 files added (on-disk size: 23078.6 KB)
+0004.105 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4800 files added (on-disk size: 23078.6 KB)
+0004.107 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 4900 files added (on-disk size: 23078.6 KB)
+0004.108 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (5.6 MB, 9357 files batched, 1001 (4997) added so far); re-opening (prior size: 23078.6 KB)
+0006.509 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5000 files added (on-disk size: 24760.9 KB)
+0006.511 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5100 files added (on-disk size: 24760.9 KB)
+0006.513 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5200 files added (on-disk size: 24760.9 KB)
+0006.514 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5300 files added (on-disk size: 24760.9 KB)
+0006.516 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5400 files added (on-disk size: 24760.9 KB)
+0006.517 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5500 files added (on-disk size: 24760.9 KB)
+0006.518 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5600 files added (on-disk size: 24760.9 KB)
+0006.520 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5700 files added (on-disk size: 24760.9 KB)
+0006.521 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5800 files added (on-disk size: 24760.9 KB)
+0006.523 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 5900 files added (on-disk size: 24760.9 KB)
+0006.524 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.7 MB, 9357 files batched, 1001 (5998) added so far); re-opening (prior size: 24760.9 KB)
+0009.202 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6000 files added (on-disk size: 27616 KB)
+0009.203 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6100 files added (on-disk size: 27616 KB)
+0009.205 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6200 files added (on-disk size: 27616 KB)
+0009.206 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6300 files added (on-disk size: 27616 KB)
+0009.208 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6400 files added (on-disk size: 27616 KB)
+0009.209 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6500 files added (on-disk size: 27616 KB)
+0009.211 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6600 files added (on-disk size: 27616 KB)
+0009.212 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6700 files added (on-disk size: 27616 KB)
+0009.214 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6800 files added (on-disk size: 27616 KB)
+0009.215 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 6900 files added (on-disk size: 27616 KB)
+0009.217 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (27.1 MB, 9357 files batched, 1001 (6999) added so far); re-opening (prior size: 27616 KB)
+0012.759 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: size is now: 34.90 MB
+0012.760 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7000 files added (on-disk size: 35693.6 KB)
+0012.762 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7100 files added (on-disk size: 35693.6 KB)
+0012.763 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7200 files added (on-disk size: 35693.6 KB)
+0012.765 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7300 files added (on-disk size: 35693.6 KB)
+0012.767 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7400 files added (on-disk size: 35693.6 KB)
+0012.768 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7500 files added (on-disk size: 35693.6 KB)
+0012.770 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7600 files added (on-disk size: 35693.6 KB)
+0012.772 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7700 files added (on-disk size: 35693.6 KB)
+0012.773 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7800 files added (on-disk size: 35693.6 KB)
+0012.775 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 7900 files added (on-disk size: 35693.6 KB)
+0012.776 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (6.2 MB, 9357 files batched, 1001 (8000) added so far); re-opening (prior size: 35693.6 KB)
+0016.343 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8000 files added (on-disk size: 37520.5 KB)
+0016.346 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8100 files added (on-disk size: 37520.5 KB)
+0016.348 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8200 files added (on-disk size: 37520.5 KB)
+0016.350 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8300 files added (on-disk size: 37520.5 KB)
+0016.352 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8400 files added (on-disk size: 37520.5 KB)
+0016.353 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8500 files added (on-disk size: 37520.5 KB)
+0016.355 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8600 files added (on-disk size: 37520.5 KB)
+0016.356 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8700 files added (on-disk size: 37520.5 KB)
+0016.357 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8800 files added (on-disk size: 37520.5 KB)
+0016.359 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 8900 files added (on-disk size: 37520.5 KB)
+0016.360 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 9000 files added (on-disk size: 37520.5 KB)
+0016.361 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.4 MB, 9357 files batched, 1001 (9001) added so far); re-opening (prior size: 37520.5 KB)
+0020.318 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 9100 files added (on-disk size: 40748.8 KB)
+0020.320 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 9200 files added (on-disk size: 40748.8 KB)
+0020.321 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.tmp: 9300 files added (on-disk size: 40748.8 KB)
+0024.534 (0) Creating zip file manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.list-temp.tmp)
+0024.575 (0) Successfully created zip file manifest (size: 865518)
+0024.883 (0) Created plugins zip (0) - 42646.4 KB in 24.8 s (1720.8 KB/s) (sha1: d1235157a8af59fa0d9bf6213a922dd25c313059, sha256: d6301cfc0d62839112590ef74a31011da2f24f06312592b1ac109024ff24c1d6)
+0024.889 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0024.890 (0) No remote despatch: user chose no remote backup service
+0024.890 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip
+0024.890 (0) Deleting zip manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip.list.tmp)
+0024.891 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0024.893 (0) Number of backup sets in history: 2; groups (db): 1
+0024.894 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0024.894 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0024.894 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0024.894 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0024.894 (0) Number of backup sets in history: 2; groups (files): 1
+0024.895 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0024.895 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0024.895 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0024.895 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0024.895 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0024.897 (0) Beginning creation of dump of themes (split every: 400 MB)
+0024.947 (0) Total entities for the zip file: 243 directories, 1073 files (0 skipped as non-modified), 30.2 MB
+0024.949 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0024.951 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0024.952 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0024.954 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0024.955 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0024.957 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0024.958 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0024.960 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0024.961 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0024.963 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0024.964 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (26.8 MB, 1073 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0026.688 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.tmp: size is now: 21.40 MB
+0029.147 (0) Creating zip file manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.list-temp.tmp)
+0029.152 (0) Successfully created zip file manifest (size: 74283)
+0029.333 (0) Created themes zip (0) - 25128.1 KB in 4.4 s (5710.1 KB/s) (sha1: 38e558cbbcb7f664166b608ed12dcb4070df8762, sha256: 81d9462d7b36fdcd6bde0becdf7b5dbf8be80e8b59a2067bc91c4c39fd2fb823)
+0029.334 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0029.335 (0) No remote despatch: user chose no remote backup service
+0029.335 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip
+0029.335 (0) Deleting zip manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip.list.tmp)
+0029.336 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0029.337 (0) Number of backup sets in history: 2; groups (db): 1
+0029.337 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.337 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.337 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.337 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.337 (0) Number of backup sets in history: 2; groups (files): 1
+0029.338 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.338 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.338 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.338 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.338 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0029.340 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots,wp-staging
+0029.340 (0) Looking for candidates to backup in: /home/favrnzzb/fichas.es/wp-content/uploads
+0029.340 (0) finding files: 2025: adding to list (1)
+0029.340 (0) finding files: wpallexport: adding to list (2)
+0029.341 (0) finding files: wpallimport: adding to list (3)
+0029.341 (0) finding files: wpcode: adding to list (4)
+0029.341 (0) finding files: wp-migrate-db: adding to list (5)
+0029.341 (0) finding files: webp-express-test-conversion.webp: adding to list (6)
+0029.342 (0) finding files: et_temp: adding to list (7)
+0029.342 (0) finding files: 2026: adding to list (8)
+0029.342 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0029.381 (0) Total entities for the zip file: 76 directories, 286 files (0 skipped as non-modified), 9.1 MB
+0029.383 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0029.384 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0029.674 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip.tmp: size is now: 5.00 MB
+0029.677 (0) Creating zip file manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip.list-temp.tmp)
+0029.678 (0) Successfully created zip file manifest (size: 21744)
+0029.716 (0) Created uploads zip (0) - 5149.2 KB in 0.3 s (15146.6 KB/s) (sha1: 63aa58d4f196c5ad41156b1945e881084b6d43d5, sha256: d6b0084f5390954e25d65796f1572e3669ad10da99578f6ddef004f0eca353e3)
+0029.718 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0029.718 (0) No remote despatch: user chose no remote backup service
+0029.719 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip
+0029.719 (0) Deleting zip manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip.list.tmp)
+0029.720 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0029.720 (0) Number of backup sets in history: 2; groups (db): 1
+0029.721 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.721 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.721 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.721 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.721 (0) Number of backup sets in history: 2; groups (files): 1
+0029.721 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.721 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.721 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.721 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.722 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0029.723 (0) Beginning creation of dump of mu-plugins (split every: 400 MB)
+0029.758 (0) Total entities for the zip file: 1 directories, 1 files (0 skipped as non-modified), 0 MB
+0029.763 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-mu-plugins.zip.tmp: size is now: 0.00 MB
+0029.764 (0) Creating zip file manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-mu-plugins.zip.list-temp.tmp)
+0029.765 (0) Successfully created zip file manifest (size: 83)
+0029.766 (0) Created mu-plugins zip (0) - 0.9 KB in 0 s (109.9 KB/s) (sha1: 3386a8dd3ac20ab7e2e23b7afd9705668bdbbfd9, sha256: 95fc616f4217253defe169928d0c4281f7e266cbcac3a59edefd5227cce73a1e)
+0029.768 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0029.768 (0) No remote despatch: user chose no remote backup service
+0029.768 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-mu-plugins.zip
+0029.769 (0) Deleting zip manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-mu-plugins.zip.list.tmp)
+0029.769 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0029.770 (0) Number of backup sets in history: 2; groups (db): 1
+0029.770 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.770 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.770 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.770 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.771 (0) Number of backup sets in history: 2; groups (files): 1
+0029.771 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0029.771 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.771 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0029.771 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0029.771 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0029.773 (0) Beginning backup of other directories found in the content directory (index: 0)
+0029.773 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0029.773 (0) Looking for candidates to backup in: /home/favrnzzb/fichas.es/wp-content
+0029.774 (0) finding files: languages: adding to list (1)
+0029.774 (0) finding files: litespeed: adding to list (2)
+0029.774 (0) finding files: mu-plugins: skipping: this is the mu-plugins directory
+0029.774 (0) finding files: webp-express: adding to list (3)
+0029.775 (0) finding files: themes: skipping: this is the themes directory
+0029.775 (0) finding files: index.php: adding to list (4)
+0029.775 (0) finding files: upgrade-temp-backup: adding to list (5)
+0029.775 (0) finding files: upgrade: skipping: excluded by options
+0029.776 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0029.776 (0) finding files: plugins: skipping: this is the plugins directory
+0029.776 (0) finding files: uploads: skipping: this is the uploads directory
+0029.776 (0) finding files: updraft: skipping: this is the updraft directory
+0029.813 (0) Total entities for the zip file: 12 directories, 185 files (0 skipped as non-modified), 7.8 MB
+0029.815 (0) Zip: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0030.140 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip.tmp: size is now: 2.30 MB
+0030.142 (0) Creating zip file manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip.list-temp.tmp)
+0030.144 (0) Successfully created zip file manifest (size: 12278)
+0030.162 (0) Created others zip (0) - 2313.2 KB in 0.4 s (6590.2 KB/s) (sha1: e95a33048fb70d7e4f16d4b418b535ac168a81a2, sha256: 3bbfd4d24a8da183a2d6d90d03738668f8619602c52aab057fc7d32ef8549d70)
+0030.163 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0030.164 (0) No remote despatch: user chose no remote backup service
+0030.164 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip
+0030.164 (0) Deleting zip manifest (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip.list.tmp)
+0030.165 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0030.166 (0) Number of backup sets in history: 2; groups (db): 1
+0030.166 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0030.166 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.166 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0030.166 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.166 (0) Number of backup sets in history: 2; groups (files): 1
+0030.166 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0030.166 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.167 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0030.167 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.167 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0030.169 (0) Saving backup status to database (elements: 10)
+0030.170 (0) Beginning creation of database dump (WordPress DB)
+0030.171 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0030.171 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0030.194 (0) Output: /*M!999999\- enable the sandbox mode */ \n/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*M!100616 SET @OLD_NOTE_VERBOSITY=@@NOTE_VERBOSITY, NOTE_VERBOSITY=0 */;\nDROP TABLE IF EXISTS `mzvw_options`;\n/*!40101 SET @saved_cs_client     = @@character_set (truncated - 1526 bytes total)
+0030.195 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0030.199 (0) Table mzvw_options: Total expected rows (via COUNT): 528
+0030.272 (0) Table mzvw_options: Rows added in this batch (next record: 23701): 524 (uncompressed bytes in this segment=1381302) in 0.07 seconds
+0030.274 (0) Table mzvw_options: finishing file(s) (2, 338.7 KB)
+0030.275 (0) Table mzvw_users: Total expected rows (via COUNT): 1
+0030.276 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.277 (0) Table mzvw_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1202) in 0.00 seconds
+0030.278 (0) Table mzvw_users: finishing file(s) (2, 0.6 KB)
+0030.280 (0) Table mzvw_usermeta: Total expected rows (via COUNT): 44
+0030.281 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.282 (0) Table mzvw_usermeta: Rows added in this batch (next record: 44): 44 (uncompressed bytes in this segment=6354) in 0.00 seconds
+0030.284 (0) Table mzvw_usermeta: finishing file(s) (2, 2.6 KB)
+0030.286 (0) Table mzvw_commentmeta: Total expected rows (via COUNT): 0
+0030.287 (0) Table mzvw_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=646) in 0.00 seconds
+0030.289 (0) Table mzvw_commentmeta: finishing file(s) (2, 0.4 KB)
+0030.291 (0) Table mzvw_comments: Total expected rows (via COUNT): 1
+0030.291 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.292 (0) Table mzvw_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1896) in 0.00 seconds
+0030.293 (0) Table mzvw_comments: finishing file(s) (2, 0.7 KB)
+0030.295 (0) Table mzvw_links: Total expected rows (via COUNT): 0
+0030.296 (0) Table mzvw_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1039) in 0.00 seconds
+0030.297 (0) Table mzvw_links: finishing file(s) (2, 0.5 KB)
+0030.300 (0) Table mzvw_postmeta: Total expected rows (approximate): 5787
+0030.333 (0) Table mzvw_postmeta: Rows added in this batch (next record: 10410): 5701 (uncompressed bytes in this segment=703497) in 0.04 seconds
+0030.335 (0) Table mzvw_postmeta: finishing file(s) (2, 87.2 KB)
+0030.337 (0) Table mzvw_posts: Total expected rows (via COUNT): 381
+0030.337 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.352 (0) Table mzvw_posts: Rows added in this batch (next record: 437): 381 (uncompressed bytes in this segment=418015) in 0.02 seconds
+0030.353 (0) Table mzvw_posts: finishing file(s) (2, 54.6 KB)
+0030.355 (0) Table mzvw_term_relationships: Total expected rows (approximate): 478
+0030.356 (0) Table mzvw_term_relationships: Rows added in this batch (next record: 100000): 498 (uncompressed bytes in this segment=8163) in 0.00 seconds
+0030.358 (0) Table mzvw_term_relationships: finishing file(s) (2, 1.6 KB)
+0030.361 (0) Table mzvw_term_taxonomy: Total expected rows (via COUNT): 103
+0030.361 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.362 (0) Table mzvw_term_taxonomy: Rows added in this batch (next record: 112): 103 (uncompressed bytes in this segment=4278) in 0.00 seconds
+0030.364 (0) Table mzvw_term_taxonomy: finishing file(s) (2, 1.2 KB)
+0030.366 (0) Table mzvw_termmeta: Total expected rows (via COUNT): 0
+0030.367 (0) Table mzvw_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=637) in 0.00 seconds
+0030.368 (0) Table mzvw_termmeta: finishing file(s) (2, 0.4 KB)
+0030.369 (0) Table mzvw_terms: Total expected rows (via COUNT): 103
+0030.370 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.371 (0) Table mzvw_terms: Rows added in this batch (next record: 112): 103 (uncompressed bytes in this segment=4764) in 0.00 seconds
+0030.372 (0) Table mzvw_terms: finishing file(s) (2, 1.7 KB)
+0030.374 (0) Table mzvw_asap_ia_generation_logs: Total expected rows (via COUNT): 0
+0030.375 (0) Table mzvw_asap_ia_generation_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1051) in 0.00 seconds
+0030.376 (0) Table mzvw_asap_ia_generation_logs: finishing file(s) (2, 0.5 KB)
+0030.379 (0) Table mzvw_asap_ia_logs: Total expected rows (via COUNT): 0
+0030.379 (0) Table mzvw_asap_ia_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1010) in 0.00 seconds
+0030.380 (0) Table mzvw_asap_ia_logs: finishing file(s) (2, 0.5 KB)
+0030.383 (0) Table mzvw_asap_ia_queue: Total expected rows (via COUNT): 0
+0030.383 (0) Table mzvw_asap_ia_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1052) in 0.00 seconds
+0030.385 (0) Table mzvw_asap_ia_queue: finishing file(s) (2, 0.5 KB)
+0030.386 (0) Table mzvw_litespeed_url: Total expected rows (via COUNT): 0
+0030.386 (0) Table mzvw_litespeed_url: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=589) in 0.00 seconds
+0030.387 (0) Table mzvw_litespeed_url: finishing file(s) (2, 0.4 KB)
+0030.389 (0) Table mzvw_litespeed_url_file: Total expected rows (via COUNT): 0
+0030.389 (0) Table mzvw_litespeed_url_file: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1121) in 0.00 seconds
+0030.391 (0) Table mzvw_litespeed_url_file: finishing file(s) (2, 0.5 KB)
+0030.393 (0) Table mzvw_pmxe_exports: Total expected rows (via COUNT): 2
+0030.393 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.394 (0) Table mzvw_pmxe_exports: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=32376) in 0.00 seconds
+0030.396 (0) Table mzvw_pmxe_exports: finishing file(s) (2, 5 KB)
+0030.397 (0) Table mzvw_pmxe_google_cats: Total expected rows (approximate): 5512
+0030.427 (0) Table mzvw_pmxe_google_cats: Rows added in this batch (next record: 505832): 5371 (uncompressed bytes in this segment=327539) in 0.03 seconds
+0030.429 (0) Table mzvw_pmxe_google_cats: finishing file(s) (2, 75.4 KB)
+0030.430 (0) Table mzvw_pmxe_posts: Total expected rows (via COUNT): 81
+0030.431 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.432 (0) Table mzvw_pmxe_posts: Rows added in this batch (next record: 81): 81 (uncompressed bytes in this segment=2026) in 0.00 seconds
+0030.433 (0) Table mzvw_pmxe_posts: finishing file(s) (2, 0.7 KB)
+0030.435 (0) Table mzvw_pmxe_templates: Total expected rows (via COUNT): 1
+0030.435 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.436 (0) Table mzvw_pmxe_templates: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=16097) in 0.00 seconds
+0030.438 (0) Table mzvw_pmxe_templates: finishing file(s) (2, 4 KB)
+0030.439 (0) Table mzvw_pmxi_files: Total expected rows (via COUNT): 6
+0030.439 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.440 (0) Table mzvw_pmxi_files: Rows added in this batch (next record: 88): 6 (uncompressed bytes in this segment=1703) in 0.00 seconds
+0030.441 (0) Table mzvw_pmxi_files: finishing file(s) (2, 0.8 KB)
+0030.443 (0) Table mzvw_pmxi_geocoding: Total expected rows (via COUNT): 0
+0030.443 (0) Table mzvw_pmxi_geocoding: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=802) in 0.00 seconds
+0030.444 (0) Table mzvw_pmxi_geocoding: finishing file(s) (2, 0.5 KB)
+0030.446 (0) Table mzvw_pmxi_hash: Total expected rows (approximate): 156
+0030.447 (0) Table mzvw_pmxi_hash: Rows added in this batch (next record: 1000): 164 (uncompressed bytes in this segment=9556) in 0.00 seconds
+0030.448 (0) Table mzvw_pmxi_hash: finishing file(s) (2, 4.2 KB)
+0030.449 (0) Table mzvw_pmxi_history: Total expected rows (via COUNT): 11
+0030.450 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.450 (0) Table mzvw_pmxi_history: Rows added in this batch (next record: 45): 11 (uncompressed bytes in this segment=1806) in 0.00 seconds
+0030.452 (0) Table mzvw_pmxi_history: finishing file(s) (2, 0.7 KB)
+0030.453 (0) Table mzvw_pmxi_images: Total expected rows (via COUNT): 14
+0030.453 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.454 (0) Table mzvw_pmxi_images: Rows added in this batch (next record: 14): 14 (uncompressed bytes in this segment=1233) in 0.00 seconds
+0030.455 (0) Table mzvw_pmxi_images: finishing file(s) (2, 0.6 KB)
+0030.457 (0) Table mzvw_pmxi_imports: Total expected rows (via COUNT): 6
+0030.458 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.460 (0) Table mzvw_pmxi_imports: Rows added in this batch (next record: 9): 6 (uncompressed bytes in this segment=76494) in 0.00 seconds
+0030.462 (0) Table mzvw_pmxi_imports: finishing file(s) (2, 7.1 KB)
+0030.463 (0) Table mzvw_pmxi_posts: Total expected rows (via COUNT): 210
+0030.464 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.466 (0) Table mzvw_pmxi_posts: Rows added in this batch (next record: 328): 210 (uncompressed bytes in this segment=9340) in 0.00 seconds
+0030.467 (0) Table mzvw_pmxi_posts: finishing file(s) (2, 2.7 KB)
+0030.469 (0) Table mzvw_pmxi_templates: Total expected rows (via COUNT): 3
+0030.469 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.471 (0) Table mzvw_pmxi_templates: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=37215) in 0.00 seconds
+0030.472 (0) Table mzvw_pmxi_templates: finishing file(s) (2, 5.2 KB)
+0030.474 (0) Table mzvw_yoast_indexable: Total expected rows (via COUNT): 197
+0030.475 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.482 (0) Table mzvw_yoast_indexable: Rows added in this batch (next record: 252): 197 (uncompressed bytes in this segment=109271) in 0.01 seconds
+0030.483 (0) Table mzvw_yoast_indexable: finishing file(s) (2, 15.2 KB)
+0030.485 (0) Table mzvw_yoast_indexable_hierarchy: Total expected rows (approximate): 225
+0030.486 (0) Table mzvw_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 225 (uncompressed bytes in this segment=4665) in 0.00 seconds
+0030.487 (0) Table mzvw_yoast_indexable_hierarchy: finishing file(s) (2, 1 KB)
+0030.488 (0) Table mzvw_yoast_migrations: Total expected rows (via COUNT): 24
+0030.489 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.490 (0) Table mzvw_yoast_migrations: Rows added in this batch (next record: 24): 24 (uncompressed bytes in this segment=1252) in 0.00 seconds
+0030.491 (0) Table mzvw_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0030.492 (0) Table mzvw_yoast_primary_term: Total expected rows (via COUNT): 10
+0030.493 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.493 (0) Table mzvw_yoast_primary_term: Rows added in this batch (next record: 14): 10 (uncompressed bytes in this segment=1631) in 0.00 seconds
+0030.494 (0) Table mzvw_yoast_primary_term: finishing file(s) (2, 0.7 KB)
+0030.496 (0) Table mzvw_yoast_seo_links: Total expected rows (via COUNT): 0
+0030.497 (0) Table mzvw_yoast_seo_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1023) in 0.00 seconds
+0030.498 (0) Table mzvw_yoast_seo_links: finishing file(s) (2, 0.4 KB)
+0030.498 (0) PHP event: code E_WARNING: filemtime(): stat failed for /home/favrnzzb/fichas.es/wp-content/updraft/backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db.gz (line 1923, wp-content/plugins/updraftplus/backup.php)
+0030.499 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_options.table.tmpr23702.gz (1/34/fopen): adding to final database dump
+0030.505 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_options.table.gz (2/34/fopen): adding to final database dump
+0030.505 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_users.table.tmpr2.gz (3/34/fopen): adding to final database dump
+0030.505 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_users.table.gz (4/34/fopen): adding to final database dump
+0030.506 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_usermeta.table.tmpr45.gz (5/34/fopen): adding to final database dump
+0030.506 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_usermeta.table.gz (6/34/fopen): adding to final database dump
+0030.506 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_commentmeta.table.tmpr0.gz (7/34/fopen): adding to final database dump
+0030.507 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_commentmeta.table.gz (8/34/fopen): adding to final database dump
+0030.507 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_comments.table.tmpr2.gz (9/34/fopen): adding to final database dump
+0030.507 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_comments.table.gz (10/34/fopen): adding to final database dump
+0030.507 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_links.table.tmpr0.gz (11/34/fopen): adding to final database dump
+0030.508 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_links.table.gz (12/34/fopen): adding to final database dump
+0030.508 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_postmeta.table.tmpr10411.gz (13/34/fopen): adding to final database dump
+0030.509 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_postmeta.table.gz (14/34/fopen): adding to final database dump
+0030.510 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_posts.table.tmpr438.gz (15/34/fopen): adding to final database dump
+0030.511 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_posts.table.gz (16/34/fopen): adding to final database dump
+0030.511 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_term_relationships.table.tmpr100001.gz (17/34/fopen): adding to final database dump
+0030.511 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_term_relationships.table.gz (18/34/fopen): adding to final database dump
+0030.512 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_term_taxonomy.table.tmpr113.gz (19/34/fopen): adding to final database dump
+0030.512 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_term_taxonomy.table.gz (20/34/fopen): adding to final database dump
+0030.512 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_termmeta.table.tmpr0.gz (21/34/fopen): adding to final database dump
+0030.512 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_termmeta.table.gz (22/34/fopen): adding to final database dump
+0030.513 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_terms.table.tmpr113.gz (23/34/fopen): adding to final database dump
+0030.513 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_terms.table.gz (24/34/fopen): adding to final database dump
+0030.513 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_generation_logs.table.tmpr0.gz (25/34/fopen): adding to final database dump
+0030.513 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_generation_logs.table.gz (26/34/fopen): adding to final database dump
+0030.514 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_logs.table.tmpr0.gz (27/34/fopen): adding to final database dump
+0030.514 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_logs.table.gz (28/34/fopen): adding to final database dump
+0030.514 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_queue.table.tmpr0.gz (29/34/fopen): adding to final database dump
+0030.514 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_asap_ia_queue.table.gz (30/34/fopen): adding to final database dump
+0030.515 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_litespeed_url.table.tmpr0.gz (31/34/fopen): adding to final database dump
+0030.515 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_litespeed_url.table.gz (32/34/fopen): adding to final database dump
+0030.515 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_litespeed_url_file.table.tmpr0.gz (33/34/fopen): adding to final database dump
+0030.515 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_litespeed_url_file.table.gz (34/34/fopen): adding to final database dump
+0030.516 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_exports.table.tmpr3.gz (35/34/fopen): adding to final database dump
+0030.516 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_exports.table.gz (36/34/fopen): adding to final database dump
+0030.516 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_google_cats.table.tmpr505833.gz (37/34/fopen): adding to final database dump
+0030.518 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_google_cats.table.gz (38/34/fopen): adding to final database dump
+0030.518 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_posts.table.tmpr82.gz (39/34/fopen): adding to final database dump
+0030.518 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_posts.table.gz (40/34/fopen): adding to final database dump
+0030.518 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_templates.table.tmpr2.gz (41/34/fopen): adding to final database dump
+0030.519 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxe_templates.table.gz (42/34/fopen): adding to final database dump
+0030.519 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_files.table.tmpr89.gz (43/34/fopen): adding to final database dump
+0030.519 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_files.table.gz (44/34/fopen): adding to final database dump
+0030.519 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_geocoding.table.tmpr0.gz (45/34/fopen): adding to final database dump
+0030.519 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_geocoding.table.gz (46/34/fopen): adding to final database dump
+0030.520 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_hash.table.tmpr1001.gz (47/34/fopen): adding to final database dump
+0030.520 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_hash.table.gz (48/34/fopen): adding to final database dump
+0030.520 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_history.table.tmpr46.gz (49/34/fopen): adding to final database dump
+0030.521 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_history.table.gz (50/34/fopen): adding to final database dump
+0030.521 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_images.table.tmpr15.gz (51/34/fopen): adding to final database dump
+0030.521 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_images.table.gz (52/34/fopen): adding to final database dump
+0030.521 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_imports.table.tmpr10.gz (53/34/fopen): adding to final database dump
+0030.522 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_imports.table.gz (54/34/fopen): adding to final database dump
+0030.522 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_posts.table.tmpr329.gz (55/34/fopen): adding to final database dump
+0030.522 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_posts.table.gz (56/34/fopen): adding to final database dump
+0030.522 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_templates.table.tmpr4.gz (57/34/fopen): adding to final database dump
+0030.523 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_pmxi_templates.table.gz (58/34/fopen): adding to final database dump
+0030.523 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_indexable.table.tmpr253.gz (59/34/fopen): adding to final database dump
+0030.524 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_indexable.table.gz (60/34/fopen): adding to final database dump
+0030.524 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_indexable_hierarchy.table.tmpr1001.gz (61/34/fopen): adding to final database dump
+0030.524 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_indexable_hierarchy.table.gz (62/34/fopen): adding to final database dump
+0030.524 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_migrations.table.tmpr25.gz (63/34/fopen): adding to final database dump
+0030.525 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_migrations.table.gz (64/34/fopen): adding to final database dump
+0030.525 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_primary_term.table.tmpr15.gz (65/34/fopen): adding to final database dump
+0030.525 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_primary_term.table.gz (66/34/fopen): adding to final database dump
+0030.525 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_seo_links.table.tmpr0.gz (67/34/fopen): adding to final database dump
+0030.526 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db-table-mzvw_yoast_seo_links.table.gz (68/34/fopen): adding to final database dump
+0030.527 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db.gz: finished writing out complete database file (617.2 KB)
+0030.534 (0) Total database tables backed up: 34 (backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db.gz, size: 632181, sha1: 92ccafa863422d94c8623a82fd2a6003bad17f9f, sha256: 8c87daff948eb2a66c4e1ad8d8477d809bbda847edbdf4e44c3c5c2dfc75d870)
+0030.536 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-plugins.zip: plugins: This file has already been successfully processed
+0030.536 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-themes.zip: themes: This file has already been successfully processed
+0030.536 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-uploads.zip: uploads: This file has already been successfully processed
+0030.537 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-mu-plugins.zip: mu-plugins: This file has already been successfully processed
+0030.537 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-others.zip: others: This file has already been successfully processed
+0030.537 (0) backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db.gz: db: This file has not yet been successfully uploaded: will queue
+0030.537 (0) Saving backup history. Total backup size: 74.1 MB
+0030.538 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0030.539 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0030.539 (0) No remote despatch: user chose no remote backup service
+0030.540 (0) Recording as successfully uploaded: backup_2026-02-06-1443_Fichas_Interactivas_1b0f2b065d72-db.gz
+0030.541 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0030.541 (0) Number of backup sets in history: 3; groups (db): 1
+0030.541 (0) Examining (for databases) backup set with group_id=0, nonce=1b0f2b065d72, datestamp=1770389001 (Feb 06 2026 14:43:21)
+0030.542 (0) This backup set is the backup set just made, so will not be deleted.
+0030.542 (0) Examining (for databases) backup set with group_id=0, nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0030.542 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.542 (0) Examining (for databases) backup set with group_id=0, nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0030.542 (0) 1769702859: db: this set includes a database (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-db.gz); db count is now 2
+0030.542 (0) 1769702859: db: over retain limit (2); will delete this database
+0030.542 (0) Delete file: backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-db.gz, service=none
+0030.542 (0) Deleting local copy (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-db.gz)
+0030.543 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0030.543 (0) Number of backup sets in history: 3; groups (files): 1
+0030.543 (0) Examining (for files) backup set with nonce=1b0f2b065d72, datestamp=1770389001 (Feb 06 2026 14:43:21)
+0030.543 (0) This backup set is the backup set just made, so will not be deleted.
+0030.544 (0) This backup set is the backup set just made, so will not be deleted.
+0030.544 (0) This backup set is the backup set just made, so will not be deleted.
+0030.544 (0) This backup set is the backup set just made, so will not be deleted.
+0030.544 (0) This backup set is the backup set just made, so will not be deleted.
+0030.544 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.544 (0) Examining (for files) backup set with nonce=6fb8d9dcfe6f, datestamp=1770195611 (Feb 04 2026 09:00:11)
+0030.544 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0030.544 (0) Examining (for files) backup set with nonce=5070533fc275, datestamp=1769702859 (Jan 29 2026 16:07:39)
+0030.544 (0) plugins: over retain limit (2); will delete this file entity
+0030.544 (0) themes: over retain limit (2); will delete this file entity
+0030.544 (0) uploads: over retain limit (2); will delete this file entity
+0030.544 (0) others: over retain limit (2); will delete this file entity
+0030.544 (0) Delete file: backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-plugins.zip, service=none
+0030.544 (0) Deleting local copy (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-plugins.zip)
+0030.547 (0) Delete file: backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-themes.zip, service=none
+0030.547 (0) Deleting local copy (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-themes.zip)
+0030.549 (0) Delete file: backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-uploads.zip, service=none
+0030.549 (0) Deleting local copy (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-uploads.zip)
+0030.549 (0) Delete file: backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-others.zip, service=none
+0030.550 (0) Deleting local copy (backup_2026-01-29-1607_Fichas_Interactivas_5070533fc275-others.zip)
+0030.551 (0) This backup set is now empty; will remove from history
+0030.551 (0) Deleting log file (log.5070533fc275.txt)
+0030.551 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0030.552 (0) Resume backup (1b0f2b065d72, 0): finish run
+0030.553 (0) Decremented the semaphore (fd) by 1
+0030.553 (0) Semaphore (fd) unlocked
+0030.553 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0030.554 (0) The backup succeeded and is now complete
+0030.555 (0) No email will/can be sent - the user has not configured an email address.
+0030.555 (0) La copia de seguridad se ha realizado correctamente y se ha completado

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<post_title><![CDATA[3 Años]]></post_title>
+		<post_name><![CDATA[3-anos]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil]]></post_parent>
+		<post_content><![CDATA[Fichas educativas para niños de 3 años. Recursos interactivos adaptados a la primera etapa de educación infantil.]]></post_content>
+		<menu_order><![CDATA[1]]></menu_order>
+		<_wp_page_template><![CDATA[page-hub-curso-infantil.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas interactivas para 3 años. Actividades de lógica, lectoescritura y conocimiento del entorno adaptadas a niños de educación infantil.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[4 Años]]></post_title>
+		<post_name><![CDATA[4-anos]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil]]></post_parent>
+		<post_content><![CDATA[Fichas educativas para niños de 4 años. Recursos interactivos para el segundo año de educación infantil.]]></post_content>
+		<menu_order><![CDATA[2]]></menu_order>
+		<_wp_page_template><![CDATA[page-hub-curso-infantil.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas interactivas para 4 años. Ejercicios de matemáticas, lectoescritura y conocimiento del entorno para el segundo curso de infantil.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[5 Años]]></post_title>
+		<post_name><![CDATA[5-anos]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil]]></post_parent>
+		<post_content><![CDATA[Fichas educativas para niños de 5 años. Recursos para preparar el paso a primaria desde educación infantil.]]></post_content>
+		<menu_order><![CDATA[3]]></menu_order>
+		<_wp_page_template><![CDATA[page-hub-curso-infantil.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas interactivas para 5 años. Actividades de preparación para primaria con ejercicios de lógica-matemática y lectoescritura.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lógica-Matemática]]></post_title>
+		<post_name><![CDATA[logica-matematica]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/3-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lógica-matemática para niños de 3 años. Números, formas, colores y conceptos básicos.]]></post_content>
+		<menu_order><![CDATA[1]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de matemáticas para 3 años. Ejercicios de números, formas geométricas, colores y conceptos espaciales.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lectoescritura]]></post_title>
+		<post_name><![CDATA[lectoescritura]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/3-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lectoescritura para 3 años. Iniciación al trazo, vocales y grafomotricidad.]]></post_content>
+		<menu_order><![CDATA[2]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de lectoescritura para 3 años. Ejercicios de grafomotricidad, trazos y reconocimiento de vocales.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Conocimiento del Entorno]]></post_title>
+		<post_name><![CDATA[conocimiento-entorno]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/3-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de conocimiento del entorno para 3 años. El cuerpo, la familia, animales y plantas.]]></post_content>
+		<menu_order><![CDATA[3]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de conocimiento del entorno para 3 años. Actividades sobre el cuerpo humano, la familia y el entorno cercano.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Inglés]]></post_title>
+		<post_name><![CDATA[ingles]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/3-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de inglés para niños de 3 años. Vocabulario básico, colores, números y animales en inglés.]]></post_content>
+		<menu_order><![CDATA[4]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de inglés para 3 años. Vocabulario básico en inglés: colores, números, saludos y animales.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lógica-Matemática]]></post_title>
+		<post_name><![CDATA[logica-matematica]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/4-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lógica-matemática para niños de 4 años. Números hasta 10, seriaciones y clasificaciones.]]></post_content>
+		<menu_order><![CDATA[1]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de matemáticas para 4 años. Números hasta 10, sumas sencillas, formas geométricas y seriaciones.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lectoescritura]]></post_title>
+		<post_name><![CDATA[lectoescritura]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/4-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lectoescritura para 4 años. Vocales, consonantes y formación de palabras sencillas.]]></post_content>
+		<menu_order><![CDATA[2]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de lectoescritura para 4 años. Vocales, primeras consonantes y palabras sencillas.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Conocimiento del Entorno]]></post_title>
+		<post_name><![CDATA[conocimiento-entorno]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/4-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de conocimiento del entorno para 4 años. Estaciones, oficios, medios de transporte.]]></post_content>
+		<menu_order><![CDATA[3]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de conocimiento del entorno para 4 años. Las estaciones del año, oficios y medios de transporte.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Inglés]]></post_title>
+		<post_name><![CDATA[ingles]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/4-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de inglés para niños de 4 años. Vocabulario ampliado, frases simples y comprensión básica.]]></post_content>
+		<menu_order><![CDATA[4]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de inglés para 4 años. Vocabulario ampliado en inglés con frases simples y comprensión básica.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lógica-Matemática]]></post_title>
+		<post_name><![CDATA[logica-matematica]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/5-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lógica-matemática para niños de 5 años. Números hasta 20, sumas y restas iniciales.]]></post_content>
+		<menu_order><![CDATA[1]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de matemáticas para 5 años. Números hasta 20, primeras sumas y restas, problemas sencillos.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Lectoescritura]]></post_title>
+		<post_name><![CDATA[lectoescritura]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/5-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de lectoescritura para 5 años. Lectura fluida, escritura de palabras y frases cortas.]]></post_content>
+		<menu_order><![CDATA[2]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de lectoescritura para 5 años. Lectura comprensiva, escritura de frases y preparación para primaria.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Conocimiento del Entorno]]></post_title>
+		<post_name><![CDATA[conocimiento-entorno]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/5-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de conocimiento del entorno para 5 años. El universo, el agua, los ecosistemas.]]></post_content>
+		<menu_order><![CDATA[3]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de conocimiento del entorno para 5 años. El universo, los ecosistemas, el agua y las plantas.]]></descripcion_seo>
+	</node>
+	<node>
+		<post_title><![CDATA[Inglés]]></post_title>
+		<post_name><![CDATA[ingles]]></post_name>
+		<post_type><![CDATA[page]]></post_type>
+		<post_status><![CDATA[publish]]></post_status>
+		<post_parent><![CDATA[infantil/5-anos]]></post_parent>
+		<post_content><![CDATA[Fichas de inglés para niños de 5 años. Conversación básica, comprensión oral y vocabulario avanzado.]]></post_content>
+		<menu_order><![CDATA[4]]></menu_order>
+		<_wp_page_template><![CDATA[page-asignatura.php]]></_wp_page_template>
+		<descripcion_seo><![CDATA[Fichas de inglés para 5 años. Conversación básica en inglés, comprensión oral y vocabulario avanzado.]]></descripcion_seo>
+	</node>
+</data>

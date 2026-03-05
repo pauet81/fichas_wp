@@ -1,0 +1,606 @@
+/* =========================================================================
+ * DESIGN 4: MAGAZINE STYLE
+ * Modern magazine layout with featured post + sidebar + grid
+ * ========================================================================= */
+
+/* Base styles shared with other designs */
+.design-magazine .grid-item,
+.design-magazine .grid-item a {
+    position: relative;
+    display: block;
+}
+
+.design-magazine .featured-post img,
+.design-magazine .grid-item img,
+.design-magazine .regular-post img {
+    transform-origin: center bottom !important;
+    transition: 0.3s ease;
+}
+
+.design-magazine .featured-post,
+.design-magazine .featured-post .featured-post-img,
+.design-magazine .featured-post a,
+.design-magazine .grid-item,
+.design-magazine .regular-post a,
+.design-magazine .regular-post-img,
+.screen-reader-text {
+    overflow: hidden;
+}
+
+.design-magazine .grid-item a,
+.design-magazine .home-categories a:hover {
+    text-decoration: none;
+}
+
+/* =========================================================================
+ * FEATURED SECTION - Hero Layout
+ * Large featured post with sidebar of smaller posts
+ * ========================================================================= */
+
+.design-magazine .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    max-height: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Main featured post - takes full left side */
+.design-magazine .grid-container .grid-item:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-magazine .grid-container .grid-item:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sidebar posts - 3 posts stacked vertically */
+.design-magazine .grid-container .grid-item:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.design-magazine .grid-container .grid-item:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.design-magazine .grid-container .grid-item:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+/* Grid item styling */
+.design-magazine .grid-item {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.design-magazine .grid-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+}
+
+.design-magazine .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay gradient for text readability */
+.design-magazine .grid-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.3) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.design-magazine .grid-item:hover a::before {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.2) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+/* Text container */
+.design-magazine .grid-item .main-h2-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 32px 28px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.design-magazine .grid-item .main-h2-container h2 {
+    order: 1;
+    color: #fff;
+    margin: 0 !important;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.design-magazine .grid-item:first-child .main-h2-container h2 {
+    font-size: 32px !important;
+}
+
+.design-magazine .grid-item:not(:first-child) .main-h2-container h2 {
+    font-size: 18px !important;
+}
+
+.design-magazine .grid-item .main-h2-container span {
+    order: -1;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    opacity: 0.9;
+}
+
+span.home-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline;
+    margin-bottom: 0;
+    color: #9699a0;
+}
+
+/* Hover effects */
+.design-magazine .featured-post:hover img,
+.design-magazine .grid-item:hover img,
+.design-magazine .regular-post:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================================================
+ * CATEGORY SECTIONS - Magazine Grid
+ * ========================================================================= */
+
+.design-magazine .category-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(167, 170, 178, 0.3);
+}
+
+.design-magazine .home-categories-container {
+    padding-top: 1rem;
+}
+
+/* Featured post in category */
+.design-magazine .featured-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-magazine .featured-post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.design-magazine .featured-post-img {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    height: 280px;
+}
+
+.design-magazine .featured-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-magazine .featured-post .featured-post-details {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.design-magazine .featured-post h3 {
+    margin: 0 !important;
+    font-size: 22px !important;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #181818;
+}
+
+.design-magazine .featured-post .show-extract p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Regular posts grid */
+.design-magazine .regular-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.design-magazine .regular-post {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-magazine .regular-post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.design-magazine .regular-post-img {
+    line-height: 0;
+    margin: 0;
+    width: 160px;
+    height: 110px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.design-magazine .regular-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-magazine .regular-post .post-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 16px 16px 0;
+    width: calc(100% - 160px);
+}
+
+.design-magazine .regular-post h3 {
+    margin: 0 !important;
+    font-size: 17px !important;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #181818;
+}
+
+.design-magazine .regular-post a {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    color: inherit;
+}
+
+/* Latest posts section */
+.design-magazine .content-area {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 2rem;
+}
+
+.design-magazine .content-area.latest-post-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.design-magazine .article-loop {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 0 !important;
+}
+
+.design-magazine .article-loop:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.design-magazine .article-loop a {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.design-magazine .lastest-post-img {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    margin-bottom: 0;
+}
+
+.design-magazine .lastest-post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-magazine .home-content-loop {
+    padding: 20px;
+}
+
+.design-magazine .article-loop h3 {
+    margin: 0 0 10px 0 !important;
+    font-size: 18px !important;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #181818;
+}
+
+.design-magazine .article-loop .show-extract p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Category headers */
+.design-magazine .home-categories h2 {
+    margin-bottom: 0 !important;
+    padding: 2rem 0 1.5rem 0;
+    display: inline-block;
+    color: #181818;
+    letter-spacing: -0.025em;
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 3px solid #181818;
+}
+
+.design-magazine .home-categories h2:after {
+    content: "";
+    display: none;
+}
+
+.design-magazine .home-categories h2 a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.design-magazine .home-categories h2 svg {
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+/* Content loop */
+.content-loop-design {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 0;
+}
+
+.design-magazine .content-loop-design .content-home-text {
+    margin-bottom: 2rem;
+}
+
+.asap-padding-newspapper + .content-home-text {
+    margin-top: 2rem;
+}
+
+/* Sidebar posts - smaller padding */
+.design-magazine .grid-item:not(:first-child) .main-h2-container {
+    padding: 20px 18px;
+}
+
+/* =========================================================================
+ * RESPONSIVE - TABLET
+ * ========================================================================= */
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .home .content-loop-design {
+        padding-top: 5rem;
+    }
+
+    .design-magazine .grid-container {
+        max-height: 500px;
+    }
+
+    .design-magazine .grid-item:first-child .main-h2-container h2 {
+        font-size: 26px !important;
+    }
+
+    .design-magazine .grid-item:not(:first-child) .main-h2-container h2 {
+        font-size: 16px !important;
+    }
+
+    .design-magazine .category-posts {
+        gap: 24px;
+    }
+
+    .design-magazine .featured-post-img {
+        height: 220px;
+    }
+}
+
+/* =========================================================================
+ * RESPONSIVE - MOBILE
+ * ========================================================================= */
+
+@media only screen and (max-width: 768px) {
+    /* Grid becomes single column with horizontal scroll */
+    .design-magazine .grid-container {
+        display: flex !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        margin: 0;
+        width: 100vw;
+        max-height: 60vh !important;
+        gap: 16px !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    .design-magazine .grid-container .grid-item {
+        flex: 0 0 85vw;
+        scroll-snap-align: start;
+        grid-column: auto;
+        grid-row: auto;
+        max-height: 60vh;
+    }
+
+    .design-magazine .grid-item:first-child .main-h2-container h2 {
+        font-size: 24px !important;
+    }
+
+    .design-magazine .grid-item:not(:first-child) .main-h2-container h2 {
+        font-size: 18px !important;
+    }
+
+    /* Category posts become single column */
+    .design-magazine .category-posts {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-bottom: 1.5rem;
+    }
+
+    .design-magazine .featured-post-img {
+        height: 240px;
+    }
+
+    .design-magazine .regular-posts {
+        gap: 20px;
+    }
+
+    .design-magazine .regular-post-img {
+        width: 120px;
+        height: 90px;
+    }
+
+    .design-magazine .regular-post .post-details {
+        width: calc(100% - 120px);
+    }
+
+    /* Latest posts grid */
+    .design-magazine .content-area.latest-post-container {
+        grid-template-columns: 1fr;
+    }
+
+    .design-magazine .lastest-post-img {
+        height: 220px;
+    }
+
+    /* Removed: padding-top 70px - conflicts with double header */
+
+    .asap-padding-newspapper {
+        padding: 0 2rem;
+    }
+
+    .content-loop-design .content-home-text {
+        margin-bottom: 0 !important;
+        padding: 0 1.5rem !important;
+    }
+
+    .design-magazine .home-categories h2 {
+        font-size: 24px;
+        padding: 1.5rem 0 1rem 0;
+    }
+}
+
+/* Box design variant */
+.design-magazine.asap-box-design .article-loop,
+.design-magazine.asap-box-design .featured-post,
+.design-magazine.asap-box-design .regular-post {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.design-magazine.asap-box-design .article-loop:hover,
+.design-magazine.asap-box-design .featured-post:hover,
+.design-magazine.asap-box-design .regular-post:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Featured and new badges */
+.design-magazine .item-featured,
+.design-magazine .item-new {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 4;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Screen reader text */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+/* Transitions */
+.design-magazine .home-categories .featured-post h3,
+.design-magazine .home-categories .regular-post h3,
+.design-magazine .home-categories-h2 h2 a {
+    transition: 0.2s ease;
+}
+
+.design-magazine .home-categories .featured-post h3:hover,
+.design-magazine .home-categories .regular-post h3:hover,
+.design-magazine .home-categories-h2 h2 a:hover {
+    color: #2471a3;
+}
+

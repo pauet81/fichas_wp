@@ -1,0 +1,549 @@
+/**
+ * ASAP Megamenu - Admin Styles (Constructor Visual)
+ * Full Screen Builder para crear megamenus profesionales
+ */
+
+/* =========================================================================
+ * MENU ITEM SETTINGS
+ * ========================================================================= */
+
+.asap-megamenu-settings {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.asap-megamenu-toggle:checked + strong {
+    color: #00a32a !important;
+}
+
+.asap-open-builder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+}
+
+.asap-open-builder:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6) !important;
+}
+
+/* =========================================================================
+ * BUILDER MODAL (FULL SCREEN)
+ * ========================================================================= */
+
+#asap-megamenu-builder-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
+.asap-builder-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.asap-builder-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f1;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Header */
+.asap-builder-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.asap-builder-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.asap-builder-close {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f0f0f1;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asap-builder-close:hover {
+    background: #e74c3c;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Toolbar */
+.asap-builder-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.asap-builder-toolbar .button {
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.asap-builder-toolbar .button-primary {
+    background: #00a32a;
+    border-color: #00a32a;
+}
+
+/* Content Area */
+.asap-builder-content {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.asap-builder-columns {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+/* Column Card */
+.asap-builder-column {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: move;
+    position: relative;
+}
+
+.asap-builder-column:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+}
+
+.asap-builder-column.is-selected {
+    box-shadow: 0 0 0 3px #667eea;
+}
+
+.asap-builder-column-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.asap-builder-column-drag {
+    cursor: grab;
+    color: #999;
+    font-size: 20px;
+}
+
+.asap-builder-column-drag:active {
+    cursor: grabbing;
+}
+
+.asap-builder-column-title {
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.asap-builder-column-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.asap-builder-column-actions button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    background: #f0f0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.asap-builder-column-actions button:hover {
+    background: #ddd;
+}
+
+.asap-builder-column-actions .delete-column:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.asap-builder-column-preview {
+    font-size: 13px;
+    color: #666;
+}
+
+.asap-builder-column-preview-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.asap-builder-column-preview-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.asap-builder-column-preview-items {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.asap-builder-column-preview-items li {
+    padding: 5px 0;
+    color: #2271b1;
+    font-size: 13px;
+}
+
+.asap-builder-column-preview-items li:before {
+    content: "→ ";
+    margin-right: 5px;
+}
+
+/* Sidebar Editor */
+.asap-builder-sidebar {
+    width: 400px;
+    background: white;
+    border-left: 1px solid #ddd;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.asap-builder-sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.asap-builder-field {
+    margin-bottom: 20px;
+}
+
+.asap-builder-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.asap-builder-field input[type="text"],
+.asap-builder-field input[type="url"],
+.asap-builder-field textarea,
+.asap-builder-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.asap-builder-field input:focus,
+.asap-builder-field textarea:focus,
+.asap-builder-field select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.asap-builder-field textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.asap-builder-field-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.asap-builder-field-image-preview {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.asap-builder-field-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.asap-builder-field-image-preview.empty {
+    color: #999;
+    font-size: 12px;
+}
+
+.asap-builder-field-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Items List */
+.asap-builder-items-list {
+    margin-top: 10px;
+}
+
+.asap-builder-item {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.asap-builder-item-drag {
+    cursor: grab;
+    color: #999;
+    padding-top: 8px;
+}
+
+.asap-builder-item-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.asap-builder-item-fields input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.asap-builder-item-delete {
+    padding: 4px 8px;
+    border: none;
+    background: transparent;
+    color: #e74c3c;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.asap-builder-item-delete:hover {
+    background: #ffe5e5;
+}
+
+.asap-add-item {
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #ddd;
+    background: transparent;
+    color: #666;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.asap-add-item:hover {
+    border-color: #667eea;
+    color: #667eea;
+    background: #f9f9ff;
+}
+
+/* Empty State */
+.asap-builder-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.asap-builder-empty-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.asap-builder-empty h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.asap-builder-empty p {
+    margin-bottom: 20px;
+}
+
+/* Sortable Placeholder */
+.ui-sortable-placeholder {
+    background: #f0f0f1;
+    border: 2px dashed #667eea;
+    border-radius: 12px;
+    visibility: visible !important;
+}
+
+/* Loading State */
+.asap-builder-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.asap-builder-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Messages */
+.asap-builder-message {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: slideInRight 0.3s ease;
+    z-index: 1000000;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.asap-builder-message.success {
+    background: #00a32a;
+    color: white;
+}
+
+.asap-builder-message.error {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .asap-builder-sidebar {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .asap-builder-columns {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .asap-builder-content {
+        flex-direction: column;
+    }
+    
+    .asap-builder-sidebar {
+        width: 100%;
+        max-height: 300px;
+        border-left: none;
+        border-top: 1px solid #ddd;
+    }
+}
+
+
+
+
+

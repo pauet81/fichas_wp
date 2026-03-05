@@ -1,0 +1,208 @@
+/* ============================================
+   WORD SEARCH ADDON v2.2 - Touch Optimized
+   ============================================ */
+
+.ejercicio-wordsearch {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.pregunta-wordsearch {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wordsearch-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: start;
+}
+
+/* ============================================
+   GRID DE LETRAS - Touch Friendly
+   ============================================ */
+
+.wordsearch-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.wordsearch-table {
+    border-collapse: separate;
+    border-spacing: 4px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.wordsearch-cell {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #2d3748;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* Touch optimizations */
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.wordsearch-cell:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    transform: scale(1.05);
+}
+
+/* Estado: Seleccionada (amarillo) */
+.wordsearch-cell.selected {
+    background: #fef3c7 !important;
+    border-color: #fbbf24 !important;
+    color: #92400e;
+    transform: scale(1.1);
+}
+
+/* Estado: Encontrada (verde) */
+.wordsearch-cell.found {
+    background: #d1fae5 !important;
+    border-color: #10b981 !important;
+    color: #065f46;
+    pointer-events: none;
+    animation: found-pulse 0.6s ease;
+}
+
+@keyframes found-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* ============================================
+   LISTA DE PALABRAS
+   ============================================ */
+
+.wordsearch-words {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 150px;
+}
+
+.wordsearch-words-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #4b5563;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.wordsearch-words-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.word-item {
+    padding: 10px 15px;
+    background: #f9fafb;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.word-item.found {
+    background: #d1fae5;
+    color: #065f46;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* ============================================
+   BOTONES (sin Pista)
+   ============================================ */
+
+.acciones-wordsearch {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-reintentar-wordsearch {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reintentar-wordsearch:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   FEEDBACK
+   ============================================ */
+
+.feedback-wordsearch {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.feedback-wordsearch.exito {
+    background: #d1fae5;
+    border: 2px solid #10b981;
+    color: #065f46;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .wordsearch-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wordsearch-cell {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1em;
+    }
+
+    .ejercicio-wordsearch {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wordsearch-cell {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+}

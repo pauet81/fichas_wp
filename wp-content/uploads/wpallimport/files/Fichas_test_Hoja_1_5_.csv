@@ -1,0 +1,1459 @@
+id,nivel_educativo,curso,asignatura,tema,bloque_lomloe,dificultad,editorial,post_title,edad_recomendada,tiempo_estimado,destacada,descripcion,objetivos_raw,instrucciones_raw,post_content,contenido_ficha_html,featured_image_url,post_status,post_date
+001,Primaria,1º Primaria,Matemáticas,Números 1-10,Sentido Numérico,Fácil,Genérica,Contar hasta 10,6-7 años,15,1,Ficha interactiva para contar objetos y asociar con números del 1 al 10.,Contar objetos del 1 al 10|Identificar cantidades|Asociar número con cantidad,Observa cada grupo de objetos|Cuenta cuántos hay|Escribe el número en la casilla,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_001"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_001"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""width: 100%; height: 20px; background: #E5E5E5; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_001"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_001"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 10</span>
+  </div>
+
+  <div style=""margin-top: 100px;"">
+    <div class=""titulo-ficha"" style=""font-size: 2.5em; text-align: center; color: #FF6B35; font-weight: bold; margin: 20px 0;"">🔢 Contar hasta 10</div>
+    <div class=""instrucciones"" style=""font-size: 1.2em; text-align: center; color: #2C3E50; margin: 15px 0; padding: 15px; background: #E8F4FD; border-radius: 15px;"">¡Cuenta los objetos y encuentra el número correcto! 🌟</div>
+    
+    <div style=""text-align: center; margin: 20px 0;"">
+      <button class=""btn-comprobar"" id=""comprobar_001"" style=""background: #FF6B35; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.3em; cursor: pointer; margin: 10px;"">✅ ¡YA TERMINÉ!</button>
+      <button class=""btn-descargar-pdf"" id=""descargarPDF_001"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+    </div>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_001""></div>
+
+  <div class=""feedback"" id=""feedback_001"" style=""text-align: center; font-size: 1.5em; margin: 30px; padding: 20px; border-radius: 15px; display: none;""></div>
+</div>
+
+<script>
+(function() {
+  function aplicarEstilos_001() {
+    const style = document.createElement('style');
+    style.textContent = 'body { font-family: Arial, sans-serif; padding-top: 100px; background: #F8F9FA; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { background: white; margin: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 5px solid #FF6B35; } .pregunta { font-size: 1.4em; color: #2C3E50; margin-bottom: 15px; font-weight: bold; } .visual { font-size: 3em; text-align: center; margin: 20px 0; padding: 20px; background: #F8F9FA; border-radius: 10px; } .opciones { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; } .opcion-btn { padding: 15px 25px; font-size: 1.3em; border: 3px solid #3498DB; background: white; color: #3498DB; border-radius: 15px; cursor: pointer; transition: all 0.3s; font-weight: bold; } .opcion-btn:hover { background: #3498DB; color: white; transform: scale(1.05); } .opcion-btn.seleccionado { background: #3498DB; color: white; } .opcion-btn.correcto { background: #27AE60; border-color: #27AE60; color: white; } .opcion-btn.incorrecto { background: #E74C3C; border-color: #E74C3C; color: white; } .feedback.exito { background: #D5F4E6; color: #27AE60; border: 3px solid #27AE60; } .feedback.mejorar { background: #FADBD8; color: #E74C3C; border: 3px solid #E74C3C; } .btn-comprobar { transition: all 0.3s; } .btn-comprobar:hover { background: #E55A2B; transform: scale(1.05); }';
+    document.head.appendChild(style);
+  }
+
+  const preguntas_001 = [
+    {
+      id: 1,
+      texto: ""¿Cuántos globos hay?"",
+      visual: ""🎈🎈🎈"",
+      opciones: [""2"", ""3"", ""4""],
+      correcta: 1
+    },
+    {
+      id: 2,
+      texto: ""Cuenta las manzanas"",
+      visual: ""🍎🍎🍎🍎🍎"",
+      opciones: [""4"", ""5"", ""6""],
+      correcta: 1
+    },
+    {
+      id: 3,
+      texto: ""¿Cuántas estrellas ves?"",
+      visual: ""⭐⭐"",
+      opciones: [""1"", ""2"", ""3""],
+      correcta: 1
+    },
+    {
+      id: 4,
+      texto: ""Cuenta los corazones"",
+      visual: ""❤️❤️❤️❤️❤️❤️❤️"",
+      opciones: [""6"", ""7"", ""8""],
+      correcta: 1
+    },
+    {
+      id: 5,
+      texto: ""¿Cuántos soles hay?"",
+      visual: ""☀️"",
+      opciones: [""0"", ""1"", ""2""],
+      correcta: 1
+    },
+    {
+      id: 6,
+      texto: ""Cuenta las flores"",
+      visual: ""🌸🌸🌸🌸"",
+      opciones: [""3"", ""4"", ""5""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""¿Cuántos peces ves?"",
+      visual: ""🐠🐠🐠🐠🐠🐠🐠🐠"",
+      opciones: [""7"", ""8"", ""9""],
+      correcta: 1
+    },
+    {
+      id: 8,
+      texto: ""Cuenta las pelotas"",
+      visual: ""⚽⚽⚽⚽⚽⚽"",
+      opciones: [""5"", ""6"", ""7""],
+      correcta: 1
+    },
+    {
+      id: 9,
+      texto: ""¿Cuántos dulces hay?"",
+      visual: ""🍭🍭🍭🍭🍭🍭🍭🍭🍭"",
+      opciones: [""8"", ""9"", ""10""],
+      correcta: 1
+    },
+    {
+      id: 10,
+      texto: ""Cuenta todos los gatitos"",
+      visual: ""🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱"",
+      opciones: [""9"", ""10"", ""11""],
+      correcta: 1
+    }
+  ];
+
+  let respuestas_001 = {};
+  let respondidas_001 = 0;
+
+  function generarHTML_001() {
+    const contenedor = document.getElementById('contenedor_001');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_001.length; i++) {
+      const p = preguntas_001[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + (i + 1) + '. ' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+      }
+      
+      html += '</div>';
+      html += '</div>';
+    }
+    
+    contenedor.innerHTML = html;
+  }
+
+  function actualizarProgreso_001() {
+    const total = preguntas_001.length;
+    const porcentaje = (respondidas_001 / total) * 100;
+    
+    document.getElementById('progreso-fill_001').style.width = porcentaje + '%';
+    document.getElementById('contador_001').textContent = respondidas_001 + ' de ' + total;
+  }
+
+  function manejarRespuesta_001(event) {
+    if (!event.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(event.target.getAttribute('data-pregunta'));
+    const valor = parseInt(event.target.getAttribute('data-valor'));
+    const bloque = event.target.closest('.bloque-ejercicio');
+    const botones = bloque.querySelectorAll('.opcion-btn');
+    
+    if (respuestas_001[preguntaId] === undefined) {
+      respondidas_001++;
+    }
+    
+    botones.forEach(btn => btn.classList.remove('seleccionado'));
+    event.target.classList.add('seleccionado');
+    
+    respuestas_001[preguntaId] = valor;
+    actualizarProgreso_001();
+  }
+
+  function comprobarRespuestas_001() {
+    if (respondidas_001 < preguntas_001.length) {
+      alert('¡Completa todas las preguntas primero! 😊');
+      return;
+    }
+
+    let aciertos = 0;
+    
+    for (let i = 0; i < preguntas_001.length; i++) {
+      const pregunta = preguntas_001[i];
+      const bloque = document.querySelector('[data-pregunta=""' + pregunta.id + '""]');
+      const botones = bloque.querySelectorAll('.opcion-btn');
+      const respuestaUsuario = respuestas_001[pregunta.id];
+      
+      botones.forEach((btn, index) => {
+        btn.classList.remove('seleccionado');
+        if (index === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (index === respuestaUsuario && respuestaUsuario !== pregunta.correcta) {
+          btn.classList.add('incorrecto');
+        }
+      });
+      
+      if (respuestaUsuario === pregunta.correcta) {
+        aciertos++;
+      }
+    }
+    
+    mostrarFeedback_001(aciertos, preguntas_001.length);
+  }
+
+  function mostrarFeedback_001(aciertos, total) {
+    const feedback = document.getElementById('feedback_001');
+    const porcentaje = (aciertos / total) * 100;
+    
+    let mensaje = '';
+    let clase = '';
+    
+    if (aciertos >= 8) {
+      mensaje = '🌟 ¡Excelente! Has acertado ' + aciertos + ' de ' + total + ' preguntas. ¡Eres genial contando! 🎉';
+      clase = 'exito';
+    } else if (aciertos >= 6) {
+      mensaje = '👍 ¡Muy bien! Has acertado ' + aciertos + ' de ' + total + ' preguntas. ¡Sigue practicando! 😊';
+      clase = 'exito';
+    } else {
+      mensaje = '💪 Has acertado ' + aciertos + ' de ' + total + ' preguntas. ¡Puedes hacerlo mejor! ¡Inténtalo de nuevo! 🌈';
+      clase = 'mejorar';
+    }
+    
+    feedback.textContent = mensaje;
+    feedback.className = 'feedback ' + clase;
+    feedback.style.display = 'block';
+    
+    feedback.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function descargarPDF_001() {
+    const elemento = document.getElementById('ficha_001');
+    const opt = {
+      margin: 10,
+      filename: 'ficha_contar_hasta_10.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+    };
+    html2pdf().set(opt).from(elemento).save();
+  }
+
+  function inicializar_001() {
+    aplicarEstilos_001();
+    generarHTML_001();
+    
+    document.getElementById('contenedor_001').addEventListener('click', manejarRespuesta_001);
+    document.getElementById('comprobar_001').addEventListener('click', comprobarRespuestas_001);
+    document.getElementById('descargarPDF_001').addEventListener('click', descargarPDF_001);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_001);
+  } else {
+    inicializar_001();
+  }
+})();
+</script>",,publish,2026-01-15
+002,Primaria,1º Primaria,Matemáticas,Sumas y Restas,Sentido Numérico,Fácil,Genérica,Sumas sin llevar hasta 10,6-7 años,20,1,Ejercicios de sumas sencillas con apoyo visual para primero de primaria.,Realizar sumas sin llevar|Comprender concepto de adición|Resolver problemas sencillos,Lee cada suma|Cuenta con los dedos si es necesario|Escribe el resultado|Comprueba con dibujos,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_002"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_002"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""width: 100%; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_002"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_002"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 10</span>
+  </div>
+
+  <div style=""margin-top: 80px;"">
+    <div class=""titulo-ficha"" style=""background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 20px; border-radius: 15px; font-size: 2em; font-weight: bold; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"">
+      ➕ Sumas sin llevar hasta 10
+    </div>
+    <div class=""instrucciones"" style=""background: #e8f4f8; padding: 15px; border-radius: 10px; text-align: center; font-size: 1.3em; margin-bottom: 20px; border-left: 5px solid #2EC4B6;"">
+      ¡Vamos a sumar números! Cuenta con tus dedos si lo necesitas 🖐️
+    </div>
+    
+    <div style=""text-align: center; margin-bottom: 30px;"">
+      <button class=""btn-comprobar"" id=""comprobar_002"" style=""background: #FF6B6B; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.4em; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"">✅ ¡YA TERMINÉ!</button>
+      <button class=""btn-descargar-pdf"" id=""descargarPDF_002"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+    </div>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_002""></div>
+
+  <div class=""feedback"" id=""feedback_002"" style=""margin-top: 30px; padding: 20px; border-radius: 15px; text-align: center; font-size: 1.4em; font-weight: bold; display: none;""></div>
+</div>
+
+<script>
+(function() {
+  
+  function aplicarEstilos_002() {
+    const style = document.createElement('style');
+    style.textContent = 'body { padding-top: 100px; font-family: Arial, sans-serif; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { background: white; margin: 20px 0; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-left: 5px solid #FF9F1C; } .pregunta { font-size: 1.6em; font-weight: bold; color: #333; margin-bottom: 15px; } .visual { font-size: 2.5em; text-align: center; margin: 20px 0; padding: 15px; background: #f9f9f9; border-radius: 10px; } .opciones { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 20px; } .opcion-btn { padding: 15px 25px; font-size: 1.4em; font-weight: bold; border: 3px solid #ddd; border-radius: 15px; background: white; cursor: pointer; transition: all 0.3s; min-width: 80px; } .opcion-btn:hover { border-color: #2EC4B6; background: #f0fbfa; } .opcion-btn.seleccionado { border-color: #2EC4B6; background: #2EC4B6; color: white; } .opcion-btn.correcto { border-color: #4CAF50; background: #4CAF50; color: white; } .opcion-btn.incorrecto { border-color: #f44336; background: #f44336; color: white; } .feedback.exito { background: linear-gradient(135deg, #4CAF50, #45a049); color: white; } .feedback.mejorar { background: linear-gradient(135deg, #FF9F1C, #ff8800); color: white; }';
+    document.head.appendChild(style);
+  }
+
+  const preguntas_002 = [
+    {
+      id: 1,
+      texto: ""¿Cuánto es 2 + 1?"",
+      visual: ""✌️ + ☝️ = ?"",
+      opciones: [""2"", ""3"", ""4""],
+      correcta: 1
+    },
+    {
+      id: 2,
+      texto: ""¿Cuánto es 1 + 1?"",
+      visual: ""🍎 + 🍎 = ?"",
+      opciones: [""1"", ""2"", ""3""],
+      correcta: 1
+    },
+    {
+      id: 3,
+      texto: ""¿Cuánto es 3 + 2?"",
+      visual: ""🐸🐸🐸 + 🐸🐸 = ?"",
+      opciones: [""4"", ""5"", ""6""],
+      correcta: 1
+    },
+    {
+      id: 4,
+      texto: ""¿Cuánto es 4 + 1?"",
+      visual: ""⭐⭐⭐⭐ + ⭐ = ?"",
+      opciones: [""4"", ""5"", ""6""],
+      correcta: 1
+    },
+    {
+      id: 5,
+      texto: ""¿Cuánto es 2 + 3?"",
+      visual: ""🦋🦋 + 🦋🦋🦋 = ?"",
+      opciones: [""4"", ""5"", ""6""],
+      correcta: 1
+    },
+    {
+      id: 6,
+      texto: ""¿Cuánto es 1 + 4?"",
+      visual: ""🌸 + 🌸🌸🌸🌸 = ?"",
+      opciones: [""4"", ""5"", ""6""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""¿Cuánto es 3 + 3?"",
+      visual: ""🎈🎈🎈 + 🎈🎈🎈 = ?"",
+      opciones: [""5"", ""6"", ""7""],
+      correcta: 1
+    },
+    {
+      id: 8,
+      texto: ""¿Cuánto es 2 + 4?"",
+      visual: ""🐻🐻 + 🐻🐻🐻🐻 = ?"",
+      opciones: [""5"", ""6"", ""7""],
+      correcta: 1
+    },
+    {
+      id: 9,
+      texto: ""¿Cuánto es 4 + 3?"",
+      visual: ""🚗🚗🚗🚗 + 🚗🚗🚗 = ?"",
+      opciones: [""6"", ""7"", ""8""],
+      correcta: 1
+    },
+    {
+      id: 10,
+      texto: ""¿Cuánto es 5 + 2?"",
+      visual: ""🎵🎵🎵🎵🎵 + 🎵🎵 = ?"",
+      opciones: [""6"", ""7"", ""8""],
+      correcta: 1
+    }
+  ];
+
+  let respuestasUsuario_002 = {};
+  let respondidas_002 = 0;
+
+  function generarHTML_002() {
+    const contenedor = document.getElementById('contenedor_002');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_002.length; i++) {
+      const p = preguntas_002[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">Pregunta ' + p.id + ': ' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">';
+        html += p.opciones[j];
+        html += '</button>';
+      }
+      
+      html += '</div></div>';
+    }
+    
+    contenedor.innerHTML = html;
+  }
+
+  function actualizarProgreso_002() {
+    const total = preguntas_002.length;
+    const porcentaje = (respondidas_002 / total) * 100;
+    document.getElementById('progreso-fill_002').style.width = porcentaje + '%';
+    document.getElementById('contador_002').textContent = respondidas_002 + ' de ' + total;
+  }
+
+  function manejarRespuesta_002(event) {
+    if (!event.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(event.target.dataset.pregunta);
+    const valorSeleccionado = parseInt(event.target.dataset.valor);
+    
+    // Limpiar selecciones previas de esta pregunta
+    const botonesPregunta = document.querySelectorAll('[data-pregunta=""' + preguntaId + '""]');
+    botonesPregunta.forEach(function(btn) {
+      btn.classList.remove('seleccionado');
+    });
+    
+    // Marcar la nueva selección
+    event.target.classList.add('seleccionado');
+    
+    // Guardar respuesta
+    const yaRespondida = respuestasUsuario_002.hasOwnProperty(preguntaId);
+    respuestasUsuario_002[preguntaId] = valorSeleccionado;
+    
+    // Actualizar contador si es nueva respuesta
+    if (!yaRespondida) {
+      respondidas_002++;
+      actualizarProgreso_002();
+    }
+  }
+
+  function comprobarRespuestas_002() {
+    let aciertos = 0;
+    
+    for (let i = 0; i < preguntas_002.length; i++) {
+      const pregunta = preguntas_002[i];
+      const respuestaUsuario = respuestasUsuario_002[pregunta.id];
+      const botonesPregunta = document.querySelectorAll('[data-pregunta=""' + pregunta.id + '""]');
+      
+      botonesPregunta.forEach(function(btn) {
+        const valor = parseInt(btn.dataset.valor);
+        btn.classList.remove('seleccionado');
+        
+        if (valor === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (valor === respuestaUsuario) {
+          btn.classList.add('incorrecto');
+        }
+      });
+      
+      if (respuestaUsuario === pregunta.correcta) {
+        aciertos++;
+      }
+    }
+    
+    // Mostrar feedback
+    const feedback = document.getElementById('feedback_002');
+    feedback.style.display = 'block';
+    
+    if (aciertos >= 8) {
+      feedback.className = 'feedback exito';
+      feedback.innerHTML = '🎉 ¡EXCELENTE! 🎉<br>Has conseguido ' + aciertos + ' de ' + preguntas_002.length + ' respuestas correctas.<br>¡Eres genial sumando!';
+    } else {
+      feedback.className = 'feedback mejorar';
+      feedback.innerHTML = '💪 ¡Buen intento! 💪<br>Has conseguido ' + aciertos + ' de ' + preguntas_002.length + ' respuestas correctas.<br>¡Sigue practicando las sumas!';
+    }
+    
+    // Scroll al feedback
+    feedback.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function descargarPDF_002() {
+    const elemento = document.getElementById('ficha_002');
+    const opt = {
+      margin: 10,
+      filename: 'sumas_sin_llevar_hasta_10.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+    };
+    html2pdf().set(opt).from(elemento).save();
+  }
+
+  function inicializar_002() {
+    aplicarEstilos_002();
+    generarHTML_002();
+    actualizarProgreso_002();
+    
+    // Event listeners
+    document.getElementById('contenedor_002').addEventListener('click', manejarRespuesta_002);
+    document.getElementById('comprobar_002').addEventListener('click', comprobarRespuestas_002);
+    document.getElementById('descargarPDF_002').addEventListener('click', descargarPDF_002);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_002);
+  } else {
+    inicializar_002();
+  }
+
+})();
+</script>",,publish,2026-01-15
+003,Primaria,1º Primaria,Lengua,Vocales,Las Letras,Fácil,Genérica,Reconocer vocales,6-7 años,15,1,Identifica y reconoce las cinco vocales en diferentes contextos.,Identificar las cinco vocales|Distinguir mayúscula y minúscula|Reconocer sonido,Lee en voz alta cada vocal|Rodea las vocales que encuentres|Escribe las vocales que faltan|Une cada vocal con su sonido,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_003"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_003"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""width: 100%; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_003"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_003"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 12</span>
+  </div>
+
+  <div style=""margin-top: 80px;"">
+    <div class=""titulo-ficha"" style=""font-size: 2.5em; color: #FF6B35; text-align: center; margin: 20px 0; font-weight: bold;"">🔤 Reconocer vocales</div>
+    <div class=""instrucciones"" style=""text-align: center; font-size: 1.3em; color: #666; margin: 15px 0;"">¡Vamos a descubrir las vocales! Lee, observa y elige la respuesta correcta</div>
+    
+    <div style=""text-align: center; margin: 20px 0;"">
+      <button class=""btn-comprobar"" id=""comprobar_003"" style=""background: #2EC4B6; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.4em; cursor: pointer; margin: 10px;"">✅ ¡YA TERMINÉ!</button>
+      <button class=""btn-descargar-pdf"" id=""descargarPDF_003"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+    </div>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_003""></div>
+
+  <div class=""feedback"" id=""feedback_003"" style=""text-align: center; margin: 30px 0; font-size: 1.4em; font-weight: bold; padding: 20px; border-radius: 15px;""></div>
+</div>
+
+<script>
+(function() {
+  function aplicarEstilos_003() {
+    const style = document.createElement('style');
+    style.textContent = 'body { padding-top: 100px; font-family: Arial, sans-serif; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { background: white; margin: 20px auto; padding: 25px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px; border-left: 5px solid #FF9F1C; } .pregunta { font-size: 1.4em; color: #333; margin-bottom: 15px; font-weight: bold; } .visual { font-size: 3em; text-align: center; margin: 20px 0; } .opciones { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 20px; } .opcion-btn { padding: 12px 20px; font-size: 1.2em; border: 2px solid #ddd; border-radius: 10px; background: white; cursor: pointer; transition: all 0.3s; min-width: 100px; } .opcion-btn:hover { background: #f0f0f0; border-color: #2EC4B6; } .opcion-btn.seleccionado { background: #E3F2FD; border-color: #2196F3; } .opcion-btn.correcto { background: #E8F5E8; border-color: #4CAF50; color: #2E7D32; } .opcion-btn.incorrecto { background: #FFEBEE; border-color: #F44336; color: #C62828; } .feedback.exito { background: #E8F5E8; color: #2E7D32; } .feedback.mejorar { background: #FFF3E0; color: #E65100; }';
+    document.head.appendChild(style);
+  }
+
+  const preguntas_003 = [
+    {
+      id: 1,
+      texto: ""¿Cuál de estas es la vocal A?"",
+      visual: ""🔤"",
+      opciones: [""A"", ""B"", ""C""],
+      correcta: 0
+    },
+    {
+      id: 2,
+      texto: ""¿Qué vocal suena como en 'elefante'?"",
+      visual: ""🐘"",
+      opciones: [""A"", ""E"", ""O""],
+      correcta: 1
+    },
+    {
+      id: 3,
+      texto: ""¿Cuál es la vocal I?"",
+      visual: ""👀"",
+      opciones: [""U"", ""I"", ""A""],
+      correcta: 1
+    },
+    {
+      id: 4,
+      texto: ""¿Qué vocal tiene la palabra 'oso'?"",
+      visual: ""🐻"",
+      opciones: [""A"", ""E"", ""O""],
+      correcta: 2
+    },
+    {
+      id: 5,
+      texto: ""¿Cuál es la vocal U?"",
+      visual: ""🎵"",
+      opciones: [""U"", ""O"", ""A""],
+      correcta: 0
+    },
+    {
+      id: 6,
+      texto: ""¿Cuántas vocales hay en total?"",
+      visual: ""✋"",
+      opciones: [""3"", ""5"", ""7""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""¿Qué vocal tiene 'iglú'?"",
+      visual: ""🏠"",
+      opciones: [""I y U"", ""A y E"", ""E y O""],
+      correcta: 0
+    },
+    {
+      id: 8,
+      texto: ""¿Es la 'a' una vocal?"",
+      visual: ""🅰️"",
+      opciones: [""Sí"", ""No""],
+      correcta: 0
+    },
+    {
+      id: 9,
+      texto: ""¿Qué vocal falta? _avión"",
+      visual: ""✈️"",
+      opciones: [""A"", ""E"", ""I""],
+      correcta: 0
+    },
+    {
+      id: 10,
+      texto: ""¿Cuál NO es una vocal?"",
+      visual: ""❌"",
+      opciones: [""A"", ""B"", ""E""],
+      correcta: 1
+    },
+    {
+      id: 11,
+      texto: ""¿Qué vocales tiene 'casa'?"",
+      visual: ""🏡"",
+      opciones: [""A y A"", ""E y O"", ""I y U""],
+      correcta: 0
+    },
+    {
+      id: 12,
+      texto: ""¿La vocal E puede ser mayúscula?"",
+      visual: ""🔠"",
+      opciones: [""Sí"", ""No""],
+      correcta: 0
+    }
+  ];
+
+  let respuestas_003 = {};
+  let respondidas_003 = 0;
+
+  function generarHTML_003() {
+    const contenedor = document.getElementById('contenedor_003');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_003.length; i++) {
+      const p = preguntas_003[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + (i + 1) + '. ' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">';
+        html += p.opciones[j];
+        html += '</button>';
+      }
+      
+      html += '</div>';
+      html += '</div>';
+    }
+    
+    contenedor.innerHTML = html;
+  }
+
+  function manejarRespuesta_003(event) {
+    if (!event.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(event.target.dataset.pregunta);
+    const valor = parseInt(event.target.dataset.valor);
+    
+    const botonesPregunta = document.querySelectorAll('[data-pregunta=""' + preguntaId + '""].opcion-btn');
+    botonesPregunta.forEach(btn => btn.classList.remove('seleccionado'));
+    
+    event.target.classList.add('seleccionado');
+    
+    if (!respuestas_003[preguntaId]) {
+      respondidas_003++;
+    }
+    respuestas_003[preguntaId] = valor;
+    
+    actualizarProgreso_003();
+  }
+
+  function actualizarProgreso_003() {
+    const total = preguntas_003.length;
+    const porcentaje = (respondidas_003 / total) * 100;
+    
+    document.getElementById('progreso-fill_003').style.width = porcentaje + '%';
+    document.getElementById('contador_003').textContent = respondidas_003 + ' de ' + total;
+  }
+
+  function comprobarRespuestas_003() {
+    let aciertos = 0;
+    
+    for (let i = 0; i < preguntas_003.length; i++) {
+      const pregunta = preguntas_003[i];
+      const respuestaUsuario = respuestas_003[pregunta.id];
+      const esCorrecta = respuestaUsuario === pregunta.correcta;
+      
+      if (esCorrecta) aciertos++;
+      
+      const botonesPregunta = document.querySelectorAll('[data-pregunta=""' + pregunta.id + '""].opcion-btn');
+      botonesPregunta.forEach(btn => {
+        const valorBtn = parseInt(btn.dataset.valor);
+        
+        if (valorBtn === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (valorBtn === respuestaUsuario && !esCorrecta) {
+          btn.classList.add('incorrecto');
+        }
+        
+        btn.disabled = true;
+      });
+    }
+    
+    mostrarFeedback_003(aciertos);
+    document.getElementById('comprobar_003').style.display = 'none';
+  }
+
+  function mostrarFeedback_003(aciertos) {
+    const total = preguntas_003.length;
+    const feedback = document.getElementById('feedback_003');
+    let mensaje = '';
+    let clase = '';
+    
+    if (aciertos >= 10) {
+      mensaje = '🌟 ¡EXCELENTE! ' + aciertos + ' de ' + total + ' correctas. ¡Eres un experto en vocales! 🌟';
+      clase = 'exito';
+    } else if (aciertos >= 8) {
+      mensaje = '⭐ ¡MUY BIEN! ' + aciertos + ' de ' + total + ' correctas. ¡Conoces muy bien las vocales! ⭐';
+      clase = 'exito';
+    } else if (aciertos >= 6) {
+      mensaje = '👍 ¡BIEN! ' + aciertos + ' de ' + total + ' correctas. ¡Sigue practicando las vocales! 👍';
+      clase = 'mejorar';
+    } else {
+      mensaje = '💪 ' + aciertos + ' de ' + total + ' correctas. ¡Vamos a repasar las vocales juntos! 💪';
+      clase = 'mejorar';
+    }
+    
+    feedback.textContent = mensaje;
+    feedback.className = 'feedback ' + clase;
+    feedback.style.display = 'block';
+  }
+
+  function descargarPDF_003() {
+    const elemento = document.getElementById('ficha_003');
+    const opt = {
+      margin: 10,
+      filename: 'ficha_003_vocales.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+    };
+    html2pdf().set(opt).from(elemento).save();
+  }
+
+  function inicializar_003() {
+    aplicarEstilos_003();
+    generarHTML_003();
+    
+    document.getElementById('contenedor_003').addEventListener('click', manejarRespuesta_003);
+    document.getElementById('comprobar_003').addEventListener('click', comprobarRespuestas_003);
+    document.getElementById('descargarPDF_003').addEventListener('click', descargarPDF_003);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_003);
+  } else {
+    inicializar_003();
+  }
+})();
+</script>",,publish,2026-01-15
+004,Primaria,1º Primaria,Lengua,Consonantes,Las Letras,Medio,Genérica,"Las letras P, M y L",6-7 años,20,0,"Aprende las letras P, M y L formando sílabas y palabras simples.","Aprender consonantes P, M, L|Formar sílabas directas|Iniciarse en lectoescritura",Repite en voz alta cada sílaba|Escribe las sílabas siguiendo modelo|Une las sílabas para formar palabras,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_004"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_004"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""background: #E0E0E0; height: 20px; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_004"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_004"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 12</span>
+  </div>
+
+  <div style=""margin-top: 80px;"">
+    <div class=""titulo-ficha"" style=""text-align: center; font-size: 2em; color: #FF6B35; margin-bottom: 10px; font-weight: bold;"">Las letras P, M y L</div>
+    <div class=""instrucciones"" style=""text-align: center; font-size: 1.2em; margin-bottom: 20px; color: #2EC4B6;"">¡Aprende las consonantes y forma sílabas divertidas! 📖✨</div>
+    
+    <div style=""text-align: center; margin-bottom: 30px;"">
+      <button class=""btn-comprobar"" id=""comprobar_004"" style=""background: #FF6B35; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.3em; cursor: pointer; margin-right: 10px;"">✅ ¡YA TERMINÉ!</button>
+      <button class=""btn-descargar-pdf"" id=""descargarPDF_004"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+    </div>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_004""></div>
+
+  <div class=""feedback"" id=""feedback_004"" style=""text-align: center; margin-top: 30px; font-size: 1.5em; font-weight: bold;""></div>
+</div>
+
+<script>
+(function(){
+
+function aplicarEstilos_004() {
+  const style = document.createElement('style');
+  style.textContent = 'body { padding-top: 100px; font-family: Arial, sans-serif; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { background: #FFF; border: 3px solid #FFD23F; border-radius: 15px; padding: 20px; margin: 20px auto; max-width: 600px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); } .pregunta { font-size: 1.4em; font-weight: bold; color: #2D3436; margin-bottom: 15px; } .visual { font-size: 3em; text-align: center; margin: 20px 0; } .opciones { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; } .opcion-btn { background: #74B9FF; color: white; border: none; padding: 15px 25px; border-radius: 20px; font-size: 1.2em; cursor: pointer; transition: all 0.3s; min-width: 100px; } .opcion-btn:hover { background: #0984E3; transform: scale(1.05); } .opcion-btn.seleccionado { background: #FDCB6E; color: #2D3436; } .opcion-btn.correcto { background: #00B894; } .opcion-btn.incorrecto { background: #E17055; } .feedback.exito { color: #00B894; } .feedback.mejorar { color: #E17055; } .silaba-grande { font-size: 2em; background: #DDA0DD; padding: 10px; border-radius: 10px; margin: 5px; display: inline-block; color: #4B0082; font-weight: bold; }';
+  document.head.appendChild(style);
+}
+
+const preguntas_004 = [
+  {
+    id: 1,
+    texto: ""¿Cuál es la letra P?"",
+    visual: ""📝"",
+    opciones: [""P"", ""B"", ""D""],
+    correcta: 0
+  },
+  {
+    id: 2,
+    texto: ""¿Cuál es la letra M?"",
+    visual: ""✏️"",
+    opciones: [""N"", ""M"", ""W""],
+    correcta: 1
+  },
+  {
+    id: 3,
+    texto: ""¿Cuál es la letra L?"",
+    visual: ""📚"",
+    opciones: [""I"", ""T"", ""L""],
+    correcta: 2
+  },
+  {
+    id: 4,
+    texto: ""¿Qué sílaba forman P + A?"",
+    visual: ""🔤"",
+    opciones: [""PA"", ""AP"", ""PO""],
+    correcta: 0
+  },
+  {
+    id: 5,
+    texto: ""¿Qué sílaba forman M + E?"",
+    visual: ""🎯"",
+    opciones: [""MA"", ""ME"", ""MI""],
+    correcta: 1
+  },
+  {
+    id: 6,
+    texto: ""¿Qué sílaba forman L + O?"",
+    visual: ""⭐"",
+    opciones: [""LA"", ""LI"", ""LO""],
+    correcta: 2
+  },
+  {
+    id: 7,
+    texto: ""¿Con qué letra empieza PAPÁ?"",
+    visual: ""👨"",
+    opciones: [""M"", ""P"", ""L""],
+    correcta: 1
+  },
+  {
+    id: 8,
+    texto: ""¿Con qué letra empieza MAMÁ?"",
+    visual: ""👩"",
+    opciones: [""M"", ""P"", ""L""],
+    correcta: 0
+  },
+  {
+    id: 9,
+    texto: ""¿Con qué letra empieza LUNA?"",
+    visual: ""🌙"",
+    opciones: [""P"", ""M"", ""L""],
+    correcta: 2
+  },
+  {
+    id: 10,
+    texto: ""¿Qué palabra se forma con PA-PÁ?"",
+    visual: ""👨‍👧"",
+    opciones: [""PAPÁ"", ""MAMÁ"", ""LUNA""],
+    correcta: 0
+  },
+  {
+    id: 11,
+    texto: ""¿Cuántas letras tiene la palabra PALA?"",
+    visual: ""🏖️"",
+    opciones: [""3"", ""4"", ""5""],
+    correcta: 1
+  },
+  {
+    id: 12,
+    texto: ""¿Qué sílaba falta en _UNA?"",
+    visual: ""🌕"",
+    opciones: [""PA"", ""MA"", ""LU""],
+    correcta: 2
+  }
+];
+
+let respuestasUsuario_004 = {};
+let preguntasRespondidas_004 = 0;
+
+function generarHTML_004() {
+  const contenedor = document.getElementById('contenedor_004');
+  let html = '';
+  
+  for (let i = 0; i < preguntas_004.length; i++) {
+    const p = preguntas_004[i];
+    html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+    html += '<div class=""pregunta"">Pregunta ' + p.id + ': ' + p.texto + '</div>';
+    html += '<div class=""visual"">' + p.visual + '</div>';
+    
+    if (p.id === 4 || p.id === 5 || p.id === 6) {
+      html += '<div style=""text-align: center; margin: 15px 0;"">';
+      if (p.id === 4) html += '<span class=""silaba-grande"">P</span> + <span class=""silaba-grande"">A</span> = ?';
+      if (p.id === 5) html += '<span class=""silaba-grande"">M</span> + <span class=""silaba-grande"">E</span> = ?';
+      if (p.id === 6) html += '<span class=""silaba-grande"">L</span> + <span class=""silaba-grande"">O</span> = ?';
+      html += '</div>';
+    }
+    
+    html += '<div class=""opciones"">';
+    for (let j = 0; j < p.opciones.length; j++) {
+      html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+    }
+    html += '</div>';
+    html += '</div>';
+  }
+  
+  contenedor.innerHTML = html;
+}
+
+function actualizarProgreso_004() {
+  const total = preguntas_004.length;
+  const porcentaje = (preguntasRespondidas_004 / total) * 100;
+  document.getElementById('progreso-fill_004').style.width = porcentaje + '%';
+  document.getElementById('contador_004').textContent = preguntasRespondidas_004 + ' de ' + total;
+}
+
+function manejarRespuesta_004(event) {
+  if (!event.target.classList.contains('opcion-btn')) return;
+  
+  const preguntaId = parseInt(event.target.dataset.pregunta);
+  const valorRespuesta = parseInt(event.target.dataset.valor);
+  
+  const botonesGrupo = document.querySelectorAll('[data-pregunta=""' + preguntaId + '""]');
+  botonesGrupo.forEach(function(btn) {
+    if (btn.classList.contains('opcion-btn')) {
+      btn.classList.remove('seleccionado');
+    }
+  });
+  
+  event.target.classList.add('seleccionado');
+  
+  if (!(preguntaId in respuestasUsuario_004)) {
+    preguntasRespondidas_004++;
+  }
+  
+  respuestasUsuario_004[preguntaId] = valorRespuesta;
+  actualizarProgreso_004();
+}
+
+function comprobarRespuestas_004() {
+  let aciertos = 0;
+  
+  for (let i = 0; i < preguntas_004.length; i++) {
+    const pregunta = preguntas_004[i];
+    const respuestaUsuario = respuestasUsuario_004[pregunta.id];
+    const botonesGrupo = document.querySelectorAll('[data-pregunta=""' + pregunta.id + '""]');
+    
+    botonesGrupo.forEach(function(btn, index) {
+      if (btn.classList.contains('opcion-btn')) {
+        btn.classList.remove('seleccionado');
+        if (index === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (index === respuestaUsuario && respuestaUsuario !== pregunta.correcta) {
+          btn.classList.add('incorrecto');
+        }
+        btn.disabled = true;
+      }
+    });
+    
+    if (respuestaUsuario === pregunta.correcta) {
+      aciertos++;
+    }
+  }
+  
+  const feedback = document.getElementById('feedback_004');
+  if (aciertos >= 10) {
+    feedback.innerHTML = '⭐ ¡EXCELENTE! ' + aciertos + ' de ' + preguntas_004.length + ' ¡Eres genial con las letras! 🎉';
+    feedback.className = 'feedback exito';
+  } else if (aciertos >= 8) {
+    feedback.innerHTML = '👏 ¡MUY BIEN! ' + aciertos + ' de ' + preguntas_004.length + ' ¡Sigue practicando! 💪';
+    feedback.className = 'feedback exito';
+  } else {
+    feedback.innerHTML = '📚 Has acertado ' + aciertos + ' de ' + preguntas_004.length + '. ¡Practica más las letras P, M y L! 🌟';
+    feedback.className = 'feedback mejorar';
+  }
+  
+  document.getElementById('comprobar_004').disabled = true;
+}
+
+function descargarPDF_004() {
+  const elemento = document.getElementById('ficha_004');
+  const opt = {
+    margin: 10,
+    filename: 'ficha_004_letras_PML.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+  };
+  html2pdf().set(opt).from(elemento).save();
+}
+
+function inicializar_004() {
+  aplicarEstilos_004();
+  generarHTML_004();
+  actualizarProgreso_004();
+  
+  document.getElementById('contenedor_004').addEventListener('click', manejarRespuesta_004);
+  document.getElementById('comprobar_004').addEventListener('click', comprobarRespuestas_004);
+  document.getElementById('descargarPDF_004').addEventListener('click', descargarPDF_004);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', inicializar_004);
+} else {
+  inicializar_004();
+}
+
+})();
+</script>",,publish,2026-01-15
+005,Primaria,1º Primaria,Matemáticas,Números 1-100,Sentido Numérico,Medio,Genérica,Números del 1 al 20,6-7 años,15,0,Practica los números del 11 al 20 con ejercicios variados.,Contar del 11 al 20|Escribir números de dos cifras|Comprender segunda decena,Lee los números en orden|Completa la serie|Escribe el número que falta|Cuenta hacia adelante y atrás,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_005"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_005"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""width: 100%; height: 20px; background: #E0E0E0; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_005"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_005"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 10</span>
+  </div>
+
+  <div style=""margin-top: 100px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; text-align: center; margin-bottom: 30px;"">
+    <div class=""titulo-ficha"" style=""font-size: 2.5em; color: white; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin-bottom: 10px;"">📊 Números del 1 al 20 🔢</div>
+    <div class=""instrucciones"" style=""color: #FFE066; font-size: 1.3em; font-weight: 500;"">¡Vamos a practicar los números hasta el 20!</div>
+  </div>
+
+  <div style=""text-align: center; margin-bottom: 30px;"">
+    <button class=""btn-comprobar"" id=""comprobar_005"" style=""background: #FF6B6B; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.4em; cursor: pointer; box-shadow: 0 4px 15px rgba(255,107,107,0.4); transition: transform 0.2s;"">✅ ¡YA TERMINÉ!</button>
+    <button class=""btn-descargar-pdf"" id=""descargarPDF_005"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_005""></div>
+
+  <div class=""feedback"" id=""feedback_005"" style=""margin-top: 30px; padding: 20px; border-radius: 15px; text-align: center; font-size: 1.3em; font-weight: bold; display: none;""></div>
+</div>
+
+<script>
+(function() {
+  function aplicarEstilos_005() {
+    const style = document.createElement('style');
+    style.textContent = 'body { padding-top: 100px; font-family: ""Comic Sans MS"", Arial, sans-serif; background: #F0F8FF; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { background: white; margin: 20px auto; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 600px; border: 3px solid #E0E0E0; transition: transform 0.2s; } .bloque-ejercicio:hover { transform: translateY(-2px); } .pregunta { font-size: 1.4em; color: #333; margin-bottom: 15px; font-weight: bold; } .visual { font-size: 2.5em; text-align: center; margin: 20px 0; } .opciones { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; } .opcion-btn { padding: 12px 20px; border: 2px solid #4ECDC4; background: white; border-radius: 10px; font-size: 1.2em; cursor: pointer; transition: all 0.3s; min-width: 80px; } .opcion-btn:hover { background: #4ECDC4; color: white; transform: scale(1.05); } .opcion-btn.seleccionado { background: #FFE066; border-color: #F39C12; } .opcion-btn.correcto { background: #2ECC71; color: white; border-color: #27AE60; } .opcion-btn.incorrecto { background: #E74C3C; color: white; border-color: #C0392B; } .feedback.exito { background: linear-gradient(135deg, #2ECC71, #27AE60); color: white; } .feedback.mejorar { background: linear-gradient(135deg, #F39C12, #E67E22); color: white; } .btn-comprobar:hover { transform: scale(1.05); }';
+    document.head.appendChild(style);
+  }
+
+  const preguntas_005 = [
+    {
+      id: 1,
+      texto: ""¿Cuál es el número que viene después del 10?"",
+      visual: ""🔟➡️❓"",
+      opciones: [""11"", ""9"", ""12""],
+      correcta: 0
+    },
+    {
+      id: 2,
+      texto: ""Cuenta las estrellas:"",
+      visual: ""⭐⭐⭐⭐⭐ (12 estrellas)"",
+      opciones: [""11"", ""12"", ""13""],
+      correcta: 1
+    },
+    {
+      id: 3,
+      texto: ""¿Qué número va entre el 15 y el 17?"",
+      visual: ""1️⃣5️⃣ ❓ 1️⃣7️⃣"",
+      opciones: [""14"", ""16"", ""18""],
+      correcta: 1
+    },
+    {
+      id: 4,
+      texto: ""¿Cuántos puntos hay?"",
+      visual: ""🔴🔴🔴🔴🔴 (14 puntos rojos)"",
+      opciones: [""13"", ""14"", ""15""],
+      correcta: 1
+    },
+    {
+      id: 5,
+      texto: ""¿Cuál es el número anterior al 20?"",
+      visual: ""❓ ➡️ 2️⃣0️⃣"",
+      opciones: [""19"", ""18"", ""21""],
+      correcta: 0
+    },
+    {
+      id: 6,
+      texto: ""¿Qué número falta en la serie: 11, 12, __, 14?"",
+      visual: ""1️⃣1️⃣ 1️⃣2️⃣ ❓ 1️⃣4️⃣"",
+      opciones: [""10"", ""13"", ""15""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""Cuenta hacia atrás: 18, 17, __"",
+      visual: ""🔢 1️⃣8️⃣ 1️⃣7️⃣ ❓"",
+      opciones: [""16"", ""19"", ""15""],
+      correcta: 0
+    },
+    {
+      id: 8,
+      texto: ""¿Cuántos corazones hay en total?"",
+      visual: ""💙💙💙💙💙 (17 corazones azules)"",
+      opciones: [""16"", ""17"", ""18""],
+      correcta: 1
+    },
+    {
+      id: 9,
+      texto: ""¿Cuál es el mayor: 13 o 15?"",
+      visual: ""1️⃣3️⃣ 🆚 1️⃣5️⃣"",
+      opciones: [""13"", ""15"", ""Son iguales""],
+      correcta: 1
+    },
+    {
+      id: 10,
+      texto: ""Complete: 16, 17, 18, __"",
+      visual: ""🏃‍♂️ 1️⃣6️⃣ 1️⃣7️⃣ 1️⃣8️⃣ ❓"",
+      opciones: [""19"", ""20"", ""15""],
+      correcta: 0
+    }
+  ];
+
+  let respuestasUsuario_005 = {};
+  let totalPreguntas_005 = preguntas_005.length;
+
+  function generarHTML_005() {
+    const contenedor = document.getElementById('contenedor_005');
+    let html = '';
+    
+    for (let i = 0; i < preguntas_005.length; i++) {
+      const p = preguntas_005[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">Pregunta ' + p.id + ': ' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+      }
+      
+      html += '</div>';
+      html += '</div>';
+    }
+    
+    contenedor.innerHTML = html;
+  }
+
+  function actualizarProgreso_005() {
+    const respondidas = Object.keys(respuestasUsuario_005).length;
+    const porcentaje = (respondidas / totalPreguntas_005) * 100;
+    
+    document.getElementById('progreso-fill_005').style.width = porcentaje + '%';
+    document.getElementById('contador_005').textContent = respondidas + ' de ' + totalPreguntas_005;
+  }
+
+  function manejarRespuesta_005(event) {
+    if (!event.target.classList.contains('opcion-btn')) return;
+    
+    const preguntaId = parseInt(event.target.getAttribute('data-pregunta'));
+    const valorSeleccionado = parseInt(event.target.getAttribute('data-valor'));
+    
+    const bloque = document.querySelector('[data-pregunta=""' + preguntaId + '""]');
+    const botones = bloque.querySelectorAll('.opcion-btn');
+    
+    botones.forEach(function(btn) {
+      btn.classList.remove('seleccionado');
+    });
+    
+    event.target.classList.add('seleccionado');
+    respuestasUsuario_005[preguntaId] = valorSeleccionado;
+    
+    actualizarProgreso_005();
+  }
+
+  function comprobarRespuestas_005() {
+    let aciertos = 0;
+    
+    for (let i = 0; i < preguntas_005.length; i++) {
+      const pregunta = preguntas_005[i];
+      const bloque = document.querySelector('[data-pregunta=""' + pregunta.id + '""]');
+      const botones = bloque.querySelectorAll('.opcion-btn');
+      
+      botones.forEach(function(btn, index) {
+        btn.classList.remove('seleccionado');
+        
+        if (index === pregunta.correcta) {
+          btn.classList.add('correcto');
+        } else if (respuestasUsuario_005[pregunta.id] === index) {
+          btn.classList.add('incorrecto');
+        }
+      });
+      
+      if (respuestasUsuario_005[pregunta.id] === pregunta.correcta) {
+        aciertos++;
+      }
+    }
+    
+    mostrarFeedback_005(aciertos);
+  }
+
+  function mostrarFeedback_005(aciertos) {
+    const feedback = document.getElementById('feedback_005');
+    let mensaje = '';
+    let clase = '';
+    
+    if (aciertos >= 8) {
+      mensaje = '🌟 ¡Increíble! Has acertado ' + aciertos + ' de ' + totalPreguntas_005 + ' preguntas. ¡Eres un campeón de los números! 🏆';
+      clase = 'exito';
+    } else if (aciertos >= 6) {
+      mensaje = '👏 ¡Muy bien! Has acertado ' + aciertos + ' de ' + totalPreguntas_005 + ' preguntas. ¡Sigue practicando! 📚';
+      clase = 'mejorar';
+    } else {
+      mensaje = '💪 Has acertado ' + aciertos + ' de ' + totalPreguntas_005 + ' preguntas. ¡No te rindas, puedes mejorar! 🌈';
+      clase = 'mejorar';
+    }
+    
+    feedback.innerHTML = mensaje;
+    feedback.className = 'feedback ' + clase;
+    feedback.style.display = 'block';
+    
+    feedback.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function descargarPDF_005() {
+    const elemento = document.getElementById('ficha_005');
+    const opt = {
+      margin: 10,
+      filename: 'numeros_1_al_20_ficha_005.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+    };
+    html2pdf().set(opt).from(elemento).save();
+  }
+
+  function inicializar_005() {
+    aplicarEstilos_005();
+    generarHTML_005();
+    actualizarProgreso_005();
+    
+    document.getElementById('contenedor_005').addEventListener('click', manejarRespuesta_005);
+    document.getElementById('comprobar_005').addEventListener('click', comprobarRespuestas_005);
+    document.getElementById('descargarPDF_005').addEventListener('click', descargarPDF_005);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_005);
+  } else {
+    inicializar_005();
+  }
+
+})();
+</script>",,publish,2026-01-15
+006,Primaria,1º Primaria,Matemáticas,Sumas y Restas,Sentido Numérico,Medio,Genérica,Restas sin llevar,6-7 años,20,0,Iniciación a las restas con ejercicios sin llevar adaptados.,Realizar restas sin llevar|Comprender concepto sustracción|Resolver problemas de quitar,Lee cada resta|Puedes usar objetos para quitar|Escribe el resultado|Comprueba tu respuesta,,"<script src=""https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js""></script>
+
+<div id=""ficha_006"" class=""ficha-educativa"">
+  <div class=""progreso"" id=""progreso_006"" style=""position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"">
+    <div class=""barra-progreso"" style=""width: 100%; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden;"">
+      <div class=""progreso-actual"" id=""progreso-fill_006"" style=""height: 100%; background: #2EC4B6; width: 0%; transition: width 0.3s;""></div>
+    </div>
+    <span id=""contador_006"" style=""display: block; text-align: center; font-weight: bold; margin-top: 5px;"">0 de 10</span>
+  </div>
+
+  <div style=""margin-top: 80px; text-align: center; padding: 20px;"">
+    <div class=""titulo-ficha"" style=""font-size: 2.5em; color: #FF6B35; font-weight: bold; margin-bottom: 10px;"">🔢 Restas sin llevar 🔢</div>
+    <div class=""instrucciones"" style=""font-size: 1.3em; color: #333; margin-bottom: 20px;"">¡Vamos a aprender a quitar números! Puedes usar objetos para ayudarte a contar</div>
+    
+    <button class=""btn-comprobar"" id=""comprobar_006"" style=""background: #FF9F1C; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.3em; cursor: pointer; margin: 10px;"">✅ ¡YA TERMINÉ!</button>
+    <button class=""btn-descargar-pdf"" id=""descargarPDF_006"" style=""background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px;"">📥 Descargar PDF</button>
+  </div>
+
+  <div class=""contenedor-preguntas"" id=""contenedor_006""></div>
+
+  <div class=""feedback"" id=""feedback_006"" style=""text-align: center; margin: 20px; font-size: 1.5em; padding: 20px; border-radius: 15px;""></div>
+</div>
+
+<script>
+(function() {
+  function aplicarEstilos_006() {
+    const style = document.createElement('style');
+    style.textContent = 'body { padding-top: 100px; font-family: Arial, sans-serif; } .progreso { position: fixed !important; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFBF0; border-bottom: 2px solid #FF9F1C; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .btn-descargar-pdf { background: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 25px; font-size: 1.2em; cursor: pointer; margin-left: 10px; transition: background 0.3s; } .btn-descargar-pdf:hover { background: #45a049; } .bloque-ejercicio { margin: 20px auto; padding: 25px; background: #f9f9f9; border-radius: 15px; max-width: 600px; border-left: 5px solid #FF9F1C; } .pregunta { font-size: 1.4em; font-weight: bold; color: #333; margin-bottom: 15px; } .visual { font-size: 2em; margin: 20px 0; text-align: center; } .opciones { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; } .opcion-btn { padding: 15px 25px; font-size: 1.3em; border: 3px solid #2EC4B6; background: white; border-radius: 20px; cursor: pointer; transition: all 0.3s; min-width: 80px; } .opcion-btn:hover { background: #E8F8F7; transform: scale(1.05); } .seleccionado { background: #2EC4B6; color: white; } .correcto { background: #4CAF50 !important; color: white; } .incorrecto { background: #F44336 !important; color: white; } .exito { background: #E8F5E8; border: 2px solid #4CAF50; color: #2E7D32; } .mejorar { background: #FFF3E0; border: 2px solid #FF9800; color: #E65100; }';
+    document.head.appendChild(style);
+  }
+
+  const preguntas_006 = [
+    {
+      id: 1,
+      texto: ""¿Cuánto es 5 - 2?"",
+      visual: ""🍎🍎🍎🍎🍎 - 🍎🍎"",
+      opciones: [""3"", ""2"", ""4""],
+      correcta: 0
+    },
+    {
+      id: 2,
+      texto: ""¿Cuánto es 6 - 1?"",
+      visual: ""⭐⭐⭐⭐⭐⭐ - ⭐"",
+      opciones: [""5"", ""6"", ""4""],
+      correcta: 0
+    },
+    {
+      id: 3,
+      texto: ""¿Cuánto es 4 - 3?"",
+      visual: ""🐶🐶🐶🐶 - 🐶🐶🐶"",
+      opciones: [""1"", ""2"", ""0""],
+      correcta: 0
+    },
+    {
+      id: 4,
+      texto: ""¿Cuánto es 7 - 4?"",
+      visual: ""🌸🌸🌸🌸🌸 (7 flores) - 🌸🌸🌸🌸"",
+      opciones: [""2"", ""3"", ""4""],
+      correcta: 1
+    },
+    {
+      id: 5,
+      texto: ""¿Cuánto es 8 - 3?"",
+      visual: ""🚗🚗🚗🚗🚗 (8 coches) - 🚗🚗🚗"",
+      opciones: [""5"", ""4"", ""6""],
+      correcta: 0
+    },
+    {
+      id: 6,
+      texto: ""¿Cuánto es 9 - 5?"",
+      visual: ""🎈🎈🎈🎈🎈 (9 globos) - 🎈🎈🎈🎈🎈"",
+      opciones: [""3"", ""4"", ""5""],
+      correcta: 1
+    },
+    {
+      id: 7,
+      texto: ""¿Cuánto es 6 - 4?"",
+      visual: ""🐱🐱🐱🐱🐱🐱 - 🐱🐱🐱🐱"",
+      opciones: [""2"", ""1"", ""3""],
+      correcta: 0
+    },
+    {
+      id: 8,
+      texto: ""¿Cuánto es 8 - 6?"",
+      visual: ""🍪🍪🍪🍪🍪 (8 galletas) - 🍪🍪🍪🍪🍪🍪"",
+      opciones: [""1"", ""2"", ""3""],
+      correcta: 1
+    },
+    {
+      id: 9,
+      texto: ""¿Cuánto es 10 - 7?"",
+      visual: ""🎯🎯🎯🎯🎯 (10 dianas) - 🎯🎯🎯🎯🎯 (7 dianas)"",
+      opciones: [""3"", ""4"", ""2""],
+      correcta: 0
+    },
+    {
+      id: 10,
+      texto: ""¿Cuánto es 9 - 6?"",
+      visual: ""🧸🧸🧸🧸🧸 (9 ositos) - 🧸🧸🧸🧸🧸🧸"",
+      opciones: [""2"", ""3"", ""4""],
+      correcta: 1
+    }
+  ];
+
+  let respuestasSeleccionadas_006 = {};
+
+  function generarHTML_006() {
+    const contenedor = document.getElementById('contenedor_006');
+    let html = '';
+    for (let i = 0; i < preguntas_006.length; i++) {
+      const p = preguntas_006[i];
+      html += '<div class=""bloque-ejercicio"" data-pregunta=""' + p.id + '"">';
+      html += '<div class=""pregunta"">' + (i + 1) + '. ' + p.texto + '</div>';
+      html += '<div class=""visual"">' + p.visual + '</div>';
+      html += '<div class=""opciones"">';
+      for (let j = 0; j < p.opciones.length; j++) {
+        html += '<button class=""opcion-btn"" data-valor=""' + j + '"" data-pregunta=""' + p.id + '"">' + p.opciones[j] + '</button>';
+      }
+      html += '</div></div>';
+    }
+    contenedor.innerHTML = html;
+  }
+
+  function actualizarProgreso_006() {
+    const total = preguntas_006.length;
+    const respondidas = Object.keys(respuestasSeleccionadas_006).length;
+    const porcentaje = (respondidas / total) * 100;
+    
+    document.getElementById('progreso-fill_006').style.width = porcentaje + '%';
+    document.getElementById('contador_006').textContent = respondidas + ' de ' + total;
+  }
+
+  function manejarRespuesta_006(event) {
+    if (event.target.classList.contains('opcion-btn')) {
+      const preguntaId = parseInt(event.target.getAttribute('data-pregunta'));
+      const valorSeleccionado = parseInt(event.target.getAttribute('data-valor'));
+      
+      const bloque = document.querySelector('[data-pregunta=""' + preguntaId + '""]');
+      const botones = bloque.querySelectorAll('.opcion-btn');
+      
+      botones.forEach(function(boton) {
+        boton.classList.remove('seleccionado');
+      });
+      
+      event.target.classList.add('seleccionado');
+      respuestasSeleccionadas_006[preguntaId] = valorSeleccionado;
+      
+      actualizarProgreso_006();
+    }
+  }
+
+  function comprobarRespuestas_006() {
+    let correctas = 0;
+    const total = preguntas_006.length;
+    
+    for (let i = 0; i < preguntas_006.length; i++) {
+      const pregunta = preguntas_006[i];
+      const bloque = document.querySelector('[data-pregunta=""' + pregunta.id + '""]');
+      const botones = bloque.querySelectorAll('.opcion-btn');
+      
+      botones.forEach(function(boton, index) {
+        boton.classList.remove('seleccionado');
+        if (index === pregunta.correcta) {
+          boton.classList.add('correcto');
+        } else {
+          boton.classList.add('incorrecto');
+        }
+        boton.disabled = true;
+      });
+      
+      if (respuestasSeleccionadas_006[pregunta.id] === pregunta.correcta) {
+        correctas++;
+      }
+    }
+    
+    const feedback = document.getElementById('feedback_006');
+    let mensaje = '';
+    let clase = '';
+    
+    if (correctas >= 8) {
+      mensaje = '🌟 ¡Excelente! ' + correctas + ' de ' + total + ' ¡Eres genial restando! 🌟';
+      clase = 'exito';
+    } else if (correctas >= 5) {
+      mensaje = '⭐ ¡Bien! ' + correctas + ' de ' + total + ' ¡Sigue practicando! ⭐';
+      clase = 'mejorar';
+    } else {
+      mensaje = '💪 ' + correctas + ' de ' + total + ' ¡No te rindas! Practica más ¡Tú puedes! 💪';
+      clase = 'mejorar';
+    }
+    
+    feedback.textContent = mensaje;
+    feedback.className = 'feedback ' + clase;
+    
+    document.getElementById('comprobar_006').style.display = 'none';
+  }
+
+  function descargarPDF_006() {
+    const elemento = document.getElementById('ficha_006');
+    const opt = {
+      margin: 10,
+      filename: 'restas_sin_llevar_006.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+    };
+    html2pdf().set(opt).from(elemento).save();
+  }
+
+  function inicializar_006() {
+    aplicarEstilos_006();
+    generarHTML_006();
+    
+    document.getElementById('contenedor_006').addEventListener('click', manejarRespuesta_006);
+    document.getElementById('comprobar_006').addEventListener('click', comprobarRespuestas_006);
+    document.getElementById('descargarPDF_006').addEventListener('click', descargarPDF_006);
+    
+    actualizarProgreso_006();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializar_006);
+  } else {
+    inicializar_006();
+  }
+})();
+</script>",,publish,2026-01-15
+007,Primaria,1º Primaria,Lengua,Caligrafía,Expresión Escrita,Fácil,Genérica,Escribir vocales mayúsculas,6-7 años,15,0,Mejora tu caligrafía escribiendo las vocales en mayúscula.,Mejorar grafomotricidad|Escribir vocales correctamente|Seguir trazo adecuado,Observa el trazo de cada vocal|Repasa con lápiz vocales punteadas|Copia las vocales en pautas|Practica varias veces,,,,publish,2026-01-15
+008,Primaria,1º Primaria,Lengua,Lectoescritura,Las Letras,Medio,Genérica,Formar palabras sencillas,6-7 años,20,0,Combina sílabas para formar tus primeras palabras.,Combinar sílabas|Formar palabras simples|Desarrollar lectoescritura,Lee cada sílaba|Une las sílabas que forman palabra|Escribe la palabra completa|Dibuja lo que representa,,,,publish,2026-01-15
+009,Primaria,1º Primaria,Matemáticas,Formas Geométricas,Sentido Espacial,Fácil,Genérica,Formas geométricas básicas,6-7 años,15,1,Reconoce las formas geométricas básicas en objetos cotidianos.,Identificar formas geométricas|Clasificar objetos por forma|Reconocer figuras en entorno,Observa cada forma geométrica|Repasa sus lados con dedo|Cuenta los lados de cada figura|Busca objetos con esas formas,,,,publish,2026-01-15
+010,Primaria,1º Primaria,Matemáticas,Tiempo y Reloj,Sentido de la Medida,Medio,Genérica,El reloj - horas en punto,6-7 años,15,0,Lee la hora en punto usando el reloj analógico.,Leer las horas en punto|Comprender reloj analógico|Relacionar agujas con hora,Observa dónde señalan agujas|La aguja corta marca hora|Escribe qué hora es|Dibuja agujas en relojes vacíos,,,,publish,2026-01-15
