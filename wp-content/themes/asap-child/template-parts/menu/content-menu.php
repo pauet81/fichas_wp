@@ -41,11 +41,23 @@ if (!function_exists('fichas_get_hub_bg')) {
 
 <div class="asap-menu-container-flex">
 
-	<div class="fichas-progress-badge" id="fichas-progress-badge" aria-live="polite">
-		<div class="progress-level">Nivel <span class="level-value">1</span></div>
-		<div class="progress-bar"><span class="progress-fill" style="width: 0%;"></span></div>
-		<div class="progress-points"><span class="points-value">0</span> pts</div>
-	</div>
+	<?php
+		$hide_fichas_badge = (
+			is_singular('post') ||
+			is_home() ||
+			is_category() ||
+			is_tag() ||
+			is_post_type_archive('post')
+		);
+	?>
+
+	<?php if (!$hide_fichas_badge) : ?>
+		<div class="fichas-progress-badge" id="fichas-progress-badge" aria-live="polite">
+			<div class="progress-level">Nivel <span class="level-value">1</span></div>
+			<div class="progress-bar"><span class="progress-fill" style="width: 0%;"></span></div>
+			<div class="progress-points"><span class="points-value">0</span> pts</div>
+		</div>
+	<?php endif; ?>
 
 	<button id="nav-icon" class="nav-toggle" type="button" aria-label="Abrir menú">
 		<div class="circle nav-icon">
