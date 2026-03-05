@@ -1,2 +1,9 @@
 
 wp-content/ai1wm-backups/
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/debug.log
+wp-config.local.php
+*.sql
+*.wpress
