@@ -724,11 +724,17 @@
     function inicializarDragDrop(ejercicio, index, respuestasUsuario) {
         var items = ejercicio.querySelectorAll('.dragdrop-item');
         var zones = ejercicio.querySelectorAll('.dragdrop-zone');
+        var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
         items.forEach(function(item) {
-            item.draggable = true;
+            // En móvil/táctil delegamos al módulo dragdrop-addon.js
+            item.draggable = !isTouchDevice;
 
             item.addEventListener('dragstart', function(e) {
+                if (isTouchDevice) {
+                    e.preventDefault();
+                    return;
+                }
                 e.dataTransfer.setData('text/plain', item.getAttribute('data-valor'));
                 item.classList.add('dragging');
             });
@@ -743,15 +749,18 @@
             if (!zoneContent) return;
 
             zoneContent.addEventListener('dragover', function(e) {
+                if (isTouchDevice) return;
                 e.preventDefault();
                 zone.classList.add('dragover');
             });
 
             zoneContent.addEventListener('dragleave', function() {
+                if (isTouchDevice) return;
                 zone.classList.remove('dragover');
             });
 
             zoneContent.addEventListener('drop', function(e) {
+                if (isTouchDevice) return;
                 e.preventDefault();
                 zone.classList.remove('dragover');
 
