@@ -67,6 +67,11 @@
   border: 3px solid #fbbf24;
   border-radius: 12px;
   padding: 12px;
+  position: static; /* fuerza flujo normal dentro de "Grupos" */
+  left: auto;
+  top: auto;
+  width: auto;
+  z-index: auto;
   min-height: 64px;
   display: flex;
   align-items: center;
@@ -96,6 +101,15 @@
   opacity: 0.5;
   transform: scale(0.95);
   cursor: grabbing;
+}
+
+/* Si quedó estilo inline tras un drag táctil previo, lo neutraliza */
+.dragdrop-item:not(.dragging) {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  width: auto !important;
+  z-index: auto !important;
 }
 
 .dragdrop-item.dropped {
