@@ -1088,4 +1088,25 @@ function fichas_admin_apply_taxonomy_filters($query) {
 }
 add_action('pre_get_posts', 'fichas_admin_apply_taxonomy_filters');
 
+/* ================================================================
+   REDIRECCIÓN LEGACY: /lengua/ -> /lenguaje/ en Infantil
+   ================================================================ */
+function fichas_redirect_lengua_to_lenguaje_infantil() {
+    if (is_admin()) {
+        return;
+    }
+
+    $request_path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+    if (!$request_path) {
+        return;
+    }
+
+    if (preg_match('#^infantil/([^/]+)/lengua/?$#', $request_path, $matches)) {
+        $target = home_url('/infantil/' . $matches[1] . '/lenguaje/');
+        wp_safe_redirect($target, 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'fichas_redirect_lengua_to_lenguaje_infantil');
+
 

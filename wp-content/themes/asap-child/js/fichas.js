@@ -266,19 +266,19 @@
                     level: 'infantil',
                     children: [
                         { title: '3 años', href: makeUrl('/infantil/3-anos/'), items: [
-                            { title: 'Lengua', href: makeUrl('/infantil/3-anos/lengua/') },
+                            { title: 'Lenguaje', href: makeUrl('/infantil/3-anos/lenguaje/') },
                             { title: 'Inglés', href: makeUrl('/infantil/3-anos/ingles/') },
                             { title: 'Matemáticas', href: makeUrl('/infantil/3-anos/matematicas/') },
                             { title: 'Conocimiento del entorno', href: makeUrl('/infantil/3-anos/conocimiento-del-entorno/') }
                         ]},
                         { title: '4 años', href: makeUrl('/infantil/4-anos/'), items: [
-                            { title: 'Lengua', href: makeUrl('/infantil/4-anos/lengua/') },
+                            { title: 'Lenguaje', href: makeUrl('/infantil/4-anos/lenguaje/') },
                             { title: 'Inglés', href: makeUrl('/infantil/4-anos/ingles/') },
                             { title: 'Matemáticas', href: makeUrl('/infantil/4-anos/matematicas/') },
                             { title: 'Conocimiento del entorno', href: makeUrl('/infantil/4-anos/conocimiento-del-entorno/') }
                         ]},
                         { title: '5 años', href: makeUrl('/infantil/5-anos/'), items: [
-                            { title: 'Lengua', href: makeUrl('/infantil/5-anos/lengua/') },
+                            { title: 'Lenguaje', href: makeUrl('/infantil/5-anos/lenguaje/') },
                             { title: 'Inglés', href: makeUrl('/infantil/5-anos/ingles/') },
                             { title: 'Matemáticas', href: makeUrl('/infantil/5-anos/matematicas/') },
                             { title: 'Conocimiento del entorno', href: makeUrl('/infantil/5-anos/conocimiento-del-entorno/') }

@@ -575,7 +575,7 @@ $wrapper_class = ($hub_type === 'nivel') ? 'nivel-wrapper' : (($hub_type === 'cu
                 <?php
                 $asignaturas_config = array(
                     'matematicas' => array('nombre' => 'Matematicas', 'icono' => 'M', 'color' => 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 'descripcion' => 'Numeros y problemas'),
-                    'lengua' => array('nombre' => 'Lengua', 'icono' => 'L', 'color' => 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', 'descripcion' => 'Lectura y gramatica'),
+                    'lenguaje' => array('nombre' => 'Lenguaje', 'icono' => 'L', 'color' => 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', 'descripcion' => 'Lectura y escritura'),
                     'ingles' => array('nombre' => 'Ingles', 'icono' => 'I', 'color' => 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', 'descripcion' => 'Vocabulario')
                 );
 
