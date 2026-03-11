@@ -51,25 +51,42 @@
         item.addEventListener('touchstart', function(e) {
           draggedElement = this;
           this.classList.add('dragging');
+          this.dataset.touchStartX = String(e.touches[0].pageX);
+          this.dataset.touchStartY = String(e.touches[0].pageY);
+          this.dataset.touchDragging = 'false';
         });
 
         // TOUCH - Touch move
         item.addEventListener('touchmove', function(e) {
           if (!draggedElement) return;
-          // En táctil no movemos visualmente la ficha para evitar desbordes.
-          // Solo detectamos el punto final de suelta.
-          e.preventDefault();
+
+          var startX = parseFloat(this.dataset.touchStartX || '0');
+          var startY = parseFloat(this.dataset.touchStartY || '0');
+          var currentX = e.touches[0].pageX;
+          var currentY = e.touches[0].pageY;
+          var deltaX = Math.abs(currentX - startX);
+          var deltaY = Math.abs(currentY - startY);
+
+          // Solo considerar arrastre si hubo movimiento real
+          if (deltaX > 10 || deltaY > 10) {
+            this.dataset.touchDragging = 'true';
+            e.preventDefault();
+          }
         });
 
         // TOUCH - Touch end
         item.addEventListener('touchend', function(e) {
           this.classList.remove('dragging');
+          var wasDragging = this.dataset.touchDragging === 'true';
+          this.dataset.touchStartX = '';
+          this.dataset.touchStartY = '';
+          this.dataset.touchDragging = '';
 
           var touch = e.changedTouches[0];
           var elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
           var zoneBelow = elementBelow?.closest('.dragdrop-zone-content');
 
-          if (zoneBelow && draggedElement) {
+          if (wasDragging && zoneBelow && draggedElement) {
             zoneBelow.appendChild(draggedElement);
             draggedElement.classList.add('dropped');
           }
@@ -80,6 +97,9 @@
         // TOUCH - cancel (por ejemplo al interrumpir gesto)
         item.addEventListener('touchcancel', function() {
           this.classList.remove('dragging');
+          this.dataset.touchStartX = '';
+          this.dataset.touchStartY = '';
+          this.dataset.touchDragging = '';
           draggedElement = null;
         });
       });
