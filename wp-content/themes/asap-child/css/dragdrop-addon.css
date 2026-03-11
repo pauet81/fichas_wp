@@ -322,8 +322,8 @@
   }
 
   .dragdrop-items {
-    min-height: 260px; /* ✅ Más espacio para grupos en móvil */
-    padding-bottom: 20px;
+    min-height: 380px; /* ✅ Bloque "Grupos" claramente más alto en móvil */
+    padding-bottom: 28px;
   }
 
   .dragdrop-items-grid {
@@ -338,7 +338,7 @@
   }
 
   .dragdrop-zones {
-    margin-top: 8px; /* Separa claramente "Grupos" de las zonas de destino */
+    margin-top: 16px; /* Más separación visual con "Grupos" */
   }
 
   .dragdrop-zone {
