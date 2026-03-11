@@ -70,8 +70,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.2;
+  white-space: normal;
+  overflow-wrap: anywhere;
   font-size: 2em;
   cursor: grab;
   transition: all 0.3s ease;
@@ -299,15 +300,19 @@
     min-width: 0; /* ✅ Permite reducción completa */
   }
 
+  .dragdrop-items {
+    min-height: 260px; /* ✅ Más espacio para grupos en móvil */
+  }
+
   .dragdrop-items-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* ✅ 2 columnas claras en móvil */
+    grid-template-columns: 1fr; /* ✅ Botones grandes, sin solapes */
     gap: 8px;
   }
 
   .dragdrop-item {
-    font-size: 1.35em;
+    font-size: 1.2em;
     padding: 8px;
-    min-height: 56px;
+    min-height: 60px;
   }
 
   .dragdrop-zone {
@@ -316,7 +321,7 @@
   }
 
   .dragdrop-zone-content {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* ✅ evita columnas demasiado estrechas */
+    grid-template-columns: 1fr; /* ✅ Evita montajes y solapes al soltar */
     gap: 8px;
   }
 
