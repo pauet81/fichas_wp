@@ -443,9 +443,6 @@ if ($ficha_anterior || $ficha_siguiente): ?>
                                             <span class="badge-asignatura-mini"><?php echo esc_html($rel_asignaturas[0]->name); ?></span>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="badge-vistas-card">
-                                        👁️ <?php echo fichas_format_vistas(get_the_ID()); ?>
-                                    </div>
                                 </div>
 
                                 <div class="ficha-card-body-v2">

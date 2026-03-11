@@ -2064,21 +2064,6 @@
 }
 
 /* Ajustes de legibilidad específicos del carrusel de relacionadas */
-.fichas-relacionadas-box .ficha-card-header-v2 {
-    min-height: 64px;
-    padding-right: 86px;
-}
-
-.fichas-relacionadas-box .ficha-card-header-v2 .badges-row {
-    max-width: calc(100% - 74px);
-}
-
-.fichas-relacionadas-box .badge-vistas-card {
-    top: 8px;
-    right: 8px;
-    padding: 5px 10px;
-    font-size: 11px;
-}
 
 .fichas-relacionadas-box .ficha-card-titulo-v2 {
     min-height: 4.2em;
@@ -2102,15 +2087,6 @@
         flex: 0 0 86vw !important;
         min-width: 86vw !important;
         max-width: 86vw !important;
-    }
-
-    .fichas-relacionadas-box .ficha-card-header-v2 {
-        min-height: 58px;
-        padding-right: 78px;
-    }
-
-    .fichas-relacionadas-box .ficha-card-header-v2 .badges-row {
-        max-width: calc(100% - 68px);
     }
 }
 
