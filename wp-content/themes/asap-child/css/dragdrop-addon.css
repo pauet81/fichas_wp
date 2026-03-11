@@ -39,6 +39,7 @@
   border: 3px dashed #d97706;
   border-radius: 16px;
   padding: 20px;
+  padding-bottom: 28px; /* Más aire visual al final del bloque "Grupos" */
   min-width: 280px;
   min-height: 200px;
   flex: 1 1 280px; /* ✅ Flex para adaptarse */
@@ -57,6 +58,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   gap: 12px;
+  margin-bottom: 6px;
 }
 
 /* Elemento arrastrable */
@@ -302,6 +304,7 @@
 
   .dragdrop-items {
     min-height: 260px; /* ✅ Más espacio para grupos en móvil */
+    padding-bottom: 20px;
   }
 
   .dragdrop-items-grid {
@@ -313,6 +316,10 @@
     font-size: 1.2em;
     padding: 8px;
     min-height: 60px;
+  }
+
+  .dragdrop-zones {
+    margin-top: 8px; /* Separa claramente "Grupos" de las zonas de destino */
   }
 
   .dragdrop-zone {
