@@ -51,30 +51,54 @@
         item.addEventListener('touchstart', function(e) {
           draggedElement = this;
           this.classList.add('dragging');
-          this.style.position = 'fixed';
-          this.style.zIndex = '1000';
-          moveAt(e.touches[0].pageX, e.touches[0].pageY);
+          this.dataset.touchStartX = String(e.touches[0].pageX);
+          this.dataset.touchStartY = String(e.touches[0].pageY);
+          this.dataset.touchDragging = 'false';
         });
 
         // TOUCH - Touch move
         item.addEventListener('touchmove', function(e) {
-          e.preventDefault();
+          if (!draggedElement) return;
+
+          var startX = parseFloat(this.dataset.touchStartX || '0');
+          var startY = parseFloat(this.dataset.touchStartY || '0');
+          var currentX = e.touches[0].pageX;
+          var currentY = e.touches[0].pageY;
+          var deltaX = Math.abs(currentX - startX);
+          var deltaY = Math.abs(currentY - startY);
+
+          // Evita sacar el item de su sitio con un simple toque
+          if (this.dataset.touchDragging !== 'true' && (deltaX > 6 || deltaY > 6)) {
+            this.dataset.touchDragging = 'true';
+            this.style.position = 'fixed';
+            this.style.zIndex = '1000';
+            this.style.width = this.offsetWidth + 'px';
+          }
+
+          if (this.dataset.touchDragging === 'true') {
+            e.preventDefault();
+          }
           moveAt(e.touches[0].pageX, e.touches[0].pageY);
         });
 
         // TOUCH - Touch end
         item.addEventListener('touchend', function(e) {
           this.classList.remove('dragging');
+          var wasDragging = this.dataset.touchDragging === 'true';
           this.style.position = '';
           this.style.zIndex = '';
+          this.style.width = '';
           this.style.left = '';
           this.style.top = '';
+          this.dataset.touchDragging = '';
+          this.dataset.touchStartX = '';
+          this.dataset.touchStartY = '';
 
           var touch = e.changedTouches[0];
           var elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
           var zoneBelow = elementBelow?.closest('.dragdrop-zone-content');
 
-          if (zoneBelow && draggedElement) {
+          if (wasDragging && zoneBelow && draggedElement) {
             zoneBelow.appendChild(draggedElement);
             draggedElement.classList.add('dropped');
           }
