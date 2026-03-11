@@ -2029,6 +2029,7 @@
 .fichas-relacionadas-carousel {
     display: flex;
     flex-wrap: nowrap;
+    align-items: stretch;
     gap: 25px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -2058,6 +2059,42 @@
     flex: 0 0 320px !important;
     min-width: 320px !important;
     max-width: 320px !important;
+    display: flex;
+    height: auto;
+}
+
+/* Ajustes de legibilidad específicos del carrusel de relacionadas */
+.fichas-relacionadas-box .ficha-card-header-v2 {
+    min-height: 64px;
+    padding-right: 86px;
+}
+
+.fichas-relacionadas-box .ficha-card-header-v2 .badges-row {
+    max-width: calc(100% - 74px);
+}
+
+.fichas-relacionadas-box .badge-vistas-card {
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    font-size: 11px;
+}
+
+.fichas-relacionadas-box .ficha-card-titulo-v2 {
+    min-height: 4.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.fichas-relacionadas-box .ficha-card-meta-v2 {
+    min-height: 54px;
+    align-content: flex-start;
+}
+
+.fichas-relacionadas-box .ficha-card-cta-v2 .cta-text {
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -2065,6 +2102,15 @@
         flex: 0 0 86vw !important;
         min-width: 86vw !important;
         max-width: 86vw !important;
+    }
+
+    .fichas-relacionadas-box .ficha-card-header-v2 {
+        min-height: 58px;
+        padding-right: 78px;
+    }
+
+    .fichas-relacionadas-box .ficha-card-header-v2 .badges-row {
+        max-width: calc(100% - 68px);
     }
 }
 

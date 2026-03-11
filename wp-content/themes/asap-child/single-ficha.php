@@ -406,6 +406,13 @@ if ($ficha_anterior || $ficha_siguiente): ?>
                 <div class="fichas-relacionadas-carousel">
                     <?php while ($related_query->have_posts()): $related_query->the_post(); 
                         $rel_edad = get_field('edad_recomendada');
+                        $rel_edad_label = '';
+                        if (!empty($rel_edad)) {
+                            $rel_edad_label = trim((string) $rel_edad);
+                            if (stripos($rel_edad_label, 'año') === false) {
+                                $rel_edad_label .= ' años';
+                            }
+                        }
                         $rel_tiempo = get_field('tiempo_estimado');
                         $rel_asignaturas = get_the_terms(get_the_ID(), 'asignatura');
                         $rel_dificultad = get_the_terms(get_the_ID(), 'dificultad');
@@ -444,10 +451,10 @@ if ($ficha_anterior || $ficha_siguiente): ?>
                                 <div class="ficha-card-body-v2">
                                     <h3 class="ficha-card-titulo-v2"><?php the_title(); ?></h3>
                                     <div class="ficha-card-meta-v2">
-                                        <?php if ($rel_edad): ?>
+                                        <?php if ($rel_edad_label): ?>
                                             <span class="meta-item-v2">
                                                 <span class="meta-icon">👤</span>
-                                                <span class="meta-text"><?php echo esc_html($rel_edad); ?> años</span>
+                                                <span class="meta-text"><?php echo esc_html($rel_edad_label); ?></span>
                                             </span>
                                         <?php endif; ?>
                                         <?php if ($rel_tiempo): ?>
