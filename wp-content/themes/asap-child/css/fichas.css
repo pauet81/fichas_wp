@@ -2028,6 +2028,7 @@
 
 .fichas-relacionadas-carousel {
     display: flex;
+    flex-wrap: nowrap;
     gap: 25px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -2041,8 +2042,30 @@
 
 .fichas-relacionadas-carousel .ficha-card-mini-v2 {
     flex: 0 0 320px;
+    min-width: 320px;
+    max-width: 320px;
     scroll-snap-align: start;
     animation: fadeInUp 0.5s ease backwards;
+}
+
+/* Evita que reglas genéricas de otros estilos compriman las cards */
+.fichas-relacionadas-box .fichas-relacionadas-carousel {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+
+.fichas-relacionadas-box .fichas-relacionadas-carousel > .ficha-card-mini-v2 {
+    flex: 0 0 320px !important;
+    min-width: 320px !important;
+    max-width: 320px !important;
+}
+
+@media (max-width: 768px) {
+    .fichas-relacionadas-box .fichas-relacionadas-carousel > .ficha-card-mini-v2 {
+        flex: 0 0 86vw !important;
+        min-width: 86vw !important;
+        max-width: 86vw !important;
+    }
 }
 
 .fichas-relacionadas-carousel .ficha-card-mini-v2:nth-child(1) { animation-delay: 0.1s; }
