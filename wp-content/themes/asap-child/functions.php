@@ -970,4 +970,44 @@ function fichas_activity_admin_styles($hook) {
 }
 add_action('admin_enqueue_scripts', 'fichas_activity_admin_styles');
 
+/* ================================================================
+   COLUMNAS ADMIN PARA FICHAS (Curso / Asignatura)
+   ================================================================ */
+function fichas_admin_columns($columns) {
+    $new_columns = array();
+
+    foreach ($columns as $key => $label) {
+        $new_columns[$key] = $label;
+
+        if ($key === 'title') {
+            $new_columns['ficha_curso'] = 'Curso';
+            $new_columns['ficha_asignatura'] = 'Asignatura';
+        }
+    }
+
+    return $new_columns;
+}
+add_filter('manage_ficha_posts_columns', 'fichas_admin_columns');
+
+function fichas_admin_column_content($column, $post_id) {
+    if ($column === 'ficha_curso') {
+        $terms = get_the_terms($post_id, 'curso');
+        if ($terms && !is_wp_error($terms)) {
+            echo esc_html(implode(', ', wp_list_pluck($terms, 'name')));
+        } else {
+            echo '—';
+        }
+    }
+
+    if ($column === 'ficha_asignatura') {
+        $terms = get_the_terms($post_id, 'asignatura');
+        if ($terms && !is_wp_error($terms)) {
+            echo esc_html(implode(', ', wp_list_pluck($terms, 'name')));
+        } else {
+            echo '—';
+        }
+    }
+}
+add_action('manage_ficha_posts_custom_column', 'fichas_admin_column_content', 10, 2);
+
 
