@@ -363,34 +363,63 @@ if ($ficha_anterior || $ficha_siguiente): ?>
 
     <!-- FICHAS RELACIONADAS (CARRUSEL) -->
     <?php
-    // Obtener fichas relacionadas por taxonomía
+    // Relacionadas: priorizar SIEMPRE misma edad/curso
     $related_args = array(
         'post_type' => 'ficha',
         'posts_per_page' => 12,
         'post__not_in' => array(get_the_ID()),
-        'tax_query' => array(
-            'relation' => 'OR',
-        )
     );
 
-    // Añadir query por asignatura
-    if ($asignaturas && !is_wp_error($asignaturas)) {
-        $asignatura_ids = wp_list_pluck($asignaturas, 'term_id');
-        $related_args['tax_query'][] = array(
-            'taxonomy' => 'asignatura',
-            'field' => 'term_id',
-            'terms' => $asignatura_ids,
-        );
-    }
+    $related_tax_query = array('relation' => 'AND');
+    $has_age_filter = false;
 
-    // Añadir query por curso
+    // Misma edad por taxonomía "curso" (ej: 3 años, 1º Primaria...)
     if ($cursos && !is_wp_error($cursos)) {
         $curso_ids = wp_list_pluck($cursos, 'term_id');
-        $related_args['tax_query'][] = array(
-            'taxonomy' => 'curso',
-            'field' => 'term_id',
-            'terms' => $curso_ids,
-        );
+        if (!empty($curso_ids)) {
+            $related_tax_query[] = array(
+                'taxonomy' => 'curso',
+                'field' => 'term_id',
+                'terms' => $curso_ids,
+            );
+            $has_age_filter = true;
+        }
+    }
+
+    // Si no hay curso, usar edad_recomendada como fallback
+    if (!$has_age_filter) {
+        $edad_actual = get_field('edad_recomendada', get_the_ID());
+        if (!empty($edad_actual)) {
+            $related_args['meta_query'] = array(
+                array(
+                    'key' => 'edad_recomendada',
+                    'value' => trim((string) $edad_actual),
+                    'compare' => '='
+                )
+            );
+            $has_age_filter = true;
+        }
+    }
+
+    // Afinar por asignatura dentro de la misma edad
+    if ($asignaturas && !is_wp_error($asignaturas)) {
+        $asignatura_ids = wp_list_pluck($asignaturas, 'term_id');
+        if (!empty($asignatura_ids)) {
+            $related_tax_query[] = array(
+                'taxonomy' => 'asignatura',
+                'field' => 'term_id',
+                'terms' => $asignatura_ids,
+            );
+        }
+    }
+
+    if (count($related_tax_query) > 1) {
+        $related_args['tax_query'] = $related_tax_query;
+    }
+
+    // Si no se puede filtrar por edad/curso, no mostrar mezclas de etapas.
+    if (!$has_age_filter) {
+        $related_args['post__in'] = array(0);
     }
 
     $related_query = new WP_Query($related_args);
