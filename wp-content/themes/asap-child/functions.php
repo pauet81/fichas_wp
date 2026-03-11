@@ -1010,4 +1010,82 @@ function fichas_admin_column_content($column, $post_id) {
 }
 add_action('manage_ficha_posts_custom_column', 'fichas_admin_column_content', 10, 2);
 
+/* ================================================================
+   FILTROS ADMIN PARA FICHAS (Curso / Asignatura)
+   ================================================================ */
+function fichas_admin_taxonomy_filters() {
+    global $typenow;
+    if ($typenow !== 'ficha') {
+        return;
+    }
+
+    $current_curso = isset($_GET['ficha_curso_filter']) ? sanitize_text_field(wp_unslash($_GET['ficha_curso_filter'])) : '';
+    $current_asignatura = isset($_GET['ficha_asignatura_filter']) ? sanitize_text_field(wp_unslash($_GET['ficha_asignatura_filter'])) : '';
+
+    wp_dropdown_categories(array(
+        'show_option_all' => 'Todos los cursos',
+        'taxonomy' => 'curso',
+        'name' => 'ficha_curso_filter',
+        'orderby' => 'name',
+        'selected' => $current_curso,
+        'hierarchical' => false,
+        'depth' => 1,
+        'show_count' => false,
+        'hide_empty' => false,
+        'value_field' => 'slug',
+    ));
+
+    wp_dropdown_categories(array(
+        'show_option_all' => 'Todas las asignaturas',
+        'taxonomy' => 'asignatura',
+        'name' => 'ficha_asignatura_filter',
+        'orderby' => 'name',
+        'selected' => $current_asignatura,
+        'hierarchical' => false,
+        'depth' => 1,
+        'show_count' => false,
+        'hide_empty' => false,
+        'value_field' => 'slug',
+    ));
+}
+add_action('restrict_manage_posts', 'fichas_admin_taxonomy_filters');
+
+function fichas_admin_apply_taxonomy_filters($query) {
+    global $pagenow;
+
+    if (!is_admin() || $pagenow !== 'edit.php') {
+        return;
+    }
+
+    $post_type = $query->get('post_type');
+    if ($post_type !== 'ficha') {
+        return;
+    }
+
+    $tax_query = array('relation' => 'AND');
+
+    if (!empty($_GET['ficha_curso_filter'])) {
+        $curso_slug = sanitize_text_field(wp_unslash($_GET['ficha_curso_filter']));
+        $tax_query[] = array(
+            'taxonomy' => 'curso',
+            'field' => 'slug',
+            'terms' => $curso_slug,
+        );
+    }
+
+    if (!empty($_GET['ficha_asignatura_filter'])) {
+        $asignatura_slug = sanitize_text_field(wp_unslash($_GET['ficha_asignatura_filter']));
+        $tax_query[] = array(
+            'taxonomy' => 'asignatura',
+            'field' => 'slug',
+            'terms' => $asignatura_slug,
+        );
+    }
+
+    if (count($tax_query) > 1) {
+        $query->set('tax_query', $tax_query);
+    }
+}
+add_action('pre_get_posts', 'fichas_admin_apply_taxonomy_filters');
+
 
