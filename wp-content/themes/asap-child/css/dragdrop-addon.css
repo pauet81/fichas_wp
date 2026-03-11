@@ -65,7 +65,13 @@
   border: 3px solid #fbbf24;
   border-radius: 12px;
   padding: 12px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  line-height: 1;
+  white-space: nowrap;
   font-size: 2em;
   cursor: grab;
   transition: all 0.3s ease;
@@ -294,13 +300,14 @@
   }
 
   .dragdrop-items-grid {
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* ✅ Items más pequeños */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* ✅ 2 columnas claras en móvil */
     gap: 8px;
   }
 
   .dragdrop-item {
-    font-size: 1.5em;
+    font-size: 1.35em;
     padding: 8px;
+    min-height: 56px;
   }
 
   .dragdrop-zone {
@@ -309,7 +316,8 @@
   }
 
   .dragdrop-zone-content {
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* ✅ Zonas más pequeñas */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* ✅ evita columnas demasiado estrechas */
+    gap: 8px;
   }
 
   .btn-reiniciar-dragdrop,
