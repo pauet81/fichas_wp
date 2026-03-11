@@ -1153,6 +1153,62 @@
     }
 
     // ============================================
+    // CARRUSEL FICHAS RELACIONADAS
+    // ============================================
+    function inicializarCarruselRelacionadas() {
+        var wrappers = document.querySelectorAll('.fichas-carousel-wrapper');
+        if (!wrappers.length) return;
+
+        wrappers.forEach(function(wrapper) {
+            var carousel = wrapper.querySelector('.fichas-relacionadas-carousel');
+            var prevBtn = wrapper.querySelector('.carousel-prev');
+            var nextBtn = wrapper.querySelector('.carousel-next');
+
+            if (!carousel || !prevBtn || !nextBtn) return;
+
+            function getStep() {
+                var cards = carousel.querySelectorAll('.ficha-card-mini-v2');
+                if (cards.length >= 2) {
+                    var firstLeft = cards[0].getBoundingClientRect().left;
+                    var secondLeft = cards[1].getBoundingClientRect().left;
+                    var delta = Math.abs(secondLeft - firstLeft);
+                    if (delta > 0) return delta;
+                }
+                if (cards.length === 1) return cards[0].offsetWidth;
+                return Math.max(240, Math.round(carousel.clientWidth * 0.85));
+            }
+
+            function updateButtons() {
+                var maxScroll = Math.max(0, carousel.scrollWidth - carousel.clientWidth);
+                var left = carousel.scrollLeft;
+                prevBtn.disabled = left <= 2;
+                nextBtn.disabled = left >= (maxScroll - 2);
+            }
+
+            function scrollByStep(direction) {
+                carousel.scrollBy({
+                    left: getStep() * direction,
+                    behavior: 'smooth'
+                });
+            }
+
+            prevBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollByStep(-1);
+            });
+
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollByStep(1);
+            });
+
+            carousel.addEventListener('scroll', updateButtons, { passive: true });
+            window.addEventListener('resize', updateButtons);
+            updateButtons();
+        });
+    }
+
+    // ============================================
     // ============================================
     // SISTEMA DE IMPRESIÓN PDF v3.0
     // ============================================
@@ -1331,6 +1387,11 @@
         document.addEventListener('DOMContentLoaded', inicializarNavegacionAtencion);
     } else {
         inicializarNavegacionAtencion();
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', inicializarCarruselRelacionadas);
+    } else {
+        inicializarCarruselRelacionadas();
     }
     // ============================================
     // ============================================
