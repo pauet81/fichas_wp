@@ -17,6 +17,8 @@
       var items = ejercicio.querySelectorAll('.dragdrop-item');
       var zones = ejercicio.querySelectorAll('.dragdrop-zone');
       var btnReiniciar = ejercicio.querySelector('.btn-reiniciar-dragdrop');
+      var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+      var selectedItem = null;
 
       var draggedElement = null;
       var itemsOriginales = [];
@@ -33,6 +35,21 @@
       // EVENTOS PARA ELEMENTOS ARRASTRABLES
       // ============================================
       items.forEach(function(item) {
+        if (isTouchDevice) {
+          item.draggable = false;
+
+          // UX móvil infantil: tocar ficha y luego tocar destino
+          item.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (item.classList.contains('dropped')) return;
+
+            items.forEach(function(i) { i.classList.remove('drag-selected'); });
+            selectedItem = item;
+            item.classList.add('drag-selected');
+          });
+          return;
+        }
+
         // MOUSE - Drag start
         item.addEventListener('dragstart', function(e) {
           draggedElement = this;
@@ -47,61 +64,6 @@
           draggedElement = null;
         });
 
-        // TOUCH - Touch start
-        item.addEventListener('touchstart', function(e) {
-          draggedElement = this;
-          this.classList.add('dragging');
-          this.dataset.touchStartX = String(e.touches[0].pageX);
-          this.dataset.touchStartY = String(e.touches[0].pageY);
-          this.dataset.touchDragging = 'false';
-        });
-
-        // TOUCH - Touch move
-        item.addEventListener('touchmove', function(e) {
-          if (!draggedElement) return;
-
-          var startX = parseFloat(this.dataset.touchStartX || '0');
-          var startY = parseFloat(this.dataset.touchStartY || '0');
-          var currentX = e.touches[0].pageX;
-          var currentY = e.touches[0].pageY;
-          var deltaX = Math.abs(currentX - startX);
-          var deltaY = Math.abs(currentY - startY);
-
-          // Solo considerar arrastre si hubo movimiento real
-          if (deltaX > 10 || deltaY > 10) {
-            this.dataset.touchDragging = 'true';
-            e.preventDefault();
-          }
-        });
-
-        // TOUCH - Touch end
-        item.addEventListener('touchend', function(e) {
-          this.classList.remove('dragging');
-          var wasDragging = this.dataset.touchDragging === 'true';
-          this.dataset.touchStartX = '';
-          this.dataset.touchStartY = '';
-          this.dataset.touchDragging = '';
-
-          var touch = e.changedTouches[0];
-          var elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
-          var zoneBelow = elementBelow?.closest('.dragdrop-zone-content');
-
-          if (wasDragging && zoneBelow && draggedElement) {
-            zoneBelow.appendChild(draggedElement);
-            draggedElement.classList.add('dropped');
-          }
-
-          draggedElement = null;
-        });
-
-        // TOUCH - cancel (por ejemplo al interrumpir gesto)
-        item.addEventListener('touchcancel', function() {
-          this.classList.remove('dragging');
-          this.dataset.touchStartX = '';
-          this.dataset.touchStartY = '';
-          this.dataset.touchDragging = '';
-          draggedElement = null;
-        });
       });
 
       function moveAt(pageX, pageY) {
@@ -131,6 +93,7 @@
 
         // Drop
         zoneContent.addEventListener('drop', function(e) {
+          if (isTouchDevice) return;
           e.preventDefault();
           zone.classList.remove('drag-over');
 
@@ -139,6 +102,16 @@
             draggedElement.classList.add('dropped');
           }
         });
+
+        if (isTouchDevice) {
+          zoneContent.addEventListener('click', function() {
+            if (!selectedItem) return;
+            zoneContent.appendChild(selectedItem);
+            selectedItem.classList.add('dropped');
+            selectedItem.classList.remove('drag-selected');
+            selectedItem = null;
+          });
+        }
       });
 
       // ============================================
@@ -148,9 +121,10 @@
         btnReiniciar.addEventListener('click', function() {
           // Devolver items a posición original
           itemsOriginales.forEach(function(obj) {
-            obj.parent.appendChild(obj.element);
-            obj.element.classList.remove('dropped', 'correcto', 'incorrecto');
+              obj.parent.appendChild(obj.element);
+              obj.element.classList.remove('dropped', 'correcto', 'incorrecto', 'drag-selected');
           });
+          selectedItem = null;
 
           // Limpiar estados de zonas
           zones.forEach(function(zone) {
