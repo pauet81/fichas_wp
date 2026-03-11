@@ -407,20 +407,72 @@ if ($ficha_anterior || $ficha_siguiente): ?>
                     <?php while ($related_query->have_posts()): $related_query->the_post(); 
                         $rel_edad = get_field('edad_recomendada');
                         $rel_tiempo = get_field('tiempo_estimado');
+                        $rel_asignaturas = get_the_terms(get_the_ID(), 'asignatura');
+                        $rel_dificultad = get_the_terms(get_the_ID(), 'dificultad');
+                        $rel_nivel = get_the_terms(get_the_ID(), 'nivel-educativo');
+                        $rel_curso = get_the_terms(get_the_ID(), 'curso');
+
+                        $nivel_class = 'nivel-primaria';
+                        if ($rel_nivel && !is_wp_error($rel_nivel)) {
+                            $nivel_slug_item = $rel_nivel[0]->slug;
+                            if ($nivel_slug_item === 'infantil') {
+                                $nivel_class = 'nivel-infantil';
+                            } elseif ($nivel_slug_item === 'secundaria') {
+                                $nivel_class = 'nivel-secundaria';
+                            }
+                        }
                     ?>
-                        <article class="ficha-relacionada-card">
-                            <a href="<?php the_permalink(); ?>" class="card-link">
-                                <h3 class="card-titulo"><?php the_title(); ?></h3>
-                                <div class="card-meta">
-                                    <?php if ($rel_edad): ?>
-                                        <span class="card-meta-item">👶 <?php echo esc_html($rel_edad); ?></span>
-                                    <?php endif; ?>
-                                    <?php if ($rel_tiempo): ?>
-                                        <span class="card-meta-item">⏱️ <?php echo esc_html($rel_tiempo); ?> min</span>
-                                    <?php endif; ?>
+                        <div class="ficha-card-mini-v2 <?php echo esc_attr($nivel_class); ?>">
+                            <a href="<?php the_permalink(); ?>" class="ficha-card-link-v2">
+                                <div class="ficha-card-header-v2">
+                                    <div class="badges-row">
+                                        <?php if ($rel_nivel && !is_wp_error($rel_nivel)): ?>
+                                            <span class="badge-nivel-mini"><?php echo esc_html($rel_nivel[0]->name); ?></span>
+                                        <?php endif; ?>
+                                        <?php if ($rel_curso && !is_wp_error($rel_curso)): ?>
+                                            <span class="badge-curso-mini"><?php echo esc_html($rel_curso[0]->name); ?></span>
+                                        <?php endif; ?>
+                                        <?php if ($rel_asignaturas && !is_wp_error($rel_asignaturas)): ?>
+                                            <span class="badge-asignatura-mini"><?php echo esc_html($rel_asignaturas[0]->name); ?></span>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="badge-vistas-card">
+                                        👁️ <?php echo fichas_format_vistas(get_the_ID()); ?>
+                                    </div>
+                                </div>
+
+                                <div class="ficha-card-body-v2">
+                                    <h3 class="ficha-card-titulo-v2"><?php the_title(); ?></h3>
+                                    <div class="ficha-card-meta-v2">
+                                        <?php if ($rel_edad): ?>
+                                            <span class="meta-item-v2">
+                                                <span class="meta-icon">👤</span>
+                                                <span class="meta-text"><?php echo esc_html($rel_edad); ?> años</span>
+                                            </span>
+                                        <?php endif; ?>
+                                        <?php if ($rel_tiempo): ?>
+                                            <span class="meta-item-v2">
+                                                <span class="meta-icon">⏱️</span>
+                                                <span class="meta-text"><?php echo esc_html($rel_tiempo); ?> min</span>
+                                            </span>
+                                        <?php endif; ?>
+                                        <?php if ($rel_dificultad && !is_wp_error($rel_dificultad)): ?>
+                                            <span class="meta-item-v2">
+                                                <span class="meta-icon">⭐</span>
+                                                <span class="meta-text"><?php echo esc_html($rel_dificultad[0]->name); ?></span>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+
+                                <div class="ficha-card-footer-v2">
+                                    <span class="ficha-card-cta-v2">
+                                        <span class="cta-text">Empezar ficha</span>
+                                        <span class="cta-arrow">→</span>
+                                    </span>
                                 </div>
                             </a>
-                        </article>
+                        </div>
                     <?php endwhile; ?>
                 </div>
                  <div class="carousel-controls">
